@@ -65,13 +65,22 @@
   function onScroll() {
     const y = window.scrollY;
     header.classList.toggle('scrolled', y > 8);
-    topBtn.classList.toggle('show', y > window.innerHeight * 0.8);
+    topBtn.classList.toggle('show', y > 50);
   }
-  window.addEventListener('scroll', onScroll, { passive: true });
+  let scrollFramePending = false;
+  window.addEventListener('scroll', () => {
+    if (scrollFramePending) return;
+    scrollFramePending = true;
+    requestAnimationFrame(() => {
+      onScroll();
+      scrollFramePending = false;
+    });
+  }, { passive: true });
   onScroll();
 
   topBtn.addEventListener('click', () => {
-    window.scrollTo({ top: 0 });
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'instant' : 'smooth' });
     document.querySelector('.logo').focus({ preventScroll: true });
   });
 
