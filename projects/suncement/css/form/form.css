@@ -1,0 +1,88 @@
+/* 공통 설정 */
+.required {color: red;}
+
+/*윤리규범 제보하기*/
+.audit-form {width: 100%;}
+
+.form-notice {margin-bottom: 10px; font-size: 18px; color: #666; text-align: right;}
+.form-notice .required {margin-right: 4px;}
+
+.form-board {border-top: 2px solid #222;}
+.form-row {display: flex; border-bottom: 1px solid #e5e5e5;}
+.form-label {display: flex; align-items: center; width: 220px; min-height: 60px; padding: 20px; font-weight: 600; color: #222; margin-bottom: 0;}
+.form-field {flex: 1; padding: 10px 20px;}
+
+.form-input, .form-textarea {width: 100%; border: 1px solid #dcdfe6; border-radius: 6px; padding: 12px 14px; font-size: 16px; color: #222;}
+.form-input {height: 44px;}
+.form-textarea {min-height: 220px; resize: vertical;}
+
+.email-row {display: flex; align-items: center; gap: 12px;}
+.email-row .form-input {width: 100%; max-width: 220px;}
+.email-at {font-size: 20px; font-weight: 500; color: #555;}
+.email-row .form-select {width: 100%; max-width: 180px; height: 44px; border: 1px solid #dcdfe6; border-radius: 6px; padding: 0 40px 0 15px; font-size: 16px;}
+
+.radio-row {display: flex; align-items: center; flex-wrap: wrap; gap: 12px 24px; min-height: 48px;}
+.radio-row label {display: inline-flex; align-items: center; gap: 8px; font-size: 16px; color: #222;}
+.check-row {display: flex; align-items: center; min-height: 48px;}
+.check-row label {display: inline-flex; align-items: center; gap: 8px; font-size: 16px; color: #222;}
+
+.file-field {display: flex; align-items: center; gap: 12px;}
+.file-btn {display: inline-flex; align-items: center; justify-content: center; height: 38px; padding: 0 20px; background: #435b74; color: #fff; border-radius: 6px; cursor: pointer;}
+.file-btn input {display: none;}
+.file-name {font-size: 14px; color: #666;}
+
+.audit-agree {margin-top: 40px; border: 1px solid #dcdfe6; border-radius: 8px; overflow: hidden;}
+.agree-title {padding: 13px 20px; font-size: 18px; font-weight: 600; background: #F8FBFF;}
+.agree-content {padding: 16px 20px; font-size: 15px; color: #555; line-height: 1.7;}
+.agree-check {padding: 16px 20px; border-top: 1px solid #e5e5e5;}
+.agree-check label {display: flex; align-items: center; gap: 8px; font-size: 16px;}
+.agree-check input {width: 18px; height: 18px;}
+
+.btn-wrap {display: flex; justify-content: center; gap: 10px; margin-top: 30px;}
+.btn {display: inline-flex; align-items: center; justify-content: center; min-width: 140px; height: 45px; border-radius: 6px; font-size: 16px;}
+.btn.submit {background: #435b74; color: #fff;}
+.btn.cancel {border: 1px solid #dcdfe6; background: #fff; color: #222;}
+
+@media (max-width:768px) {
+  .form-row {flex-direction: column;}
+  .form-label {width: 100%; min-height: auto; padding: 14px 16px; background: #F8FBFF;}
+  .form-field {padding: 10px 16px;} 
+  .radio-row {gap: 10px 18px;}
+  .file-field {flex-direction: column; align-items: flex-start;}
+  .btn-wrap {flex-direction: column;}
+  .btn {width: 100%;}
+}
+
+@media all and (max-width: 768px) {
+  .board_agree_title {font-size: 22px; margin: 20px 0 0; padding: 10px 20px;}
+  .board_form_table input[type="text"],
+  .board_form_table input[type="email"],
+  .board_form_table input[type="password"],
+  .board_form_table input[type="tel"] {display: flex; flex-direction: column; margin-bottom: 10px; width: 100%;}
+  
+  .captcha_wrap {flex-direction: column; justify-content: left;}
+
+  .board_agree_content p, .board_agree_content ul li, .board_agree_check {font-size: 16px; padding: 5px 20px;}
+  .board_agree_check {padding: 25px 20px;}
+
+  .radio_row label {margin-right: 20px;}
+  .agree-content {overflow-y: auto; max-height: 250px;}
+}
+
+@media all and (max-width: 525px) {
+  .board_form_table th {display: block; width: 100%; border-right: 0;}
+
+  .board_form_table td {display: block;}
+
+  .board_form_table input, .board_form_table textarea {width: 100%; box-sizing: border-box;}
+
+  /*윤리규범 제보하기*/
+  .form-notice {font-size: 16px;}
+  .email-row {gap: 8px;}
+  .email-at {font-size: 16px;}
+  .email-row .form-input {height: 40px;}
+  .email-row .form-select {font-size: 14px; padding: 8px 10px; height: 40px;}
+  .file-btn {font-size: 14px; height: 35px;}
+
+  .radio-row {min-height: 40px;}
+}

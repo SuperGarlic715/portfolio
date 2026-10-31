@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="(주)이디컴" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="(주)이디컴" />
+  <meta property="og:description" content="(주)이디컴" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <script src="../../plugin/js/jquery-3.7.1.min.js"></script>
+  <script src="../../plugin/slick/slick.min.js"></script>
+  <script src="../../plugin/aos/aos.js"></script>
+  <script src="../../js/nav.js"></script>
+
+  <link rel="stylesheet" href="../../plugin/slick/slick.css" />
+  <link rel="stylesheet" href="../../plugin/slick/slick-theme.css" />
+  <link rel="stylesheet" href="../../plugin/icons/remixicon/remixicon.css" />
+
+  <link rel="stylesheet" href="../../css/thema/basic.css" />
+  <link rel="stylesheet" href="../../css/thema/main.css" />
+  <link rel="stylesheet" href="../../css/thema/nav.css" />
+  <link rel="stylesheet" href="../../css/thema/sub.css" />
+  <link rel="stylesheet" href="../../css/board/board.css" />
+  <link rel="stylesheet" href="../../css/footer.css" />
+  <link rel="stylesheet" href="../../css/etc/policy.css" />
+  <link rel="stylesheet" href="../../plugin/aos/aos.css" />
+  <link rel="stylesheet" href="../../plugin/swiper/swiper-bundle.min.css" />
+
+  <title>(주)이디컴</title>
+</head>
+
+<header class="policy_header" id="policy">
+	<div class="inner">
+		<h1 class="logo"><a href="/"><img src="../../images/thema/common/logo.png" alt="로고"></a></h1>
+    <!-- 
+		<nav class="lang_nav">
+            <ul>
+                <li><a href="#" class="active">KOR</a></li>
+                <li><a href="#">ENG</a></li>
+                <li><a href="#">JPN</a></li>
+            </ul>
+		</nav>
+	-->
+	</div>
+</header>
+
+<body>
+  <section class="sub contents mg_bt150">
+    <div class="inner">
+      <div class="policy_wrap">
+
+        <div class="tab_wrap">
+            <a href="terms.html" class="tab_btn">이용약관</a>
+            <a href="privacy.html" class="tab_btn">개인정보처리방침</a>
+            <a href="reject.html" class="tab_btn">이메일무단수집거부</a>
+            <a href="sitemap.html" class="tab_btn active">사이트맵</a>
+        </div>
+      
+        <div class="policy_section">
+          <div class="policy_content">
+
+            <div class="sitemap_list">
+              <div class="sitemap_menu">
+                <div class="sitemap_menu_title">
+                회사소개
+                </div>
+                  <ul class="sitemap_detail">
+                  <li><a href="../../sub1_1.html">인사말</a></li>
+                  <li><a href="../../sub1_2.html">주요연혁</a></li>
+                  <li><a href="../../sub1_3.html">인증 및 수상</a></li>
+                  <li><a href="../../sub1_4.html">프로젝트</a></li>
+                </ul>
+              </div>
+              
+              <div class="sitemap_menu">
+                <div class="sitemap_menu_title">
+                제품소개
+                </div>
+                  <ul class="sitemap_detail">
+                    <li><a href="../../sub2_1_1.html">배터리 관리시스템</a></li>
+                    <li><a href="../../sub2_2_1.html">배터리 진단시스템</a></li>
+                    <li><a href="../../sub2_3_1.html">재사용 에너지저장장치</a></li>
+                  </ul>
+              </div>
+              
+              <div class="sitemap_menu">
+                <div class="sitemap_menu_title">
+                핵심솔루션
+                </div>
+                  <ul class="sitemap_detail">
+                    <li><a href="../../sub3_1.html">배터리 진단</a></li>
+                    <li><a href="../../sub3_2.html">전기사고 예측</a></li>
+                    <li><a href="../../sub3_3.html">배터리 화재 안전</a></li>
+                    <li><a href="../../sub3_4.html">전기사고 예측</a></li>
+                    <li><a href="../../sub3_5.html">배터리 화재 안전</a></li>
+                  </ul>
+              </div>
+              
+              <div class="sitemap_menu">
+                <div class="sitemap_menu_title">
+                <a href="../../sub4.html">연구개발</a>
+                </div>
+              </div>
+
+              <div class="sitemap_menu">
+                <div class="sitemap_menu_title">
+                고객지원
+                </div>
+                  <ul class="sitemap_detail">
+                    <li><a href="../../webzin_lists.html">공지 및 뉴스</a></li>
+                    <li><a href="../../gallery.html">자료실</a></li>
+                    <li><a href="../../sub5_3.html">채용안내</a></li>
+                    <li><a href="../../contact.html">온라인 문의</a></li>
+                  </ul>
+              </div>
+
+          </div><!-- sitemap_list -->
+        </div><!-- policy_content -->
+        
+      </div><!--policy_wrap-->
+    </div><!--inner-->
+  </section>
+
+  <div class="top_btn"><i class="ri-arrow-up-s-line"></i></div>
+
+  <script src="plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="plugin/aos/aos_reset.js"></script>
+
+  <script>
+    $(function () {
+      const $btn = $('.top_btn');
+
+      $(window).on('scroll', function () {
+        if ($(this).scrollTop() > 50) {
+          $btn.css({ opacity: 1, visibility: 'visible' });
+        } else {
+          $btn.css({ opacity: 0, visibility: 'hidden' });
+        }
+      });
+
+      $btn.on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 400);
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

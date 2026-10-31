@@ -1,0 +1,88 @@
+/* 공통 설정 */
+.board_form .required {color: red;}
+
+/* 개인정보 수집 동의 영역 */
+.board_agree_box {border: 1px solid #ccc; margin-top: 20px;}
+.board_agree_title {font-size: 26px; margin-top: 40px; padding-left: 40px;}
+
+.board_agree_content p, .board_agree_content li {padding: 5px 40px; font-size: 18px; color: #555; line-height: 26px; font-weight: 400;}
+.board_agree_content p:last-child {margin-bottom: 5px;}
+
+.board_agree_content ul {margin: 10px 0; padding-left: 0;}
+
+.board_agree_content ul li {text-indent: -0.8em; margin-left: 0.8em;}
+
+.board_agree_check {background: #F5F9FC; padding: 25px 40px; border-top: 1px solid #ccc; text-align: left; color: #666; margin-top: 20px;}
+
+.board_agree_check input {width: 18px; height: 18px; margin-right: 10px; vertical-align: middle;}
+
+/* 입력 안내 */
+.board_form_notice {margin: 60px 0 10px;}
+.board_form_notice p {font-size: 18px; text-align: left; color: #555;}
+
+/* 입력 테이블 */
+.board_form_table {width: 100%; border-top: 2px solid #555; border-bottom: 1px solid #555;}
+
+.board_form_table th, .board_form_table td {padding: 20px 15px; font-size: 18px; color: #555; text-align: left; box-sizing: border-box;}
+
+.board_form_table th {border-top: 1px solid #ccc;  width: 13%; background: #F5F9FC;}
+.board_form_table td {border-top: 1px solid #ccc; box-sizing: border-box; overflow: hidden;}
+
+.input_guide_text {margin-left: 10px; font-size: 16px; color: #828A8F;}
+
+.board_form_table input[type="text"],
+.board_form_table input[type="email"],
+.board_form_table input[type="password"],
+.board_form_table input[type="tel"] {font-size: 14px; color: #555; border: 1px solid #ccc; padding: 3px 5px; width: 200px; padding: 8px 0; box-sizing: border-box;}
+
+.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px; box-sizing: border-box; color: #555; font-size: 14px; line-height: 26px; border: 1px solid #ccc; font-family: 'Pretendard', sans-serif;}
+
+/* 캡차 영역 */
+
+.captcha_wrap {display: flex; gap: 10px; align-items: center;}
+
+.captcha_image {display: flex; flex-direction: column; align-items: center; gap: 10px;}
+
+.captcha_refresh {font-size: 20px; color: #666; cursor: pointer;}
+.refresh_btn {width: 18px; height: 18px; margin-left: 10px; cursor: pointer;}
+
+.captcha_wrap input[type="text"] {padding-left: 10px; vertical-align: middle; width: 100%; max-width: 180px;}
+
+/* 버튼 영역 */
+.board_detail_buttons {display: flex; justify-content: flex-end; margin: 20px 0; gap: 10px;}
+.btn_cmn {padding: 10px 30px;  box-sizing: border-box; font-size: 14px;  cursor: pointer; transition: all 0.4s;}
+.board_detail_buttons .btn_cancel {border: 1px solid #555; color: #555; background: #fff;}
+.board_detail_buttons .btn_cancel:hover {background: #3e505c; color: #fff; border: 1px solid #3e505c;}
+
+/* 반응형 */
+@media all and (max-width: 768px) {
+  .board_agree_title {font-size: 22px; margin: 20px 0 0; padding: 10px 20px;}
+  .board_form_table input[type="text"],
+  .board_form_table input[type="email"],
+  .board_form_table input[type="password"],
+  .board_form_table input[type="tel"] {display: flex; flex-direction: column; margin-bottom: 10px; width: 100%;}
+  
+  .captcha_wrap {flex-direction: column; justify-content: left;}
+
+  .board_agree_content p, .board_agree_content ul li, .board_agree_check {font-size: 16px; padding: 5px 20px;}
+  .board_agree_check {padding: 25px 20px;}
+
+}
+
+@media all and (max-width: 525px) {
+  .board_form_table th {
+    display: block;
+    width: 100%;
+    border-right: 0;
+  }
+
+  .board_form_table td {
+    display: block;
+  }
+
+  .board_form_table input,
+  .board_form_table textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}

@@ -1,0 +1,23 @@
+.crt-list {align-items: stretch;}
+.crt-item {color: #222;}
+.crt-thumb {position: relative; display: flex; align-items: center; justify-content: center; width: 305px; height: 390px; max-width: 100%; margin: 0 auto; overflow: hidden; background: #F4F4F4; transition: border-color .25s ease, box-shadow .25s ease;}
+.crt-thumb img {position: relative; display: block; width: 200px; height: 280px; object-fit: contain; transition: transform .35s ease, filter .35s ease; box-shadow: 0 0 20px rgba(0,0,0,0.1);}
+.crt-thumb::before {content: ""; position: absolute; inset: 0; background: rgba(0,0,0,0); transition: background .25s ease; z-index: 1;}
+.crt-view {position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%) scale(.9); opacity: 0; font-size: 28px; color: #fff; width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: var(--brand-color); box-shadow: 0 6px 16px rgba(31, 76, 143, 0.25); transition: opacity .2s ease, transform .2s ease; z-index: 2;}
+.crt-name {font-size: 16px; font-weight: 500; text-align: center;}
+.crt-bold {font-weight: 600; color: #222; text-align: center;}
+
+.crt-item:hover .crt-thumb {border-color: var(--brand-color); box-shadow: inset 0 0 0 3px var(--brand-color), 0 8px 20px rgba(0,0,0,.06);}
+.crt-item:hover .crt-thumb::before {background: rgba(0,0,0,.18);}
+.crt-item:hover .crt-view {opacity: 1; transform: translate(-50%,-50%) scale(1);}
+
+@media (max-width:768px) {
+  .crt-view {opacity: 1; transform: translate(-50%,-50%) scale(1);}
+  .crt-thumb::before {background: rgba(0,0,0,.12);}
+}
+
+@media (max-width:370px) {
+  .crt-thumb {width: 260px; height: 340px;}
+  .crt-thumb img {width: 170px; height: 240px;}
+  .crt-name {font-size: 15px;}
+}

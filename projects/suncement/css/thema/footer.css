@@ -1,0 +1,45 @@
+/*footer*/
+footer {background:#272727;}
+footer .inner {width:100%; max-width:1280px; margin:0 auto; padding:40px 0; font-size:15px; color:#ccc; display:flex; flex-direction:column; align-items:stretch;}
+.ft_top {width: 100%; display:flex; justify-content: space-between; align-items:center; margin-bottom: 10px;}
+.ft_link {display:flex; justify-content: flex-end; width:100%; gap:20px; transition: .3s ease;}
+.ft_link a {transition: .3s ease;}
+.ft_link a:hover {color: #fff;}
+
+.ft-item strong {margin-right: 10px; color: #fff;}
+.ft-info.link {transition:.3s; }
+.ft-info.link:hover {color:#fff;}
+
+.ft-wrap {display: flex; justify-content:space-between; align-items:flex-start; flex-direction: column; margin-top:16px; gap: 10px;}
+
+.ft-group {display: flex; flex-wrap: wrap; gap: 20px;}
+.ft-item {font-size: 14px;}
+
+.copy {font-size: 14px;}
+
+@media screen and (max-width: 998px) {
+  footer .inner {padding: 40px 20px;}
+}
+
+@media screen and (max-width: 768px) {
+  
+  .ft-wrap {flex-direction: column;}
+  .ft_top {flex-direction:column; gap: 0;}
+  .ft_link {width:100%; flex-wrap:wrap; margin-top: 30px; justify-content:space-between; gap: 10px;}
+
+  .ft-group {gap: 10px;}
+}
+
+@media screen and (max-width: 468px) {
+  .ft_link {justify-content:space-evenly;}
+  .ft_link a::after {right: -20px;}
+
+}
+
+@media screen and (max-width: 370px) {
+  footer * {font-size: 12px;}
+
+  .ft_link {flex-wrap: wrap;}
+  
+
+}

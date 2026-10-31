@@ -1,0 +1,121 @@
+.report .inner {flex-direction: column;}
+.report_search_box {width: 100%; padding: 28px 28px 30px; border: 1px solid #d9d9d9; border-radius: 18px; background: #fff;}
+.report_search_row {display: flex; align-items: center; border-bottom: 1px solid #e5e5e5;}
+.report_search_row:last-child {border-bottom: 0;}
+.report_search_title {flex-shrink: 0; width: 160px; padding: 20px; font-size: 18px; font-weight: 600; color: #111; line-height: 1.4;}
+.report_search_cont {display: flex; gap: 10px; flex-wrap: wrap; width: calc(100% - 130px); padding: 15px 0;}
+
+.report_chip input[type="radio"] {display: none;}
+.report_chip span {display: inline-flex; align-items: center; justify-content: center; height: 38px; padding: 0 18px; border-radius: 999px; background: #efefef; font-size: 16px; font-weight: 400; color: #222; line-height: 1; cursor: pointer; transition: .3s ease;}
+.report_chip input[type="radio"]:checked + span {background: #3c4a5b; color: #fff;}
+
+.report_date_input {width: 130px; height: 38px; padding: 0 12px; border: 1px solid #d9d9d9; border-radius: 6px; background: #fff; font-size: 15px; color: #333; text-align: center;}
+.report_date_dash {display: inline-flex; align-items: center; justify-content: center; width: 12px; font-size: 16px; color: #333;}
+.report_date_btn {height: 38px; padding: 0 18px; border: 0; border-radius: 999px; background: #f1f1f1; font-size: 15px; color: #333; cursor: pointer; transition: .3s ease;}
+.report_date_btn:hover {background: #e5e5e5;}
+
+.report .btn-wrap {display: flex; justify-content: center; align-items: center; gap: 18px; margin: 40px 0;}
+
+.search, .excel {display: inline-flex; align-items: center; justify-content: center; width: 120px; min-height: 40px; border-radius: 10px; font-size: 18px; font-weight: 500; cursor: pointer; transition: .3s ease;}
+
+.search {background: #34414E; color: #fff; border: none;}
+.search:hover {background: #556679;}
+
+.excel {border: 1px solid #344150; border-radius: 10px; background: #fff; color: #34414E;}
+.excel:hover {background: #edeef1;}
+
+.board_top {margin-bottom: 15px; font-weight: 600;}
+
+#report_board {width: 100%; box-sizing: border-box; font-size: 16px; color: #333;}
+#report_board table {table-layout: fixed; width: 100%; border-top: 1px solid #444; font-size: 16px;}
+#report_board table tr {text-align: center; line-height: 50px; border-bottom: 1px solid #d9d9d9;}
+#report_board table thead th {background: #f9f9f9; font-weight: 600; line-height: 1; padding: 15px 8px;}
+#report_board table thead td {display: flex; justify-content: center; align-items: center; line-height: 1;}
+
+.report_issue_input {width: 120px; height: 36px; border: 1px solid #d9d9d9; border-radius: 8px; background: #fff; font-size: 14px; color: #333; text-align: center;}
+.report_print_btn {display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 0; background: transparent; color: #44576b; cursor: pointer;}
+.report_print_btn i {font-size: 22px; line-height: 1;}
+
+/*일별출하현황*/
+.report_ship .inner {display: flex; flex-direction: column;}
+.report_ship .report_search_box {padding: 28px 28px 30px; border: 1px solid #d9d9d9; border-radius: 18px; background: #fff;}
+.report_ship .report_search_row {display: flex; align-items: center; justify-content: space-between; gap: 30px;}
+.report_ship .report_search_row.month {justify-content: center;}
+.report_ship .report_search_item {display: flex; align-items: center; gap: 18px;}
+.report_ship .report_search_title {flex-shrink: 0; font-size: 18px; font-weight: 600; color: #111; line-height: 1.4; width: auto;}
+.report_ship .report_search_cont {width: 100%; display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.report_ship .report_search_input {width: 120px; height: 38px; padding: 0 12px; border: 1px solid #d9d9d9; border-radius: 6px; background: #fff; font-size: 15px; color: #333; text-align: center;}
+.report_ship .report_search_select {width: 100px; height: 38px; padding: 0 10px; border: 1px solid #d9d9d9; border-radius: 6px; background: #fff; font-size: 15px; color: #333;}
+.report_ship .report_date_dash {display: inline-flex; align-items: center; justify-content: center; width: 12px; font-size: 16px; color: #333;}
+.report_ship .report_search_unit {font-size: 15px; color: #666; white-space: nowrap;}
+
+.report_ship #report_board table {table-layout: fixed;}
+
+.report-btn {display: inline-flex; justify-content: center; min-width: 50px; height: 32px; border: 0; border-radius: 6px; font-size: 14px; cursor: pointer; transition: .3s ease;}
+
+.report-btn.confirm {background: #34414E; color: #fff;}
+.report-btn.confirm:hover {background: #556679;}
+
+.report-btn.cancel {border: 1px solid #b1b8c0;}
+.report-btn.cancel:hover {background: #f5f5f5;}
+
+/*달력*/
+#ui-datepicker-div {z-index: 9999 !important; width: 280px; padding: 10px; border: 1px solid #d9d9d9; border-radius: 16px; background: #fff;}
+#ui-datepicker-div .ui-datepicker-header {position: relative; padding: 0 0 12px; border: 0; background: #fff;}
+#ui-datepicker-div .ui-datepicker-prev, #ui-datepicker-div .ui-datepicker-next {position: absolute; top: 2px; width: 30px; height: 30px; border: 1px solid transparent; border-radius: 8px; cursor: pointer; transition: .2s ease;}
+#ui-datepicker-div .ui-datepicker-prev {left: 0;}
+#ui-datepicker-div .ui-datepicker-next {right: 0;}
+#ui-datepicker-div .ui-datepicker-prev:hover, #ui-datepicker-div .ui-datepicker-next:hover {background: #f5f7fa; border-color: #e5e7eb;}
+#ui-datepicker-div .ui-datepicker-prev span, #ui-datepicker-div .ui-datepicker-next span {position: absolute; top: 50%; left: 50%; width: 16px; height: 16px; margin: -8px 0 0 -8px;}
+#ui-datepicker-div .ui-datepicker-title {display: flex; align-items: center; justify-content: center; gap: 6px; margin: 0 34px; line-height: 30px;}
+#ui-datepicker-div .ui-datepicker-title select {height: 32px; padding: 0 10px; border: 1px solid #d9d9d9; border-radius: 8px; background-color: #fff; font-size: 14px; color: #222;}
+#ui-datepicker-div table {width: 100%; margin: 0; border-collapse: collapse; table-layout: fixed;}
+#ui-datepicker-div th {padding: 8px 0 10px; font-size: 13px; font-weight: 600; color: #888; text-align: center;}
+#ui-datepicker-div td {padding: 0; text-align: center;}
+#ui-datepicker-div td span, #ui-datepicker-div td a {display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; margin: 0 auto; border: 0; border-radius: 10px; background: transparent; font-size: 14px; color: #222; text-align: center; text-decoration: none; transition: .2s ease;}
+#ui-datepicker-div td a:hover {background: #f3f6fb;}
+#ui-datepicker-div .ui-state-default {border: 0; background: transparent;}
+#ui-datepicker-div .ui-state-active {background: var(--brand-color); color: #fff;}
+#ui-datepicker-div .ui-state-active:hover {background: var(--brand-color); color: #fff;}
+#ui-datepicker-div .ui-datepicker-today .ui-state-default {border: 1px solid var(--brand-color); color: var(--brand-color);}
+#ui-datepicker-div .ui-datepicker-today .ui-state-active {color: #fff;}
+#ui-datepicker-div .ui-state-disabled span {color: #c7c7c7;}
+
+@media (max-width:1024px) {
+  .report_search_title {width: 110px; font-size: 18px;}
+  .report_search_cont {width: calc(100% - 110px);}
+  .report_chip span {font-size: 14px;}
+}
+
+@media (max-width:768px) {
+  .report_search_box {padding: 20px;}
+  .report_search_row {flex-direction: column; align-items: flex-start;}
+  .report_search_title {width: 100%; padding: 10px 0; font-size: 18px;}
+  .report_search_cont {width: 100%; padding-bottom: 14px;}
+  .report_chip_list {gap: 8px;}
+  .report_chip span {height: 34px; padding: 0 14px; font-size: 13px;}
+  .report_date_input {width: 110px; height: 34px; font-size: 13px;}
+  .report_date_btn {height: 34px; padding: 0 14px; font-size: 13px;}
+  .report_search_btn {width: 110px; height: 46px; font-size: 17px;}
+
+  .report_board {padding-left: 5px; padding-right: 5px;}
+  .report_board table{width: 100%;}
+  
+  .report_btn {font-size: 12px; line-height: 30px; padding: 0 5px;}    
+  .report_board table tr {line-height: 20px;}
+
+  .report .btn-wrap {flex-direction: row;}
+
+  .search, .excel {font-size: 16px;}
+  
+  .report .field input[type="text"] {text-align: left; padding-left: 10px; font-size: 14px;}
+  #report_board table th {font-size: 14px;}
+  #report_board table td {line-height: 1; font-size: 14px; padding: 5px 0;}
+  .report_issue_input {width: 80px; height: 30px; font-size: 14px;}
+  .report_print_btn i {font-size: 18px;}
+
+  .report-btn {height: 30px; font-size: 12px; min-width: 40px;}
+
+  .report_ship .report_search_cont {padding: 0;}
+}
+

@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+/*공통*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.product_title a{display: flex; justify-content: center; width: 200px; height: 45px; border-radius: 50px; color: #fff; font-weight: 500; margin-top: 30px; transition: all 0.3s ease;}
+.product_title a {background: #40B4E1;}
+.point_gray, .bg_gray {background: #fbfbfb;}
+.title_row {display: flex; align-items: center; justify-content: space-around; gap: 40px; flex-wrap: wrap; margin-bottom: 100px;}
+.title_dash {display: inline-block; width: 18rem; height: 1px; background: #707070;}
+.title_row h2 {font-size: 40px; font-weight: 700;}
+.title_highlight {font-size: 55px; color: #298DDE;}
+
+/*PUREPet - 제품소개*/
+.product {position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 1200px; background: url(../images/sub/product/product_bg.jpg) center/cover no-repeat;}
+.product_title {position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+.product_title h2 {font-size: 24px; color: #666; font-weight: 400;}
+.product_title h3 {font-size: 80px; color: #222; font-weight: 800; line-height: 1.2;}
+.product_title a:hover {background: #17536b;}
+
+.product_features_title {position: relative; text-align: center; padding-bottom: 40px; margin-bottom: 80px;}
+.product_features_title p::after {position: absolute; bottom: -40px; left: 50%; content: ""; width: 1px; height: 50px; background: #707070;}
+.product_point_box {width: 100%; display: flex; justify-content: center; align-items: center; gap: 20px;}
+.product_point_item {width: 25%; height: 380px; background: #f6f6f6; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px 40px; border-radius: 20px;}
+.product_point {padding: 5px 35px; background: #1CAFE8; border-radius: 50px; color: #fff; font-size: 24px; font-weight: 600; font-family: 'Montserrat', sans-serif; margin-bottom: 30px;}
+.product_point_item h2 {font-size: 28px; color: #222; line-height: 3;}
+.product_point_item p {text-align: center; font-size: 22px; color: #222; }
+
+.sub_contents.product_banner {padding-top: 0;}
+.product_banner {position: relative; height: 400px; background: url(../images/sub/product/product_banner.jpg) top/contain no-repeat; background-attachment: fixed; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; overflow: hidden;}
+.product_banner::before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 2;}
+
+.product_banner h2 {z-index: 3; font-size: 60px; font-family: 'Montserrat', sans-serif;}
+
+.point h2, .point_gray h2 {font-size: 46px; color: #222; font-weight: 700; font-family: 'Pretendard', sans-serif;}
+.point_gray h2 {margin-bottom: 60px;}
+.product_color {color: #1CAFE8; }
+
+/*point01*/
+.product_step {display: flex; align-items: flex-start; justify-content: center; gap: 60px; max-width: 1200px; margin: 40px auto 0; flex-wrap: wrap;}
+
+.product_step_img img {width: 375px; max-width: 100%; display: block;}
+
+.product_step_list {flex: 1; display: flex; flex-direction: column; gap: 10px; padding-top: 60px;}
+.product_step_list li {line-height: 1.5;}
+
+.step_title {font-weight: 700; margin-bottom: 5px; font-size: 28px; color: #222;}
+.step_num {color: #f7931e; margin: 0 6px 20px 0; font-size: 32px; font-family: 'Montserrat', sans-serif;}
+.step_desc {font-size: 20px; color: #666;}
+.step_complete {margin-top: 20px;}
+.step_done {font-size: 46px; font-weight: 900; color: #00aaff; display: block;}
+.step_final {font-size: 35px; font-weight: 700; color: #222;}
+.step_highlight {color: #00aaff; font-weight: 800;}
+
+/*point02*/
+.product_point2_item {width: 100%; display: flex; margin-bottom: 60px;}
+.product_point2_item .product_point_text {width: 100%; display: flex; flex-direction: column; background: #fff; justify-content: center; align-items: left; padding: 40px; box-sizing: border-box;}
+.product_point2_item .product_point_text h2 {font-size: 36px; margin-bottom: 25px;}
+.product_point2_item .product_point_text p {font-size: 22px;}
+
+.point .product_point_title_text {font-size: 28px; margin: 20px 0 40px;}
+.point_cutting {width: 780px; overflow: hidden;}
+.point_cutting img {border-radius: 30px;}
+
+.product_point_text h3 {font-size: 24px; display: flex; justify-content: left; font-weight: 500; line-height: 2.5;}
+.product_point_text img {margin-right: 20px;}
+
+/*product bottom banner*/
+.sub_contents.product_bottom_banner {padding-top: 0;}
+
+.product_bottom_banner {width: 100%; height: 325px; background: #F0F8FF;}
+.product_bottom_banner .inner {display: flex;}
+
+.product_banner_wrapper {position: relative; width: 100%; max-width: 1280px; display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;}
+
+.product_bottom_banner_text {max-width: 600px;}
+.product_bottom_banner_text h2 {font-size: 28px; color: #1d4e89; font-weight: 500;}
+.product_bottom_banner_text h3 {font-size: 54px; font-weight: 800; color: #1d4e89; margin-bottom: 25px;}
+
+.product_banner_btn {display: inline-block; background: #298DDE; color: #fff; padding: 10px 30px; border-radius: 30px; font-weight: 600; font-size: 20px; transition: background 0.3s;}
+.product_banner_btn:hover {background: #17536b;}
+
+.product_bottom_banner_img {position: absolute; bottom: -63px; right: 0; }
+.product_bottom_banner_img img {max-width: 100%; display: block;}
+
+/*PUREPet - 사용방법*/
+.product_usage_list {display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 20px;}
+.product_usage_item {width: 32%;}
+.product_usage_item img {width: 100%;}
+.product_usage_item .usage_text {display: flex; align-items: flex-start; font-size: 24px; font-weight: 400; margin: 40px 0 50px 0; line-height: 1.5;}
+.product_usage_list .product_usage_item:nth-child(5) p.usage_text {margin-bottom: 20px;}
+.product_usage_item .usage_number {width: 40px; height: 40px; color: #fff; background: #FB9C30; border-radius: 50px; font-weight: 700; font-size: 26px; display: flex; justify-content: center; align-items: center; margin-right: 15px; flex-shrink: 0; font-family: 'Pretendard', sans-serif;}
+
+.caution {display: flex; align-items: flex-start; margin-bottom: 40px;}
+.caution_text {font-size: 18px; color: #777; line-height: 1.5;}
+.caution img {width: 34px; margin-right: 20px; border-radius: 20px;}

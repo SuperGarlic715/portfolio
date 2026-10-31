@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="웹 퍼블리셔 KIM HA NEUL의 포트폴리오. 기업 홈페이지 3곳, 90여 개 페이지를 HTML·CSS·JavaScript로 퍼블리싱했습니다." />
+  <meta name="author" content="KIM HA NEUL" />
+  <meta name="theme-color" content="#F5F7F9" />
+
+  <!-- Open Graph : 배포 주소가 정해지면 og:url, og:image를 절대 경로로 바꿔 주세요 -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="KIM HA NEUL | 웹 퍼블리셔 포트폴리오" />
+  <meta property="og:description" content="기업 홈페이지 3곳, 90여 개 페이지를 HTML·CSS·JavaScript로 퍼블리싱했습니다." />
+  <meta property="og:image" content="images/common/og-image.png" />
+  <meta property="og:url" content="" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <link rel="icon" href="images/common/favicon.svg" type="image/svg+xml" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=IBM+Plex+Sans+KR:wght@400;500;600;700&display=swap" />
+
+  <link rel="stylesheet" href="css/thema/basic.css" />
+  <link rel="stylesheet" href="css/thema/nav.css" />
+  <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/footer.css" />
+
+  <title>KIM HA NEUL | 웹 퍼블리셔 포트폴리오</title>
+</head>
+
+<body>
+  <a class="skip_link" href="#main">본문 바로가기</a>
+
+  <!-- ================= header ================= -->
+  <header class="header" id="header">
+    <div class="nav-inner">
+      <a class="logo" href="#top" aria-label="KIM HA NEUL 처음으로">KIM HA NEUL'S PORTFOLIO</a>
+      <button class="menu_toggle" id="menuToggle" type="button" aria-expanded="false" aria-controls="gnb">
+        <span class="menu_btn"></span><span class="menu_btn"></span><span class="sr_only">메뉴 열기</span>
+      </button>
+      <nav class="gnb" id="gnb" aria-label="주요 메뉴">
+        <ul class="depth1">
+          <li><a href="#about">ABOUT ME</a></li>
+          <li><a href="#work">WORK</a></li>
+          <li><a href="#design">PROJECT</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= hero ================= -->
+    <section class="hero" id="top" aria-labelledby="heroName">
+      <div class="gradient-bg" id="mesh-gradient" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow">WEB PUBLISHER &amp; UI DESIGNER</p>
+        <h1 class="hero-title" id="heroName"><span>IDEAS INTO</span><span class="accent">EXPERIENCES.</span></h1>
+        <p class="hero-desc">안녕하세요. 더 나은 사용자 경험을 고민하는<br />웹 퍼블리셔 KIM HA NEUL입니다.</p>
+        <div class="hero-bottom">
+          <p>DESIGN&nbsp;&nbsp;·&nbsp;&nbsp;PUBLISHING&nbsp;&nbsp;·&nbsp;&nbsp;USER EXPERIENCE</p>
+          <a class="scroll" href="#about">SCROLL DOWN<span class="scroll-line"></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= about ================= -->
+    <section class="section_area about" id="about" aria-labelledby="aboutTitle">
+      <div class="inner split">
+        <div class="section_head">
+          <h2 class="section_title" id="aboutTitle">소개</h2>
+        </div>
+
+        <div class="section_body">
+          <p class="about_text">
+            시안의 간격과 정렬을 그대로 옮기는 데서 시작해, 1024px과 768px 구간에서 메뉴·슬라이더·표가 자연스럽게 바뀌도록 설계합니다.
+            회사 소개, 제품 브랜드, 골프장 예약 안내처럼 페이지가 많은 사이트를 공통 레이아웃과 재사용하기 쉬운 CSS로 나눠 관리해 왔습니다.
+          </p>
+
+          <div class="about_group">
+            <h3 class="group_title">경력</h3>
+            <!-- TODO: 실제 경력으로 바꿔 주세요. 최근 경력이 위로 오게 정렬합니다. -->
+            <ol class="career_list">
+              <li class="career_item">
+                <span class="career_period"><span class="todo">YYYY.MM – 현재</span></span>
+                <div class="career_info">
+                  <strong class="career_company"><span class="todo">회사명</span></strong>
+                  <span class="career_role"><span class="todo">팀 / 직무</span></span>
+                  <p class="career_desc"><span class="todo">담당 업무를 한 문장으로. 예: 기업·브랜드 사이트 신규 구축과 유지보수 퍼블리싱</span></p>
+                </div>
+              </li>
+              <li class="career_item">
+                <span class="career_period"><span class="todo">YYYY.MM – YYYY.MM</span></span>
+                <div class="career_info">
+                  <strong class="career_company"><span class="todo">회사명</span></strong>
+                  <span class="career_role"><span class="todo">팀 / 직무</span></span>
+                  <p class="career_desc"><span class="todo">담당 업무를 한 문장으로</span></p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div class="about_group">
+            <h3 class="group_title">다루는 기술</h3>
+            <dl class="skill_list">
+              <div class="skill_row">
+                <dt>마크업</dt>
+                <dd>HTML5 시맨틱 마크업, 웹 표준, 이미지 대체 텍스트</dd>
+              </div>
+              <div class="skill_row">
+                <dt>스타일</dt>
+                <dd>CSS3 (Flexbox, 미디어쿼리, CSS 변수), Bootstrap 5</dd>
+              </div>
+              <div class="skill_row">
+                <dt>스크립트</dt>
+                <dd>JavaScript (ES6), jQuery 3.7</dd>
+              </div>
+              <div class="skill_row">
+                <dt>인터랙션</dt>
+                <dd>GSAP ScrollTrigger, Swiper, Slick, AOS</dd>
+              </div>
+              <div class="skill_row">
+                <dt>도구</dt>
+                <!-- TODO: 실제로 쓰는 도구만 남겨 주세요 -->
+                <dd>Figma, VS Code, <span class="todo">Git / Photoshop 등</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= work (code) ================= -->
+    <section class="section_area work" id="work" aria-labelledby="workTitle">
+      <div class="inner">
+        <div class="section_head row">
+          <h2 class="section_title" id="workTitle">퍼블리싱 작업</h2>
+          <p class="section_note">이미지 옆 숫자는 캡처한 화면 너비(px)입니다.</p>
+        </div>
+
+        <!-- 작업 1 : 부곡CC -->
+        <article class="work_item" id="work-bugok">
+          <div class="work_media">
+            <figure class="shot shot_pc">
+              <img src="images/work/bugok_pc.jpg" width="1200" height="750" loading="lazy" alt="부곡컨트리클럽 PC 메인 화면. 골프 코스 항공 영상 위에 클럽 이름이 놓여 있다." />
+              <figcaption class="shot_label">1440</figcaption>
+            </figure>
+            <figure class="shot shot_mo">
+              <img src="images/work/bugok_mo.jpg" width="390" height="844" loading="lazy" alt="부곡컨트리클럽 모바일 화면. 공지사항 목록과 예약 달력이 세로로 배치되어 있다." />
+              <figcaption class="shot_label">390</figcaption>
+            </figure>
+          </div>
+
+          <div class="work_body">
+            <h3 class="work_title">부곡컨트리클럽 홈페이지</h3>
+            <p class="work_summary">골프장 소개부터 코스·요금 안내, 실시간 예약, 회원 관리까지 담은 반응형 사이트입니다.</p>
+
+            <dl class="work_meta">
+              <div><dt>기간</dt><dd>2026.01 – 2026.02</dd></div>
+              <div><dt>분량</dt><dd>45페이지 (메인, 서브, 회원, 게시판, 약관)</dd></div>
+              <div><dt>기여도</dt><dd>퍼블리싱 <span class="todo">00%</span></dd></div>
+              <div><dt>기술</dt><dd>HTML5, CSS3, jQuery 3.7, Swiper 11, Bootstrap 5</dd></div>
+            </dl>
+
+            <h4 class="point_title">구현한 부분</h4>
+            <ul class="point_list">
+              <li>메인 영상 배경과 이벤트 슬라이더. 768px을 기준으로 한 번에 보이는 슬라이드를 1장과 2장으로 나눴습니다.</li>
+              <li>예약 달력, 주간 날씨, 공지 목록을 한 화면에 묶은 메인 정보 영역</li>
+              <li>1024px 이하에서 메가 메뉴가 드로어 메뉴로 바뀌고, 창 크기를 바꾸면 열린 상태를 초기화합니다.</li>
+              <li>로그인·회원가입·정보 수정·탈퇴로 이어지는 회원 화면 6종</li>
+            </ul>
+
+            <div class="work_links">
+              <!-- TODO: 데모 경로. projects/bugok/ 에 사이트 폴더를 넣거나 실제 주소로 바꿔 주세요 -->
+              <a class="btn btn_fill" href="projects/bugok/index.html" target="_blank" rel="noopener" data-demo>사이트 열기</a>
+              <a class="btn btn_line" href="#" target="_blank" rel="noopener" data-todo-link>코드 보기</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 작업 2 : 에코산업개발 -->
+        <article class="work_item" id="work-eco">
+          <div class="work_media">
+            <figure class="shot shot_pc">
+              <img src="images/work/eco_pc.jpg" width="1200" height="750" loading="lazy" alt="(주)에코산업개발 PC 메인 화면. 원형 수처리 시설 사진 위에 회사 슬로건이 놓여 있다." />
+              <figcaption class="shot_label">1440</figcaption>
+            </figure>
+            <figure class="shot shot_mo">
+              <img src="images/work/eco_mo.jpg" width="390" height="844" loading="lazy" alt="(주)에코산업개발 모바일 메인 화면. 같은 시설 사진을 세로로 잘라 보여 준다." />
+              <figcaption class="shot_label">390</figcaption>
+            </figure>
+          </div>
+
+          <div class="work_body">
+            <h3 class="work_title">(주)에코산업개발 기업 홈페이지</h3>
+            <p class="work_summary">상·하수도 설비와 재활용 설비를 다루는 환경 기업의 회사 소개 사이트입니다.</p>
+
+            <dl class="work_meta">
+              <div><dt>기간</dt><dd>2025.09 – 2025.10</dd></div>
+              <div><dt>분량</dt><dd>33페이지 (회사소개, 사업분야 5개, 인증, 실적, 문의)</dd></div>
+              <div><dt>기여도</dt><dd>퍼블리싱 <span class="todo">00%</span></dd></div>
+              <div><dt>기술</dt><dd>HTML5, CSS3, jQuery 3.7, GSAP ScrollTrigger, Slick, Bootstrap 5</dd></div>
+            </dl>
+
+            <h4 class="point_title">구현한 부분</h4>
+            <ul class="point_list">
+              <li>스크롤에 맞춰 사진이 화면 가득 커지고, 문구가 한 글자씩 나타나는 GSAP 섹션</li>
+              <li>사업분야 5개와 하위 12개, 모두 17페이지를 공통 서브 레이아웃 하나로 구성</li>
+              <li>인증서 갤러리, 납품·공사 실적 표, 온라인 문의 폼</li>
+            </ul>
+
+            <div class="work_links">
+              <a class="btn btn_fill" href="projects/eco/index.html" target="_blank" rel="noopener" data-demo>사이트 열기</a>
+              <a class="btn btn_line" href="#" target="_blank" rel="noopener" data-todo-link>코드 보기</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- 작업 3 : PUREP -->
+        <article class="work_item" id="work-purep">
+          <div class="work_media">
+            <figure class="shot shot_pc">
+              <img src="images/work/purep_pc.jpg" width="1200" height="750" loading="lazy" alt="PUREP PC 화면. 왼쪽에 제품 소개 문구, 오른쪽에 흰색 위생 처리 장치 사진이 있다." />
+              <figcaption class="shot_label">1440</figcaption>
+            </figure>
+            <figure class="shot shot_mo">
+              <img src="images/work/purep_mo.jpg" width="390" height="844" loading="lazy" alt="PUREP 모바일 화면. 제품 사진 아래에 로고와 소개 문구가 가운데 정렬되어 있다." />
+              <figcaption class="shot_label">390</figcaption>
+            </figure>
+          </div>
+
+          <div class="work_body">
+            <h3 class="work_title">PUREP 제품 브랜드 사이트</h3>
+            <p class="work_summary">믿음레이저(주)의 반려동물 위생 폐기물 밀봉 장치를 소개하는 브랜드 사이트입니다.</p>
+
+            <dl class="work_meta">
+              <div><dt>기간</dt><dd>2025.04 – 2025.06</dd></div>
+              <div><dt>분량</dt><dd>16페이지 (브랜드, 제품, 홍보자료, 고객지원)</dd></div>
+              <div><dt>기여도</dt><dd>퍼블리싱 <span class="todo">00%</span></dd></div>
+              <div><dt>기술</dt><dd>HTML5, CSS3, JavaScript, Swiper 11, AOS</dd></div>
+            </dl>
+
+            <h4 class="point_title">구현한 부분</h4>
+            <ul class="point_list">
+              <li>첫 화면을 PC에서는 유튜브 영상 배경으로, 모바일에서는 세로 사진으로 바꿔 보여 줍니다.</li>
+              <li>모바일 주소창 높이 변화에 맞춰 첫 화면 높이를 계산하는 --vh 변수</li>
+              <li>자주하는 질문 아코디언, 1:1 문의·대량구매 문의 게시판 목록·상세·작성 화면</li>
+            </ul>
+
+            <div class="work_links">
+              <a class="btn btn_fill" href="projects/purep/index.html" target="_blank" rel="noopener" data-demo>사이트 열기</a>
+              <a class="btn btn_line" href="#" target="_blank" rel="noopener" data-todo-link>코드 보기</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ================= design (figma) ================= -->
+    <section class="section_area design" id="design" aria-labelledby="designTitle">
+      <div class="inner">
+        <div class="section_head row">
+          <h2 class="section_title" id="designTitle">디자인 작업</h2>
+          <p class="section_note">Figma 원본 파일로 연결됩니다.</p>
+        </div>
+
+        <!--
+          TODO: 시안 4개 채우기
+          1) 대표 화면을 1600×1000 JPG로 내보내 images/design/design01.jpg ~ design04.jpg 로 저장
+          2) 제목, 유형, 한 줄 설명을 바꾸고
+          3) href 에 Figma 공유 링크(보기 권한)를 넣어 주세요
+        -->
+        <ul class="design_grid">
+          <li class="design_item">
+            <a class="design_link" href="#" target="_blank" rel="noopener" data-todo-link>
+              <figure class="design_figure">
+                <img src="images/design/design01.jpg" width="1600" height="1000" alt="" data-fallback />
+              </figure>
+              <div class="design_info">
+                <h3 class="design_title"><span class="todo">시안 제목 1</span></h3>
+                <p class="design_desc"><span class="todo">유형 (예: 쇼핑몰 메인 리뉴얼) / 한 줄 설명</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="design_item">
+            <a class="design_link" href="#" target="_blank" rel="noopener" data-todo-link>
+              <figure class="design_figure">
+                <img src="images/design/design02.jpg" width="1600" height="1000" alt="" data-fallback />
+              </figure>
+              <div class="design_info">
+                <h3 class="design_title"><span class="todo">시안 제목 2</span></h3>
+                <p class="design_desc"><span class="todo">유형 / 한 줄 설명</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="design_item">
+            <a class="design_link" href="#" target="_blank" rel="noopener" data-todo-link>
+              <figure class="design_figure">
+                <img src="images/design/design03.jpg" width="1600" height="1000" alt="" data-fallback />
+              </figure>
+              <div class="design_info">
+                <h3 class="design_title"><span class="todo">시안 제목 3</span></h3>
+                <p class="design_desc"><span class="todo">유형 / 한 줄 설명</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="design_item">
+            <a class="design_link" href="#" target="_blank" rel="noopener" data-todo-link>
+              <figure class="design_figure">
+                <img src="images/design/design04.jpg" width="1600" height="1000" alt="" data-fallback />
+              </figure>
+              <div class="design_info">
+                <h3 class="design_title"><span class="todo">시안 제목 4</span></h3>
+                <p class="design_desc"><span class="todo">유형 / 한 줄 설명</span></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ================= contact ================= -->
+    <section class="section_area contact" id="contact" aria-labelledby="contactTitle">
+      <div class="inner split">
+        <div class="section_head">
+          <h2 class="section_title" id="contactTitle">연락처</h2>
+        </div>
+
+        <div class="section_body">
+          <p class="contact_text">정규직 웹 퍼블리셔 자리를 찾고 있습니다. 메일로 연락 주시면 하루 안에 답장드립니다.</p>
+
+          <!-- TODO: 이메일 주소 두 곳(href, data-copy, 화면 표시)을 함께 바꿔 주세요 -->
+          <div class="contact_mail">
+            <a class="mail_link" href="mailto:hello@example.com">hello@example.com</a>
+            <button class="btn btn_line btn_copy" type="button" data-copy="hello@example.com">주소 복사</button>
+          </div>
+
+          <dl class="contact_list">
+            <div><dt>전화</dt><dd><span class="todo">010-0000-0000 (넣지 않으려면 이 줄 삭제)</span></dd></div>
+            <div><dt>GitHub</dt><dd><a href="#" target="_blank" rel="noopener" data-todo-link><span class="todo">github.com/아이디</span></a></dd></div>
+            <div><dt>이력서</dt><dd><a href="files/resume.pdf" download>PDF 내려받기</a></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= footer ================= -->
+  <footer class="footer">
+    <div class="inner row">
+      <p class="copy">© 2026 KIM HA NEUL</p>
+      <p class="made">이 사이트도 HTML·CSS·JavaScript로 직접 작성했습니다.</p>
+    </div>
+  </footer>
+
+  <button class="top_btn" type="button" aria-label="맨 위로">
+    <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="M12 5l-7 7m7-7l7 7M12 5v14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/mesh-gradient.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

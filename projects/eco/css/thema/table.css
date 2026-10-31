@@ -1,0 +1,16 @@
+table {border-collapse: collapse; border-spacing: 0;}
+table th, table td {box-sizing:border-box;}
+
+.table.detail {width: 100%; table-layout: fixed; font-size: 16px; color: #666; border-collapse:collapse;}
+.table.detail thead th {color: #222; font-size: 18px; font-weight: 700; text-align: center; padding: 10px; border-right: 1px solid #ccc; background: #F9F9F9; border-top: 2px solid var(--brand-color);}
+.table.detail thead th:last-child {border-right: none;}
+
+.table.detail th, .table.detail td {text-align: center; vertical-align: middle; word-break: keep-all;}
+.table.detail th {padding: 15px 0; border: 1px solid #ccc; border-left: none; font-weight: 700;}
+.table.detail td {padding: 10px 20px; font-size: 16px; border: 1px solid #ccc; border-right: none; font-weight: 400; background: #fff;}
+.table.detail tbody th {background: #F9FCFF;}
+
+.table.detail th, .table.detail td {width: auto;}
+
+.table.detail td:first-child {border-left: none;}
+

@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="썬시멘트(주)" />
+
+  <meta property="og:title" content="썬시멘트(주)" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/lib/slick.css" />
+  <link rel="stylesheet" href="css/lib/slick-theme.css" />
+  <link rel="stylesheet" href="css/lib/remixicon/remixicon.css" />
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lib/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/lib/jquery-ui.css" />
+
+  <link rel="stylesheet" href="css/thema/basic.css" />
+  <link rel="stylesheet" href="css/thema/nav.css" />
+  <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/sub.css" />
+  <link rel="stylesheet" href="css/thema/footer.css" />
+  <link rel="stylesheet" href="css/board/board.css" />
+  <link rel="stylesheet" href="css/board/catalog.css" />
+  <link rel="stylesheet" href="css/thema/product.css" />
+  <link rel="stylesheet" href="css/board/certificate.css" />
+  <link rel="stylesheet" href="css/form/form.css" />
+  <link rel="stylesheet" href="css/form/report.css" />
+  <link rel="stylesheet" href="css/form/login.css" />
+  <link rel="stylesheet" href="css/etc/etc.css" />
+
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/jquery-ui.min.js"></script>
+  <script src="js/lib/slick.min.js"></script>
+  <script src="js/lib/swiper-bundle.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+
+  <title>썬시멘트(주)</title>
+</head>
+
+
+<body>
+  <header>
+    <div class="nav-inner">
+      <h1 class="logo">
+        <a href="/">
+          <img src="images/thema/common/logo_w.svg" alt="로고" class="default">
+          <img src="images/thema/common/logo.svg" alt="로고" class="scrolled_logo">
+        </a>
+      </h1>
+
+      <nav id="gnb" class="menu">
+        <div class="main_menu">
+          <div class="depth1">
+            <a href="#"><span>회사소개</span></a>
+            <ul class="depth2">
+              <li><a href="sub1_1.html">회사개요</a></li>
+              <li><a href="sub1_2.html">CEO 인사말</a></li>
+              <li><a href="sub1_3.html">경영이념</a></li>
+              <li><a href="sub1_4.html">연혁</a></li>
+              <li><a href="board_lists.html">전자공고</a></li>
+              <li><a href="sub1_5.html">오시는길</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>제품소개</span></a>
+            <ul class="depth2">
+              <li><a href="sub2_1.html">고로슬래그시멘트</a></li>
+              <li><a href="sub2_2.html">고로슬래그미분말</a></li>
+              <li><a href="sub2_3.html">저발열시멘트</a></li>
+              <li><a href="sub2_4.html">고화재</a></li>
+              <li><a href="sub2_5.html">기포 콘크리트용 시멘트</a></li>
+              <li><a href="sub2_6.html">제조공정</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>윤리규범</span></a>
+            <ul class="depth2">
+              <li><a href="sub3_1.html">기업윤리 원칙</a></li>
+              <li><a href="sub3_2.html">임직원 행동지침</a></li>
+              <li><a href="sub3_3.html">윤리제보 안내</a></li>
+              <li><a href="sub3_4.html">제보하기</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>고객지원</span></a>
+            <ul class="depth2">
+              <li><a href="certificate.html">인증서 및 공인기관성적서</a></li>
+              <li><a href="report.html">자체 시험성적서</a></li>
+              <li><a href="day.html">일간출하현황</a></li>
+              <li><a href="daily.html">일별출하현황</a></li>
+              <li><a href="month_check.html">거래처마감확인</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>인재채용</span></a>
+            <ul class="depth2">
+              <li><a href="sub5_1.html">채용정보</a></li>
+              <li><a href="career_lists.html">채용공고</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>회사소식</span></a>
+            <ul class="depth2">
+              <li><a href="board_lists.html">공지사항</a></li>
+              <li><a href="board_lists.html">회사소식</a></li>
+              <li><a href="board_lists.html">자료실</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="util-wrap">
+        <li><a href="login.html" class="user-login">고객사 로그인</a></li>
+        
+        <li class="util-user">
+          <span class="user-name">홍길동님</span>
+          <button type="button" class="logout-btn">로그아웃</button>
+        </li>
+        <li class="menu_toggle" id="menuToggle" aria-label="메뉴 열기" role="button" tabindex="0">
+          <i class="ri-align-right icon-open"></i>
+          <i class="ri-close-line icon-close"></i>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <div id="mainVisual">
+    <div class="slider_wrap">
+
+      <!-- Slick 슬라이더 -->
+      <ul class="slider">
+        <li class="img01"></li>
+        <li class="img02"></li>
+        <li class="img03"></li>
+      </ul>
+
+      <div class="cont">
+        <div class="title">
+          <h2>친환경 슬래그 시멘트 사업의 선두주자,<br>썬시멘트주식회사</h2>
+          <p>
+            최고의 품질과 안정적인 제품으로 고객의 성원에 보답하겠습니다.
+          </p>
+        </div>
+        
+        <ul class="progress visual_progress">
+          <li><span class="bar"></span></li>
+          <li><span class="bar"></span></li>
+          <li><span class="bar"></span></li>
+        </ul>
+
+        <div class="scroll-indicator">
+          <span class="label">SCROLL</span>
+          <span class="mouse"><i class="wheel"></i></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="sec s1">
+    <div class="inner">
+      <div class="m-head">
+        <p class="m-sub">OPTIMIZED QUALITY</p>
+        <h3 class="m-title"><span>최적의 생산조건으로</span><br>최고의 품질 구현</h3>
+        <h4 class="m-lead">시장맞춤형 제품과 설비로 경쟁력을 확보합니다.</h4>
+        <p class="m-desc">양호한 입지조건과 물류 인프라, 첨단 자동화 설비, 우수한 기술력을 바탕으로 고객에게 차별화된 품질로 친환경 슬래그시멘트를 생산·판매하고 있습니다.</p>
+      </div>
+
+      <div class="s1-card-wrap">
+        <div class="s1-card-col">
+          <a href="report.html" class="s1-card active">
+            <img src="images/thema/main/icon01.svg" alt="시험성적서 아이콘" class="s1-icon">
+            <h5>시험성적서 <img src="images/thema/main/cir-arrow.svg" alt="화살표"></h5>
+            <p>제품의 시험 결과와 품질 검증 내역을 확인할 수 있습니다.</p>
+          </a>
+
+          <a href="day.html" class="s1-card dark">
+            <img src="images/thema/main/icon03.svg" alt="일별출하조회 아이콘" class="s1-icon">
+            <h5>일별출하조회 <img src="images/thema/main/cir-arrow.svg" alt="화살표"></h5>
+            <p>일자별 출하 현황을 조회할 수 있습니다.</p>
+          </a>
+        </div>
+
+        <div class="s1-card-col offset">
+          <a href="day.html" class="s1-card dark">
+            <img src="images/thema/main/icon02.svg" alt="일간출하조회 아이콘" class="s1-icon">
+            <h5>일간출하조회 <img src="images/thema/main/cir-arrow.svg" alt="화살표"></h5>
+            <p>선택한 날짜의 출하 내역을 확인할 수 있습니다.</p>
+          </a>
+
+          <a href="month_check.html" class="s1-card active">
+            <img src="images/thema/main/icon04.svg" alt="거래처마감확인 아이콘" class="s1-icon">
+            <h5>거래처마감확인 <img src="images/thema/main/cir-arrow.svg" alt="화살표"></h5>
+            <p>거래처별 마감 내역과 정산 현황을 확인할 수 있습니다.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec s2">
+    <div class="prd">
+      <a href="sub2_1.html" class="t_item item01">
+        <div class="text_box">
+          <h3>고로슬래그 시멘트</h3>
+          <span class="en">Portland blast-furnace slag cement</span>
+        </div>
+      </a>
+
+      <a href="sub2_2.html" class="t_item item02">
+        <div class="text_box">
+          <h3>고로슬래그 미분말</h3>
+          <span class="en">Ground Granulated Blast-Furnace Slag</span>
+        </div>
+      </a>
+
+      <a href="sub2_3.html" class="t_item item03">
+        <div class="text_box">
+          <h3>저발열 시멘트</h3>
+          <span class="en">Low heat cement</span>
+        </div>
+      </a>
+
+      <a href="sub2_4.html" class="t_item item04">
+        <div class="text_box">
+          <h3>고화재</h3>
+          <span class="en">ECHO SOIL</span>
+        </div>
+      </a>
+
+      <a href="sub2_5.html" class="t_item item05">
+        <div class="text_box">
+          <h3>기포 콘크리트용 시멘트</h3>
+          <span class="en">Aerated concrete cement</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec s3">
+    <div class="inner">
+      <div class="m-head type-s3">
+        <p class="m-sub">ADVANCED SLAG CEMENT SOLUTIONS</p>
+        <p class="m-lead">친환경 슬래그 시멘트 산업의 선도주자</p>
+        <h3 class="m-title big">썬시멘트주식회사</h3>
+      </div>
+
+      <div class="s3-board">
+        <a href="board_lists.html" class="s3-item">
+          <div class="icon">
+            <img src="images/thema/main/s3-icon01.svg" alt="회사소식 아이콘">
+          </div>
+          <h3>회사소식</h3>
+          <span class="plus">+</span>
+        </a>
+
+        <a href="sub1_3.html" class="s3-item">
+          <div class="icon">
+            <img src="images/thema/main/s3-icon02.svg" alt="경영이념 아이콘">
+          </div>
+          <h3>경영이념</h3>
+          <span class="plus">+</span>
+        </a>
+
+        <a href="board_lists.html" class="s3-item">
+          <div class="icon">
+            <img src="images/thema/main/s3-icon03.svg" alt="전자공고 아이콘">
+          </div>
+          <h3>전자공고</h3>
+          <span class="plus">+</span>
+        </a>
+
+        <a href="sub5_1.html" class="s3-item">
+          <div class="icon">
+            <img src="images/thema/main/s3-icon04.svg" alt="인재채용 아이콘">
+          </div>
+          <h3>인재채용</h3>
+          <span class="plus">+</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec s4">
+    <div class="inner">
+      <div class="s4-notice">
+        <div class="s4-head">
+          <h3>공지사항</h3>
+          <a href="board_lists.html" class="s4-more">VIEW MORE <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <ul class="s4-list">
+          <li>
+            <a href="">
+              <span class="subject">2026년 외부감사 선임공고</span>
+              <span class="date">2026-02-13</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="subject">2025년 외부감사 선임공고</span>
+              <span class="date">2025-02-13</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="subject">2024년 외부감사 선임공고</span>
+              <span class="date">2024-02-14</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="subject">2023년 외부감사 선임공고</span>
+              <span class="date">2023-02-14</span>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <span class="subject">2022년 외부감사 선임공고</span>
+              <span class="date">2022-02-10</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <a href="" class="s4-catalog" style="background-image: url('images/thema/main/catalog.jpg');">
+        <div class="s4-catalog-text">
+          <strong>Catalog</strong>
+          <p>제품 정보를 담은 최신 카탈로그를 통해<br>품질과 혁신을 직접 확인해 보세요.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec s5">
+    <div class="inner">
+      <div class="s5-text">
+        <p class="s5-sub">변화와 도전,</p>
+        <p class="s5-sub" style="color: #fff;">그리고 새로운 도약!</p>
+        <h4 class="s5-lead">품질로 사회에 공헌하는 기업 실현</h4>
+        <p class="s5-desc">썬시멘트주식회사는 불굴의 도전정신과 고객감동 실현을 경영방침으로 하여 21세기 글로벌 시대가 요구하는 친환경, 신윤리기업을 지향하는 회사가 되겠습니다.</p>
+      </div>
+
+      <div class="s5-card-wrap">
+        <a href="sub3_1.html" class="s5-card">
+          <div class="s5-card-top">
+            <h5>기업윤리원칙</h5>
+            <span>자세히보기 <i class="ri-arrow-right-line"></i></span>
+          </div>
+          <div class="s5-card-icon">
+            <img src="images/thema/main/s5-icon01.svg" alt="기업윤리원칙 아이콘">
+          </div>
+        </a>
+
+        <a href="sub3_2.html" class="s5-card">
+          <div class="s5-card-top">
+            <h5>임직원 행동지침</h5>
+            <span>자세히보기 <i class="ri-arrow-right-line"></i></span>
+          </div>
+          <div class="s5-card-icon">
+            <img src="images/thema/main/s5-icon02.svg" alt="임직원 행동지침 아이콘">
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <div class="ft_top">
+        <img src="images/thema/common/logo_w.svg" alt="썬시멘트(주) 로고" class="pt_logo">
+        <div class="ft_link">
+          <a href="https://mail.ssys.co.kr/login">Web-mail</a>
+          <a href="etc/terms.html">이용약관</a>
+          <a href="etc/privacy.html">개인정보취급방침</a>
+          <a href="etc/reject.html">이메일주소무단수집거부</a>
+          <a href="etc/sitemap.html">사이트맵</a>
+        </div>
+      </div>
+
+      <div class="ft-wrap">
+        <div class="ft-group">
+          <p class="ft-item"><strong>본사</strong> 전라북도 군산시 임해로 355(소룡동)</span></p>
+          <p class="ft-item"><strong>TEL</strong> 063-472-2200</p>
+          <p class="ft-item"><strong>FAX</strong> 063-471-6227</p>
+          <p class="ft-item"><strong>출하실</strong> 063-472-2299</p>
+        </div>
+
+        <div class="ft-group">
+          <p class="ft-item"><strong>영업팀</strong> 전라북도 군산시 임해로 355(소룡동)</span></p>
+          <p class="ft-item"><strong>TEL</strong> 063-472-2220~2, 2251</p>
+          <p class="ft-item"><strong>FAX</strong> 063-471-6227</p>
+        </div>
+
+        <p class="copy">COPYRIGHT © 2026 썬시멘트(주). ALL RIGHTS RESERVED.</p>
+
+      </div>
+    </div>
+  </footer>
+
+  <div class="top_btn"><i class="ri-arrow-up-s-line"></i></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/btn.js"></script>
+
+</body>
+</html>

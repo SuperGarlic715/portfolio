@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
+
+:where(*), :where(*::before), :where(*::after) {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; margin: 0;padding: 0;box-sizing: border-box;}
+
+:root{--brand-color:#217AFF; --brand-color2: #1D6EE8; --brand-color3: #217AFF; }
+
+*, ::after, ::before {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
+
+html, body {height: 100%; font-family: 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #222; min-width: 380px; scroll-behavior: smooth; overflow-x: clip; -webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility;}
+
+article, aside, footer, header, nav, section {display: block;}
+
+h1, h2, h3, h4, h5, h6, strong {font-weight: 700; margin-bottom: 0;}
+
+p {margin-bottom: 0; font-size: 16px; line-height: 26px;}
+p:last-child {margin-bottom: 0;}
+
+a {text-decoration: none; color: inherit; display: flex; align-items: center;}
+
+ul, ol, li {list-style: none; padding: 0; margin: 0;}
+
+label {font-size: 16px;}
+
+img, video {max-width: 100%; height: auto; vertical-align: top;}
+
+.inner {max-width: 1280px; width: 100%; display: flex; margin: 0 auto; align-items: center; box-sizing: border-box;}
+.section_area {padding: 100px 0;}
+
+button {display: flex; align-items: center; border: none; background: none; font-size: 16px; cursor: pointer;}
+
+.pc_br {display: block;}
+.mobile_br {display: none;}
+
+/* table */
+table {border-collapse: collapse; border-spacing: 0;}
+table th, table td {box-sizing: border-box;}
+
+.table.detail {width: 100%; font-size: 16px; color: #222; border-collapse: collapse; margin: 0;}
+.table.detail thead th {background: #F5F5F5; color: #222; font-size: 18px; font-weight: 600; text-align: center; line-height: 20px; padding: 10px;}
+.table.detail thead tr:first-child th {border-top: 2px solid #444;}
+.table.detail thead tr + tr th {border-top: none;}
+.table.detail thead th:last-child, .table.detail thead th.end {border-right: none;}
+
+.table.detail th, .table.detail td {text-align: center; vertical-align: middle; word-break: keep-all; width: auto;}
+.table.detail th {padding: 10px; border: 1px solid #ccc; border-left: none; font-weight: 700;}
+.table.detail td {padding: 10px 16px; border-bottom: 1px solid #ccc; border-right: 1px solid #ccc; font-weight: 300; background: #fff;}
+.table.detail td:last-child, .table.detail td.end {border-right: none; border-left: 1px solid #ccc;}
+
+.table.detail tbody td {background: #fff;}
+.table.detail img {display: block; height: auto; margin: 0 auto;}
+
+.table.detail .bg-blue {background: #EAF2FF; white-space: nowrap;}
+.table.detail .text-left {text-align: left; padding-left: 18px;}
+
+.table.detail td strong {font-weight: 600;}
+
+/*top button*/
+.top_btn {position: fixed; bottom: 50px; right: 50px; background: var(--brand-color); width: 60px; height: 60px; color: #fff; font-size: 24px; display: flex; align-items: center; text-align: center; justify-content: center; align-items: center; border-radius: 50px; z-index: 5000; transition: .3s ease; cursor: pointer; opacity: 0; visibility: hidden; transition: 0.3s ease;}
+.top_btn:hover {background: var(--brand-color2);}
+
+@media screen and (max-width: 1240px) {
+  .inner {padding: 0 20px;}
+}
+
+@media (max-width: 1024px) {
+  .tb-scroll, .table.detail {overflow-x: auto;}
+
+}
+
+@media screen and (max-width: 768px) {
+  .pc_br {display:none;}
+  .mobile_br {display:block;}
+
+  .top_btn {right: 20px;}
+
+  .table.detail tbody td, .table.detail.scroll tbody td {padding: 8px; font-size: 14px;}
+  .table.detail thead th, .table.detail.scroll thead th {font-size: 16px;}
+}
+@media screen and (max-width: 568px) {
+
+}

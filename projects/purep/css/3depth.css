@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.nav_depth3 {border-bottom: 1px solid #ddd;}
+
+.nav_depth3 .inner {display: flex; justify-content: center;}
+
+.nav_depth3 ul {display: flex; justify-content: center; align-items: center; gap: 20px; list-style: none; padding: 0; margin: 0;}
+
+.nav_depth3 li a {position: relative; font-size: 16px; color: #666; font-weight: 500; padding: 25px 30px; border-bottom: 2px solid transparent; transition: all 0.2s;}
+.nav_depth3 li a::after {content: ''; display: block; width: 4px; height: 4px; border-radius: 50%; background: #aaa; position: absolute; right: -15px; top: calc(50% - 2px);}
+.nav_depth3 li.active a, .nav_depth3 li a:hover {color: #298DDE; font-weight: 600;}
+.nav_depth3 li:last-child a::after {display: none;}

@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
+
+:where(*), :where(*::before), :where(*::after) {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; margin: 0;padding: 0;box-sizing: border-box;}
+
+:root{--brand-color: #0D8D42; --brand-color2: #77AA49;}
+
+*, ::after, ::before {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
+
+html {scroll-behavior: smooth;}
+
+html, body {height: 100%; font-family: 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #222; min-width: 370px; overflow-x: clip; -webkit-font-smoothing:auto; -moz-osx-font-smoothing:auto; text-rendering:optimizeLegibility;}
+
+article, aside, footer, header, nav, section {display: block;}
+
+h1, h2, h3, h4, h5, h6, strong {font-weight: 700;}
+
+a {text-decoration: none; color: inherit; display: flex; align-items: center;}
+
+ul, ol, li {list-style: none;}
+
+img, video {max-width: 100%; height: auto; vertical-align: top;}
+
+.inner {max-width: 1280px; width: 100%; display: flex; margin: 0 auto; align-items: center; box-sizing: border-box;}
+.section_area {padding: 100px 0;}
+
+button {display: flex; align-items: center; border: none; background: none; font-size: 16px; cursor: pointer;}
+
+.pc_br {display: block;}
+.mobile_br {display: none;}
+
+
+/*여백*/
+.my-70 {margin: 70px auto;}
+
+/*top button*/
+.top_btn {position: fixed; bottom: 50px; right: 50px; background: var(--brand-color); width: 60px; height: 60px; color: #fff; font-size: 24px; display: flex; align-items: center; text-align: center; justify-content: center; align-items: center; border-radius: 50px; z-index: 5000; transition: .3s ease; cursor: pointer; opacity: 0; visibility: hidden; transition: 0.3s ease;}
+.top_btn:hover {background: var(--brand-color2);}
+
+@media (max-width: 1024px) {
+  .table.detail {font-size: 14px; overflow-x: auto; display: block; white-space: nowrap;}
+}
+
+@media screen and (max-width: 1199px) {
+  .inner {padding: 0 20px;}
+}
+@media screen and (max-width: 768px) {
+  .pc_br {display:none;}
+  .mobile_br {display:block;}
+}
+
+
+/* 포트폴리오 제출용 보정 : 한글 단어 중간 줄바꿈 방지 */
+body {word-break: keep-all; overflow-wrap: break-word;}

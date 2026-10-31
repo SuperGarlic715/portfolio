@@ -1,0 +1,168 @@
+@charset "utf-8";
+
+/* =========================================================
+   main.css : 히어로, 소개, 작업, 디자인, 연락처
+   ========================================================= */
+
+/* ---------- 공통 측정 칩 (히어로·작업 이미지 너비 표시) ---------- */
+.measure_chip,
+.shot_label {display: inline-flex; align-items: center; gap: 3px; padding: 3px 7px; border-radius: 3px; background: var(--select); color: var(--select-ink); font-family: var(--font-kr); font-size: 12px; font-weight: 600; line-height: 1.4; font-variant-numeric: tabular-nums; white-space: nowrap;}
+.measure_chip b {font-weight: 600;}
+
+/* ---------- hero ---------- */
+.hero {padding: 112px 0 136px;}
+.hero_role {margin-bottom: 28px; font-size: 18px; font-weight: 500; color: var(--muted);}
+
+.select_frame {position: relative; display: inline-block; max-width: 100%; padding: 0.02em 0.06em 0.06em;}
+.select_frame::before {content: ""; position: absolute; inset: 0; border: 1.5px solid var(--select); pointer-events: none; animation: frame_draw .7s cubic-bezier(.6,0,.2,1) .15s both;}
+
+.hero_name {font-family: var(--font-display); font-size: clamp(54px, 12.4vw, 184px); font-weight: 800; line-height: .94; letter-spacing: -0.025em; white-space: nowrap;}
+
+.handle {position: absolute; width: 9px; height: 9px; background: var(--surface); border: 1.5px solid var(--select); animation: handle_pop .25s ease-out .8s both;}
+.handle.tl {top: -4px; left: -4px;}
+.handle.tr {top: -4px; right: -4px;}
+.handle.bl {bottom: -4px; left: -4px;}
+.handle.br {bottom: -4px; right: -4px;}
+
+.measure_chip {position: absolute; top: 100%; left: 50%; transform: translate(-50%, 10px); animation: chip_in .3s ease-out 1s both;}
+
+.hero_lead {max-width: 42em; margin-top: 64px; font-size: 21px; line-height: 1.65;}
+.hero_actions {display: flex; flex-wrap: wrap; gap: 12px; margin-top: 36px;}
+
+@keyframes frame_draw {
+  from {clip-path: inset(0 100% 0 0);}
+  to {clip-path: inset(0 0 0 0);}
+}
+@keyframes handle_pop {
+  from {transform: scale(0);}
+  to {transform: scale(1);}
+}
+@keyframes chip_in {
+  from {opacity: 0; transform: translate(-50%, 2px);}
+  to {opacity: 1; transform: translate(-50%, 10px);}
+}
+
+/* ---------- 섹션 머리 ---------- */
+.split {display: grid; grid-template-columns: 240px minmax(0, 1fr); gap: 48px;}
+.section_title {font-size: clamp(26px, 3vw, 34px); font-weight: 700; letter-spacing: -0.01em;}
+.section_head.row {display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 24px;}
+.section_note {font-size: 14px; color: var(--muted);}
+
+/* ---------- about ---------- */
+.about_text {max-width: 34em; font-size: 20px; line-height: 1.8;}
+.about_group {margin-top: 64px;}
+.group_title {margin-bottom: 8px; font-size: 15px; font-weight: 600; color: var(--muted);}
+
+.career_item {display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 24px; padding: 22px 0; border-top: 1px solid var(--line);}
+.career_period {font-size: 15px; color: var(--muted); font-variant-numeric: tabular-nums;}
+.career_company {display: inline; font-size: 18px; font-weight: 700;}
+.career_role {margin-left: 10px; font-size: 15px; color: var(--muted);}
+.career_desc {margin-top: 6px; font-size: 16px;}
+
+.skill_row {display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; padding: 14px 0; border-top: 1px solid var(--line);}
+.skill_row dt {font-size: 15px; font-weight: 600;}
+.skill_row dd {font-size: 16px;}
+
+/* ---------- work ---------- */
+.work_item {display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: 64px; align-items: start; padding: 72px 0; border-top: 1px solid var(--line);}
+.work_item:first-of-type {border-top: none; padding-top: 32px;}
+.work_item:last-of-type {padding-bottom: 0;}
+
+.work_media {position: relative; padding: 0 9% 9% 0;}
+.shot {position: relative;}
+.shot img {width: 100%; background: var(--surface); border: 1px solid var(--line);}
+.shot_pc img {border-radius: 6px;}
+.shot_mo {position: absolute; right: 0; bottom: 0; width: 23%;}
+.shot_mo img {border-radius: 12px; box-shadow: 0 0 0 6px var(--paper);}
+.shot_label {position: absolute; top: -11px; left: 12px;}
+.shot_mo .shot_label {left: 8px;}
+
+.work_title {font-size: 26px; letter-spacing: -0.01em;}
+.work_summary {margin-top: 10px; font-size: 17px; color: var(--muted);}
+
+.work_meta {margin-top: 28px; border-top: 1px solid var(--line);}
+.work_meta > div {display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px;}
+.work_meta dt {color: var(--muted);}
+
+.point_title {margin-top: 28px; font-size: 15px; font-weight: 600; color: var(--muted);}
+.point_list {margin-top: 10px;}
+.point_list li {position: relative; padding-left: 18px; font-size: 16px; line-height: 1.65;}
+.point_list li + li {margin-top: 8px;}
+.point_list li::before {content: ""; position: absolute; top: .62em; left: 1px; width: 7px; height: 7px; background: var(--surface); border: 1.5px solid var(--select);}
+
+.work_links {display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px;}
+
+/* ---------- design ---------- */
+.design_grid {display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 48px 32px; margin-top: 32px;}
+.design_link {display: block;}
+.design_figure {position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; transition: border-color .2s;}
+.design_figure img {width: 100%; height: 100%; object-fit: cover; object-position: top center;}
+.design_figure.is_empty {border-style: dashed;}
+.design_figure.is_empty img {display: none;}
+.design_figure.is_empty::after {content: attr(data-empty); position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 20px; text-align: center; font-size: 14px; color: var(--muted);}
+.design_info {margin-top: 16px;}
+.design_title {font-size: 19px; transition: color .2s;}
+.design_desc {margin-top: 4px; font-size: 15px; color: var(--muted);}
+.design_link:hover .design_figure {border-color: var(--select);}
+.design_link:hover .design_title {color: var(--select);}
+
+/* ---------- contact ---------- */
+.contact_text {max-width: 30em; font-size: 20px; line-height: 1.75;}
+.contact_mail {display: flex; flex-wrap: wrap; align-items: center; gap: 16px 20px; margin: 32px 0 48px;}
+.mail_link {font-family: var(--font-display); font-size: clamp(28px, 4.6vw, 52px); font-weight: 600; letter-spacing: -0.01em; line-height: 1.15; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; text-decoration-color: var(--line); overflow-wrap: anywhere; transition: text-decoration-color .2s, color .2s;}
+.mail_link:hover {color: var(--select); text-decoration-color: var(--select);}
+
+.contact_list > div {display: grid; grid-template-columns: 120px minmax(0, 1fr); gap: 24px; padding: 14px 0; border-top: 1px solid var(--line); font-size: 16px;}
+.contact_list > div:last-child {border-bottom: 1px solid var(--line);}
+.contact_list dt {font-weight: 600;}
+.contact_list a {text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line);}
+.contact_list a:hover {color: var(--select); text-decoration-color: var(--select);}
+
+/* ---------- responsive ---------- */
+@media screen and (max-width: 1024px) {
+  .split {grid-template-columns: minmax(0, 1fr); gap: 28px;}
+  .work_item {grid-template-columns: minmax(0, 1fr); gap: 40px;}
+  .work_body {max-width: 640px;}
+}
+
+@media screen and (max-width: 768px) {
+  .hero {padding: 64px 0 88px;}
+  .hero_role {margin-bottom: 20px; font-size: 16px;}
+  .hero_lead {margin-top: 52px; font-size: 18px;}
+  .hero_actions .btn {flex: 1 1 auto;}
+
+  .section_head.row {flex-direction: column; align-items: flex-start; gap: 6px;}
+
+  .about_text, .contact_text {font-size: 18px;}
+  .about_group {margin-top: 48px;}
+  .career_item {grid-template-columns: minmax(0, 1fr); gap: 4px; padding: 18px 0;}
+  .career_role {display: block; margin: 2px 0 0;}
+  .skill_row, .contact_list > div {grid-template-columns: 84px minmax(0, 1fr); gap: 16px;}
+
+  .work_item {padding: 56px 0; gap: 32px;}
+  .work_title {font-size: 22px;}
+  .shot_mo {width: 27%;}
+  .shot_mo img {border-radius: 8px; box-shadow: 0 0 0 4px var(--paper);}
+  .work_links .btn {flex: 1 1 auto;}
+
+  .design_grid {grid-template-columns: minmax(0, 1fr); gap: 40px;}
+  .mail_link {text-underline-offset: 6px;}
+}
+
+/* Animated mesh gradient hero */
+.hero{position:relative;width:100%;height:100vh;min-height:760px;max-height:1080px;padding:0;overflow:hidden;isolation:isolate;background:#7293E6;}
+.gradient-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(120deg,#7293E6,#B6A7FF,#FFE38A);}
+.gradient-bg canvas{display:block;width:100%;height:100%;}
+.hero-content{position:relative;z-index:2;width:90%;height:100%;margin:0 auto;padding-top:100px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start;}
+.eyebrow{color:#1913F0;font-size:14px;font-weight:700;letter-spacing:3px;margin-bottom:27px;}
+.hero-title{font-family:Pretendard,Arial,sans-serif;font-size:clamp(90px,9.1vw,174px);line-height:.91;font-weight:900;letter-spacing:-.085em;color:#171717;}
+.hero-title span{display:block;}
+.hero-title .accent{color:#1913F0;margin-top:12px;}
+.hero-desc{margin-top:48px;font-size:20px;line-height:1.8;font-weight:500;letter-spacing:-.5px;word-break:keep-all;color:#171717;}
+.hero-bottom{position:absolute;left:0;right:0;bottom:65px;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+.hero-bottom p{font-size:12px;letter-spacing:1.5px;color:#555;font-weight:600;}
+.scroll{display:flex;align-items:center;gap:13px;color:#1913F0;font-size:11px;font-weight:700;letter-spacing:2px;white-space:nowrap;}
+.scroll-line{width:55px;height:1px;background:#1913F0;}
+@media(max-width:1100px){.hero-title{font-size:clamp(76px,10vw,120px);}}
+@media(max-width:768px){.hero{min-height:720px;}.hero-content{width:88%;padding-top:110px;padding-bottom:80px;}.eyebrow{font-size:11px;letter-spacing:2px;}.hero-title{font-size:clamp(55px,12vw,92px);letter-spacing:-.075em;}.hero-desc{font-size:15px;margin-top:32px;}.hero-bottom{bottom:30px;}.hero-bottom p{font-size:9px;}.scroll{font-size:9px;}}
+@media(max-width:480px){.hero-title{font-size:clamp(42px,11.4vw,60px);}.hero-bottom p{max-width:65%;line-height:1.5;}.scroll-line{width:24px;}}

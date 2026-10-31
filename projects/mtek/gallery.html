@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="(주)이디컴" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="(주)이디컴" />
+  <meta property="og:description" content="(주)이디컴" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+  <script src="plugin/js/jquery-3.7.1.min.js"></script>
+  <script src="plugin/slick/slick.min.js"></script>
+  <script src="plugin/aos/aos.js"></script>
+  <script src="js/nav.js"></script>
+
+  <link rel="stylesheet" href="plugin/slick/slick.css" />
+  <link rel="stylesheet" href="plugin/slick/slick-theme.css" />
+  <link rel="stylesheet" href="plugin/icons/remixicon/remixicon.css" />
+
+  <link rel="stylesheet" href="css/thema/basic.css" />
+  <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/nav.css" />
+  <link rel="stylesheet" href="css/thema/sub.css" />
+  <link rel="stylesheet" href="css/board/board.css" />
+  <link rel="stylesheet" href="css/footer.css" />
+  <link rel="stylesheet" href="css/etc/policy.css" />
+  <link rel="stylesheet" href="plugin/aos/aos.css" />
+  <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
+
+  <title>(주)이디컴</title>
+</head>
+
+  <section class="sub contents mg_bt150">
+    <div class="inner">
+      <div class="board_header">
+        <div class="board_total">총 00000 건</div>
+        
+        <form class="search_bar">
+          <div class="custom_select_wrap">
+            <select name="searchType" class="select-search">
+              <option value="">전체</option>
+              <option value="">제목</option>
+              <option value="">내용</option>
+            </select>
+          </div>
+          <input type="text" placeholder="검색어를 입력하세요." />
+          <button id="search_btn" class="button s_button btn-search"><i class="ri-search-line"></i></button>
+        </form>
+      </div>
+
+      <div class="gallery_container">
+        <!--
+        <div class="gallery_empty">
+          <p>등록된 게시글이 없습니다.</p>
+        </div>
+        -->
+        <div class="gallery_item">
+          <a href="view.html">
+            <!--no-image
+            <div class="gallery_img" style="background-image: url('images/board/no_image.jpg');"></div>
+            -->
+            <div class="gallery_img" style="background-image: url('images/thema/sub/greeting/message.jpg');"></div>
+            <div class="gallery_info">
+              <p class="gallery_title"><span class="board_num">5</span> 제목을 입력해 주세요.</p>
+              <div class="board_meta">
+                <span class="board_writer"><span>작성자 :</span> (주)이디컴</span>
+                <span class="board_date"><span>작성일자 :</span> 2025-08-01</span>
+                <span class="board_views"><span>조회수 :</span> 123456</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery_item">
+          <a href="view.html">
+            <!--no-image
+            <div class="gallery_img" style="background-image: url('images/board/no_image.jpg');"></div>
+            -->
+            <div class="gallery_img" style="background-image: url(images/thema/sub/greeting/vision04.png);"></div>
+            <div class="gallery_info">
+              <p class="gallery_title"><span class="board_num">4</span> 제목을 입력해 주세요.</p>
+              <div class="board_meta">
+                <span class="board_writer"><span>작성자 :</span> (주)이디컴</span>
+                <span class="board_date"><span>작성일자 :</span> 2025-08-01</span>
+                <span class="board_views"><span>조회수 :</span> 123456</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery_item">
+          <a href="view.html">
+            <!--no-image
+            <div class="gallery_img" style="background-image: url('images/board/no_image.jpg');"></div>
+            -->
+            <div class="gallery_img" style="background-image: url(images/thema/sub/greeting/vision03.png);"></div>
+            <div class="gallery_info">
+              <p class="gallery_title"><span class="board_num">3</span> 제목을 입력해 주세요.</p>
+              <div class="board_meta">
+                <span class="board_writer"><span>작성자 :</span> (주)이디컴</span>
+                <span class="board_date"><span>작성일자 :</span> 2025-08-01</span>
+                <span class="board_views"><span>조회수 :</span> 123456</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery_item">
+          <a href="view.html">
+            <!--no-image
+            <div class="gallery_img" style="background-image: url('images/board/no_image.jpg');"></div>
+            -->
+            <div class="gallery_img" style="background-image: url('images/thema/sub/greeting/vision01.png');"></div>
+            <div class="gallery_info">
+              <p class="gallery_title"><span class="board_num">2</span> 제목을 입력해 주세요.</p>
+              <div class="board_meta">
+                <span class="board_writer"><span>작성자 :</span> (주)이디컴</span>
+                <span class="board_date"><span>작성일자 :</span> 2025-08-01</span>
+                <span class="board_views"><span>조회수 :</span> 123456</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="gallery_item">
+          <a href="view.html">
+            <!--no-image
+            <div class="gallery_img" style="background-image: url('images/board/no_image.jpg');"></div>
+            -->
+            <div class="gallery_img" style="background-image: url(images/thema/sub/greeting/vision02.png);"></div>
+            <div class="gallery_info">
+              <p class="gallery_title"><span class="board_num">1</span> 제목을 입력해 주세요.</p>
+              <div class="board_meta">
+                <span class="board_writer"><span>작성자 :</span> (주)이디컴</span>
+                <span class="board_date"><span>작성일자 :</span> 2025-08-01</span>
+                <span class="board_views"><span>조회수 :</span> 123456</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div><!--gallery_container-->
+
+      <div class="pagination">
+          <ul>
+            <li><a href="#" class="pag_pd"><i class="ri-arrow-left-double-line"></i></a></li>
+            <li><a href="#" class="pag_pd"><i class="ri-arrow-left-s-line"></i></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="pag_pd"><i class="ri-arrow-right-s-line"></i></a></li>
+            <li><a href="#" class="pag_pd"><i class="ri-arrow-right-double-line"></i></a></li>
+          </ul>
+        </div>
+      </div><!--gallery_container-->
+    </div><!--inner-->
+  </section>
+
+  <script src="plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="plugin/aos/aos_reset.js"></script>
+
+</body>
+</html>
