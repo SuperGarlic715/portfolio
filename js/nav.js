@@ -47,6 +47,20 @@
     }
   });
 
+  // ---------- 히어로 아래로 스크롤 ----------
+  const scrollDown = document.querySelector('.hero .scroll');
+  if (scrollDown) {
+    scrollDown.addEventListener('click', (e) => {
+      if (e.button !== 0 || e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
+      const target = document.querySelector(scrollDown.getAttribute('href'));
+      if (!target) return;
+      e.preventDefault();
+      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduceMotion ? 'instant' : 'smooth', block: 'start' });
+      history.replaceState(null, '', scrollDown.getAttribute('href'));
+    });
+  }
+
   // ---------- 스크롤 상태 ----------
   function onScroll() {
     const y = window.scrollY;
