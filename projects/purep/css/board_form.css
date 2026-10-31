@@ -35,7 +35,7 @@
 .board_form_table input[type="password"],
 .board_form_table input[type="tel"] {font-size: 14px; color: #555; border: 1px solid #ccc; padding: 3px 5px; width: 200px; padding: 8px 0; box-sizing: border-box;}
 
-.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px; box-sizing: border-box; color: #555; font-size: 14px; line-height: 26px; border: 1px solid #ccc; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
+.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px; box-sizing: border-box; color: #555; font-size: 14px; line-height: 26px; border: 1px solid #ccc; font-family: 'Pretendard GOV', sans-serif;}
 
 /* 캡차 영역 */
 

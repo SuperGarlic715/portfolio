@@ -7,7 +7,7 @@
 .sub_visual_wrap.sub_top4 {background: url(../images/sub/sub_visual/sub_top4_bg.jpg) center/cover no-repeat;}
 
 .sub_visual_text {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: #fff;}
-.sub_visual_text .sub_visual_title {font-family: 'Montserrat', 'Pretendard GOV', sans-serif; font-size: 65px; text-align: center; }
+.sub_visual_text .sub_visual_title {font-family: 'Pretendard GOV', sans-serif; font-size: 65px; text-align: center; }
 
 /*뎁스*/
 .sub_nav {display: flex; justify-content: center; align-items: center; margin: 0 auto;}

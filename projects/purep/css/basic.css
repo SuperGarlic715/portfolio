@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/nunito@5.2.7/latin.css");
+
 @import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/100.css");
 @import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/200.css");
 @import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/300.css");
@@ -15,7 +17,7 @@
 
 :where(*), :where(*::before), :where(*::after) {margin: 0;padding: 0;box-sizing: border-box;}
 
-html, body {height: 100%; font-family: 'Montserrat', 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #333; background: #fff; min-width: 360px; rotate(0.03deg);}
+html, body {height: 100%; font-family: 'Nunito', 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #333; background: #fff; min-width: 360px; rotate(0.03deg);}
 
 article, aside, footer, header, nav, section {display: block;}
 

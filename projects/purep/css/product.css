@@ -13,7 +13,7 @@
 
 /*PUREPet - 제품소개*/
 .product {position: relative; display: flex; justify-content: center; align-items: center; width: 100%; height: 1200px; background: url(../images/sub/product/product_bg.jpg) center/cover no-repeat;}
-.product_title {position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-family: 'Montserrat', 'Pretendard GOV', sans-serif; display: flex; justify-content: center; flex-direction: column; align-items: center;}
+.product_title {position: absolute; top: 10%; left: 50%; transform: translateX(-50%); font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; flex-direction: column; align-items: center;}
 .product_title h2 {font-size: 24px; color: #666; font-weight: 400;}
 .product_title h3 {font-size: 80px; color: #222; font-weight: 800; line-height: 1.2;}
 .product_title a:hover {background: #17536b;}
@@ -22,7 +22,7 @@
 .product_features_title p::after {position: absolute; bottom: -40px; left: 50%; content: ""; width: 1px; height: 50px; background: #707070;}
 .product_point_box {width: 100%; display: flex; justify-content: center; align-items: center; gap: 20px;}
 .product_point_item {width: 25%; height: 380px; background: #f6f6f6; display: flex; justify-content: center; align-items: center; flex-direction: column; padding: 20px 40px; border-radius: 20px;}
-.product_point {padding: 5px 35px; background: #1CAFE8; border-radius: 50px; color: #fff; font-size: 24px; font-weight: 600; font-family: 'Montserrat', 'Pretendard GOV', sans-serif; margin-bottom: 30px;}
+.product_point {padding: 5px 35px; background: #1CAFE8; border-radius: 50px; color: #fff; font-size: 24px; font-weight: 600; font-family: 'Montserrat', sans-serif; margin-bottom: 30px;}
 .product_point_item h2 {font-size: 28px; color: #222; line-height: 3;}
 .product_point_item p {text-align: center; font-size: 22px; color: #222; }
 
@@ -30,9 +30,9 @@
 .product_banner {position: relative; height: 400px; background: url(../images/sub/product/product_banner.jpg) top/contain no-repeat; background-attachment: fixed; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; overflow: hidden;}
 .product_banner::before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 2;}
 
-.product_banner h2 {z-index: 3; font-size: 60px; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
+.product_banner h2 {z-index: 3; font-size: 60px; font-family: 'Montserrat', sans-serif;}
 
-.point h2, .point_gray h2 {font-size: 46px; color: #222; font-weight: 700; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
+.point h2, .point_gray h2 {font-size: 46px; color: #222; font-weight: 700; font-family: 'Pretendard GOV', sans-serif;}
 .point_gray h2 {margin-bottom: 60px;}
 .product_color {color: #1CAFE8; }
 
@@ -45,7 +45,7 @@
 .product_step_list li {line-height: 1.5;}
 
 .step_title {font-weight: 700; margin-bottom: 5px; font-size: 28px; color: #222;}
-.step_num {color: #f7931e; margin: 0 6px 20px 0; font-size: 32px; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
+.step_num {color: #f7931e; margin: 0 6px 20px 0; font-size: 32px; font-family: 'Montserrat', sans-serif;}
 .step_desc {font-size: 20px; color: #666;}
 .step_complete {margin-top: 20px;}
 .step_done {font-size: 46px; font-weight: 900; color: #00aaff; display: block;}
@@ -89,7 +89,7 @@
 .product_usage_item img {width: 100%;}
 .product_usage_item .usage_text {display: flex; align-items: flex-start; font-size: 24px; font-weight: 400; margin: 40px 0 50px 0; line-height: 1.5;}
 .product_usage_list .product_usage_item:nth-child(5) p.usage_text {margin-bottom: 20px;}
-.product_usage_item .usage_number {width: 40px; height: 40px; color: #fff; background: #FB9C30; border-radius: 50px; font-weight: 700; font-size: 26px; display: flex; justify-content: center; align-items: center; margin-right: 15px; flex-shrink: 0; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
+.product_usage_item .usage_number {width: 40px; height: 40px; color: #fff; background: #FB9C30; border-radius: 50px; font-weight: 700; font-size: 26px; display: flex; justify-content: center; align-items: center; margin-right: 15px; flex-shrink: 0; font-family: 'Pretendard GOV', sans-serif;}
 
 .caution {display: flex; align-items: flex-start; margin-bottom: 40px;}
 .caution_text {font-size: 18px; color: #777; line-height: 1.5;}
