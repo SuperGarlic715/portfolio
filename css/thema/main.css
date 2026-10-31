@@ -49,7 +49,7 @@
 .section_note {font-size: 14px; color: var(--muted);}
 
 /* ---------- about ---------- */
-.about_text {max-width: 34em; font-size: 20px; line-height: 1.8;}
+.about_text {font-size: 20px; line-height: 1.8;}
 .about_group {margin-top: 64px;}
 .group_title {margin-bottom: 8px; font-size: 15px; font-weight: 600; color: var(--muted);}
 
