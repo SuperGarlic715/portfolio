@@ -1,5 +1,13 @@
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/400.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/500.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/600.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/700.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/800.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/900.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
+
 /* =========================================================
    basic.css : 색상 토큰, 리셋, 공통 요소
    - 색은 모두 :root 변수로 관리 (다크 모드는 아래에서 값만 바꿈)
