@@ -16,8 +16,8 @@
   --select-ink: #FFFFFF; /* select 위 글자 */
   --todo: #B54708;       /* 채워야 할 자리 표시 */
 
-  --font-kr: 'Montserrat', 'Pretendard GOV', sans-serif;
-  --font-display: 'Montserrat', 'Pretendard GOV', sans-serif;
+  --font-kr: 'Pretendard GOV';
+  --font-display: 'Montserrat';
 
   --inner: 1200px;
   --gutter: 40px;
