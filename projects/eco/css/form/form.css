@@ -37,7 +37,7 @@
 
 .board_form_table input.input_text.input_title {width: 100%;}
 
-.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px; box-sizing: border-box; color: #555; font-size: 14px; line-height: 26px; border: 1px solid #BDC9D4; font-family: 'Pretendard', sans-serif;}
+.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px; box-sizing: border-box; color: #555; font-size: 14px; line-height: 26px; border: 1px solid #BDC9D4; font-family: 'Montserrat', 'Pretendard GOV', sans-serif;}
 
 .radio_row {display: flex; align-items: center; gap: 30px;}
 .radio_row label {display: inline-flex; align-items: center; gap: 10px; font-size: 16px; white-space: nowrap;}

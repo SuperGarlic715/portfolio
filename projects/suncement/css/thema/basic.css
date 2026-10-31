@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/100.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/200.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/300.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/400.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/500.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/600.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/700.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/800.css");
+@import url("https://cdn.jsdelivr.net/npm/@fontsource/montserrat@5.2.8/900.css");
+
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-gov.min.css");
 
 :where(*), :where(*::before), :where(*::after) {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; margin: 0;padding: 0;box-sizing: border-box;}
@@ -8,7 +18,7 @@
 
 *, ::after, ::before {-webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
 
-html, body {height: 100%; font-family: 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #222; min-width: 380px; scroll-behavior: smooth; overflow-x: clip; -webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility;}
+html, body {height: 100%; font-family: 'Montserrat', 'Pretendard GOV', sans-serif; line-height: 1.5; letter-spacing: -0.3px; color: #222; min-width: 380px; scroll-behavior: smooth; overflow-x: clip; -webkit-font-smoothing:auto;-moz-osx-font-smoothing:auto;text-rendering:optimizeLegibility;}
 
 article, aside, footer, header, nav, section {display: block;}
 
