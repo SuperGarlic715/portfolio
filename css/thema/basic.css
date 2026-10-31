@@ -16,8 +16,8 @@
   --select-ink: #FFFFFF; /* select 위 글자 */
   --todo: #B54708;       /* 채워야 할 자리 표시 */
 
-  --font-kr: 'IBM Plex Sans KR', 'Pretendard', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
-  --font-display: 'Bricolage Grotesque', 'Arial Narrow', 'Helvetica Neue', Arial, sans-serif;
+  --font-kr: 'Montserrat', 'Pretendard GOV', sans-serif;
+  --font-display: 'Montserrat', 'Pretendard GOV', 'Helvetica Neue', Arial, sans-serif;
 
   --inner: 1200px;
   --gutter: 40px;
@@ -115,6 +115,3 @@ dl, dd {margin: 0;}
   html {scroll-behavior: auto;}
   *, *::before, *::after {animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important;}
 }
-
-/* Typography for the updated portfolio header and hero */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
