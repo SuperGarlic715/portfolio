@@ -87,9 +87,14 @@
 
   <div class="main_visual">
     <iframe
-    src="https://www.youtube.com/embed/WX0QbUyMJiA?autoplay=1&mute=1&controls=0&disablekb=1&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=WX0QbUyMJiA"
+    id="purep-hero-video"
+    title="퓨어피 제품 소개 배경 영상"
+    tabindex="-1"
+    aria-hidden="true"
+    src="https://www.youtube.com/embed/WX0QbUyMJiA?autoplay=1&amp;mute=1&amp;controls=0&amp;disablekb=1&amp;rel=0&amp;loop=1&amp;playlist=WX0QbUyMJiA&amp;playsinline=1&amp;cc_load_policy=0&amp;iv_load_policy=3&amp;fs=0&amp;enablejsapi=1"
     frameborder="0"
-    allow="autoplay; fullscreen"
+    allow="autoplay; encrypted-media"
+    referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen
     ></iframe>
   
@@ -284,6 +289,8 @@
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 </script>
+
+<script src="js/hero-video.js"></script>
 
 <!-- Swiper -->
 <script src="js/swiper-bundle.min.js"></script>
