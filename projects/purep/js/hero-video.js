@@ -6,7 +6,19 @@
   const url = new URL(frame.src);
   url.searchParams.set('origin', window.location.origin);
   frame.src = url.href;
-  function hidePlayer() { hero.classList.remove('is-video-playing'); }
+  let revealTimer;
+  function hidePlayer() {
+    clearTimeout(revealTimer);
+    hero.classList.remove('is-video-playing');
+  }
+  function revealWhenPlaying(player, startedAt) {
+    if (player.getPlayerState() !== YT.PlayerState.PLAYING) return;
+    if (player.getCurrentTime() > startedAt) {
+      hero.classList.add('is-video-playing');
+    } else {
+      revealTimer = setTimeout(() => revealWhenPlaying(player, startedAt), 200);
+    }
+  }
   function hideCaptions(player) { player.unloadModule('captions'); }
   function init() {
     new YT.Player(frame.id, {
@@ -18,8 +30,13 @@
         },
         onApiChange(event) { hideCaptions(event.target); },
         onStateChange(event) {
-          hero.classList.toggle('is-video-playing', event.data === YT.PlayerState.PLAYING);
-          if (event.data === YT.PlayerState.PLAYING) hideCaptions(event.target);
+          hidePlayer();
+          if (event.data === YT.PlayerState.PLAYING) {
+            hideCaptions(event.target);
+            const startedAt = event.target.getCurrentTime();
+            // Wait beyond YouTube's initial player chrome and confirm playback advances.
+            revealTimer = setTimeout(() => revealWhenPlaying(event.target, startedAt), 1200);
+          }
           if (event.data === YT.PlayerState.ENDED) event.target.playVideo();
         },
         onError: hidePlayer
