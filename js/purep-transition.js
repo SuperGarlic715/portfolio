@@ -24,8 +24,8 @@
       defaults: { ease: 'none' },
       scrollTrigger: {
         trigger: feature,
-        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.4 - Math.max(parseFloat(getComputedStyle(work).paddingBottom) * 0.55, window.innerHeight * 0.9),
-        end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.4,
+        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.1 - Math.max(parseFloat(getComputedStyle(work).paddingBottom) * 0.55, window.innerHeight * 0.9),
+        end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.1,
         scrub: 1.6,
         invalidateOnRefresh: true
       }
