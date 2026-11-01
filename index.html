@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="css/thema/basic.css" />
   <link rel="stylesheet" href="css/thema/nav.css" />
   <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/purep-feature.css" />
   <link rel="stylesheet" href="css/thema/footer.css" />
   <link rel="stylesheet" href="css/thema/source-viewer.css" />
   <link rel="stylesheet" href="js/lib/aos/aos.css" />
@@ -279,42 +280,30 @@
           </div>
         </article>
 
-        <!-- PUREP: 별도 강조 섹션으로 이동 예정. 기존 카드 보관
-        <article class="work_item" id="work-purep">
-          <div class="work_media">
-            <figure class="shot shot_pc">
-              <img src="images/work/purep_pc.jpg" width="1200" height="750" loading="lazy" alt="PUREP PC 화면. 왼쪽에 제품 소개 문구, 오른쪽에 흰색 위생 처리 장치 사진이 있다." />
-            </figure>
-            <figure class="shot shot_mo">
-              <img src="images/work/purep_mo.jpg" width="390" height="844" loading="lazy" alt="PUREP 모바일 화면. 제품 사진 아래에 로고와 소개 문구가 가운데 정렬되어 있다." />
-            </figure>
-          </div>
 
-          <div class="work_body">
-            <h3 class="work_title">PUREP 제품 브랜드 사이트</h3>
-            <p class="work_summary">믿음레이저(주)의 반려동물 위생 폐기물 밀봉 장치를 소개하는 브랜드 사이트입니다.</p>
+      </div>
+    </section>
 
-            <dl class="work_meta">
-              <div><dt>기간</dt><dd>2025.04 – 2025.06</dd></div>
-              <div><dt>분량</dt><dd>16페이지 (브랜드, 제품, 홍보자료, 고객지원)</dd></div>
-              <div><dt>기여도</dt><dd>퍼블리싱 00%</dd></div>
-              <div><dt>기술</dt><dd>HTML5, CSS3, JavaScript, Swiper 11, AOS</dd></div>
-            </dl>
-
-            <h4 class="point_title">구현한 부분</h4>
-            <ul class="point_list">
-              <li>첫 화면을 PC에서는 유튜브 영상 배경으로, 모바일에서는 세로 사진으로 바꿔 보여 줍니다.</li>
-              <li>모바일 주소창 높이 변화에 맞춰 첫 화면 높이를 계산하는 --vh 변수</li>
-              <li>자주하는 질문 아코디언, 1:1 문의·대량구매 문의 게시판 목록·상세·작성 화면</li>
-            </ul>
-
-            <div class="work_links">
-              <a class="btn btn_fill" href="projects/purep/index.html" target="_blank" rel="noopener" data-demo>사이트 열기</a>
-              <button class="btn btn_line" type="button" data-source-project="purep" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
-            </div>
-          </div>
-        </article>
-        -->
+    <section class="section_area purep-feature" id="purep-feature" aria-labelledby="purep-feature-title">
+      <div class="inner">
+        <p class="purep-eyebrow">FEATURED PROJECT <span></span> BRAND EXPERIENCE</p>
+        <h2 id="purep-feature-title">PUREP<span>.</span></h2>
+        <p class="purep-subtitle">Brand Identity &amp; Digital Experience</p>
+        <p class="purep-intro">제품 촬영부터 상세페이지 디자인, 브랜드 웹사이트까지 일관된 브랜드 경험을 구축했습니다.</p>
+        <div class="purep-cards">
+          <button class="purep-card" type="button" data-purep-view="photography" aria-haspopup="dialog" aria-controls="purep-dialog">
+            <span class="purep-card-image"><img src="projects/purep/images/main_visual.jpg" width="1920" height="1280" loading="lazy" alt="따뜻한 실내 공간에서 촬영한 PUREP 제품" /></span>
+            <span class="purep-card-number">01 <span></span></span><span class="purep-card-title">Photography</span><span class="purep-card-description">제품 촬영 · 연출</span>
+          </button>
+          <button class="purep-card" type="button" data-purep-view="detail" aria-haspopup="dialog" aria-controls="purep-dialog">
+            <span class="purep-card-image"><img src="images/archive/purep-detail-mockup.png" width="1254" height="1254" loading="lazy" alt="PUREP 상세페이지의 스마트폰 및 세로 화면 목업" /></span>
+            <span class="purep-card-number">02 <span></span></span><span class="purep-card-title">Detail Page</span><span class="purep-card-description">기획 · 디자인</span>
+          </button>
+          <button class="purep-card" type="button" data-purep-view="website" aria-haspopup="dialog" aria-controls="purep-dialog">
+            <span class="purep-card-image"><img src="images/archive/purep_pc.png" width="1586" height="992" loading="lazy" alt="PUREP 브랜드 웹사이트 모니터 목업" /></span>
+            <span class="purep-card-number">03 <span></span></span><span class="purep-card-title">Website</span><span class="purep-card-description">기획 · 디자인 · 퍼블리싱</span>
+          </button>
+        </div>
       </div>
     </section>
 
@@ -472,7 +461,7 @@
             </div>
           </li>
           <li class="archive-item">
-            <button class="archive-open" type="button" data-archive-preview="images/archive/purep-detail.jpg" data-preview-title="믿음레이저(주) PUREP 홈페이지 개발" aria-haspopup="dialog" aria-controls="archive-preview" aria-label="믿음레이저(주) PUREP 홈페이지 개발 작업물 보기"><figure class="archive-thumb mockup mockup--rendered-devices"><img src="images/archive/purep_pc.png" width="1586" height="992" loading="lazy" alt="믿음레이저 PUREP 제품 사진을 담은 모니터 목업" /></figure></button>
+            <button class="archive-open" type="button" data-archive-preview="images/brand/purep-detail.png" data-preview-title="믿음레이저(주) PUREP 홈페이지 개발" aria-haspopup="dialog" aria-controls="archive-preview" aria-label="믿음레이저(주) PUREP 홈페이지 개발 작업물 보기"><figure class="archive-thumb mockup mockup--rendered-devices"><img src="images/archive/purep_pc.png" width="1586" height="992" loading="lazy" alt="믿음레이저 PUREP 제품 사진을 담은 모니터 목업" /></figure></button>
             <div class="archive-content">
               <h3>믿음레이저(주) PUREP 홈페이지 개발</h3>
               <p class="archive-description">웹사이트 화면 설계·디자인과 퍼블리싱을 수행했습니다.</p>
@@ -537,6 +526,20 @@
 
   <div class="toast" role="status" aria-live="polite"></div>
 
+  <dialog class="purep-dialog" id="purep-dialog" aria-labelledby="purep-dialog-title">
+    <header class="purep-dialog-header"><h2 id="purep-dialog-title">PUREP</h2><button type="button" class="purep-dialog-close" aria-label="PUREP 작업물 창 닫기" autofocus>×</button></header>
+    <div class="purep-dialog-body">
+      <div class="purep-gallery" hidden>
+        <p class="purep-gallery-status" role="status"></p>
+        <img class="purep-gallery-image" alt="" hidden />
+        <div class="purep-gallery-controls" hidden><button type="button" data-gallery-step="-1" aria-label="이전 촬영 이미지">←</button><span class="purep-gallery-count" aria-live="polite"></span><button type="button" data-gallery-step="1" aria-label="다음 촬영 이미지">→</button></div>
+      </div>
+      <div class="purep-detail" hidden><p class="purep-detail-status" role="status"></p><img src="images/brand/purep-detail.png" alt="PUREP 제품 상세페이지" /></div>
+      <div class="purep-website" hidden><p>웹사이트를 불러오지 못하면 <a href="projects/purep/index.html" target="_blank" rel="noopener">새 창에서 보기</a>를 이용해 주세요.</p><iframe title="PUREP 브랜드 웹사이트" data-src="projects/purep/index.html" sandbox="allow-scripts allow-same-origin" referrerpolicy="no-referrer"></iframe></div>
+    </div>
+    <footer class="purep-dialog-footer" hidden><a class="btn btn_fill" href="https://smartstore.naver.com/purep/products/11994081727" target="_blank" rel="noopener noreferrer">오픈마켓에서 보기 ↗</a></footer>
+  </dialog>
+
   <dialog class="archive-preview" id="archive-preview" aria-labelledby="archive-preview-title">
     <header class="archive-preview-header">
       <h2 id="archive-preview-title">작업물 보기</h2>
@@ -579,6 +582,7 @@
   <script src="js/lib/aos/aos.js"></script>
   <script src="js/section-reveal.js"></script>
   <script src="js/archive.js"></script>
+  <script src="js/purep-feature.js"></script>
   <script src="js/source-viewer.js"></script>
 </body>
 
