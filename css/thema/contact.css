@@ -1,6 +1,6 @@
 /* Compact blueprint contact: email is the only contact detail. */
-.contact-blueprint{position:relative;isolation:isolate;overflow:hidden;padding:76px 0 84px;background-color:#edf4fa;background-image:linear-gradient(rgb(13 127 217 / .055) 1px,transparent 1px),linear-gradient(90deg,rgb(13 127 217 / .055) 1px,transparent 1px);background-size:64px 64px;color:#16202a;border-top:1px solid #dce7f0;}
-.contact-blueprint-inner{position:relative;z-index:1;text-align:center;}
+.contact-blueprint{position:relative;isolation:isolate;overflow:hidden;min-height:600px;display:flex;align-items:center;padding:76px 0 84px;background-color:#edf4fa;background-image:linear-gradient(rgb(13 127 217 / .055) 1px,transparent 1px),linear-gradient(90deg,rgb(13 127 217 / .055) 1px,transparent 1px);background-size:64px 64px;color:#16202a;border-top:1px solid #dce7f0;}
+.contact-blueprint-inner{width:100%;position:relative;z-index:1;text-align:center;}
 .contact-eyebrow{color:#0d7fd9;font-family:var(--font-display),sans-serif;font-size:12px;font-weight:600;letter-spacing:.25em;}
 .contact-blueprint h2{margin-top:20px;font-size:clamp(26px,3.2vw,44px);font-weight:750;letter-spacing:-.045em;line-height:1.4;word-break:keep-all;}
 .contact-blueprint-description{margin-top:14px;font-size:16px;color:#65798a;}
