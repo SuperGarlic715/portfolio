@@ -12,6 +12,19 @@
     button.hidden = shown === cards.length;
     progress.textContent = `전체 ${cards.length}개 중 ${shown}개 프로젝트`;
     if (previous) {
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        cards.slice(previous, shown).forEach((card, index) => {
+          card.animate([
+            { opacity: 0, transform: 'translateY(20px)' },
+            { opacity: 1, transform: 'translateY(0)' }
+          ], {
+            duration: 450,
+            delay: index * 65,
+            easing: 'cubic-bezier(0.22, 1, 0.36, 1)',
+            fill: 'backwards'
+          });
+        });
+      }
       const first = cards[previous];
       first.setAttribute('tabindex', '-1');
       first.focus({ preventScroll: true });
