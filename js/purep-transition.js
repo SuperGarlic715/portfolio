@@ -11,8 +11,8 @@
       ease: 'none',
       scrollTrigger: {
         trigger: feature,
-        start: 'top bottom+=240',
-        end: 'top 65%',
+        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - 240,
+        end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.65,
         scrub: 0.8,
         invalidateOnRefresh: true
       }
