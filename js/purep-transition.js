@@ -24,9 +24,9 @@
       defaults: { ease: 'none' },
       scrollTrigger: {
         trigger: feature,
-        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - parseFloat(getComputedStyle(work).paddingBottom) * 0.55,
+        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - Math.max(parseFloat(getComputedStyle(work).paddingBottom) * 0.55, window.innerHeight * 0.9),
         end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight,
-        scrub: 0.8,
+        scrub: 1.6,
         invalidateOnRefresh: true
       }
     });
@@ -36,7 +36,7 @@
       '--ink': source.ink, '--muted': source.muted, '--line': source.line,
       '--surface': source.surface, '--paper': source.paper
     }, {
-      '--ink': '#16202a', '--muted': '#5a6774', '--line': '#d8dfe6',
+      '--ink': '#232323', '--muted': '#232323', '--line': '#d8dfe6',
       '--surface': '#ffffff', '--paper': '#ffffff'
     }, 0);
   });
