@@ -31,79 +31,119 @@
   <link rel="stylesheet" href="css/form/form.css" />
   <link rel="stylesheet" href="css/etc/etc.css" />
 
-  <title>(주)에코산업개발</title>
+  <title>게시판 | (주)에코산업개발</title>
 </head>
 
-  <section class="sub contents mb-5">
-    <div class="inner">
-      <div class="board_header d-flex flex-column gap-3 align-items-center mb-3">
-        
-        <form id="searchForm" class="search_bar d-flex align-items-center gap-2">
-          <div class="custom_select_wrap">
-            <select name="searchType" class="form-select select-search">
-              <option value="">제목</option>
-              <option value="title">제목</option>
-              <option value="content">내용</option>
-            </select>
-          </div>
-          <div class="search_input input-group">
-            <input type="text" class="form-control" placeholder="검색어를 입력해주세요.">
-            <button id="search_btn" class="btn btn-search" type="submit"><i class="ri-search-line"></i></button>
-          </div>
-        </form>
+<body>
+<header>
+    <div class="nav-inner">
+      <h1 class="logo">
+        <a href="index.html">
+          <img src="images/thema/common/logo_w.png" alt="흰색 로고" class="default">
+          <img src="images/thema/common/logo.png" alt="로고" class="scrolled_logo">
+        </a>
+      </h1>
 
-        <div class="board_total w-100 text-start">총 00000 건</div>
-
+      <!-- 모바일 메뉴 토글 버튼 -->
+      <div class="menu_toggle" id="menuToggle">
+        <span class="menu_btn"></span>
+        <span class="menu_btn"></span>
+        <span class="menu_btn"></span>
       </div>
-      <div class="table-responsive d-md-block">
-        
-        <!--
-        <div class="board_empty">
-          <p>등록된 게시글이 없습니다.</p>
+
+      <nav id="gnb" class="menu">
+        <div class="main_menu">
+          <div class="depth1">
+            <a href="#"><span>회사소개</span></a>
+            <ul class="depth2">
+              <li><a href="sub1_1.html">연혁</a></li>
+              <li><a href="sub1_2.html">CEO인사말</a></li>
+              <li><a href="sub1_3.html">조직도</a></li>
+              <li><a href="sub1_4.html">오시는길</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>사업분야</span></a>
+            <ul class="depth2">
+              <li><a href="sub2_1.html">하수도설비</a></li>
+              <li><a href="sub2_2.html">상수도설비</a></li>
+              <li><a href="sub2_3.html">양배수장설비</a></li>
+              <li><a href="sub2_4.html">재활용설비</a></li>
+              <li><a href="sub2_5.html">공사업</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>기술현황</span></a>
+            <ul class="depth2">
+              <li><a href="certificate.html">인증현황</a></li>
+              <li><a href="sub3_2.html">기업부설연구소</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>사업실적</span></a>
+            <ul class="depth2">
+              <li><a href="sub4_1.html">납품실적</a></li>
+              <li><a href="sub4_2.html">공사실적</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>고객지원</span></a>
+            <ul class="depth2">
+              <li><a href="board_lists.html">공지사항</a></li>
+              <li><a href="contact.html">온라인문의</a></li>
+            </ul>
+          </div>
         </div>
-        -->
-        
-        <table class="table align-middle notice-table">
-          <thead>
-          </thead>
+      </nav>
+
+    </div>
+  </header>
+<section id="sub5_2" class="sub_top sub_top5">
+      <div class="sub_top_title">
+        <h2>고객지원</h2>
+      </div>
+  </section>
+<main class="eco-board-page">
+  <section class="sub contents">
+    <div class="inner">
+      <h2>게시판</h2>
+      <div class="board_container">
+        <table class="board_table">
+          <caption>게시글 목록</caption>
+          <thead><tr><th scope="col" class="list_num">번호</th><th scope="col" class="list_title">제목</th><th scope="col" class="list_date">등록일</th></tr></thead>
           <tbody>
-            <tr>
-              <td>10</td>
-              <td><span class="text-truncate">㈜에코산업개발의 홈페이지가 오픈되었습니다.</span></td>
-              <td><span class="date">2025-09-30</span> <span class="bar">|</span> <span class="views">123456</span></td>
-              <td>
-
-              </td>
-            </tr>
-            <tr>
-              <td>9</td>
-              <td><span class="text-truncate">㈜에코산업개발의 다양한 소식을 만나보세요.</span></td>
-              <td><span class="date">2025-09-23</span> <span class="bar">|</span> <span class="views">123456</span></td>
-              <td>
-
-              </td>
-            </tr>
+            <tr><td class="list_num">10</td><td class="list_title">㈜에코산업개발의 홈페이지가 오픈되었습니다.</td><td class="list_date">2025-09-30</td></tr>
+            <tr><td class="list_num">9</td><td class="list_title">㈜에코산업개발의 다양한 소식을 만나보세요.</td><td class="list_date">2025-09-23</td></tr>
           </tbody>
         </table>
       </div>
-
-      <div class="pagination mt-5">
-        <ul>
-          <li><a href="#"><i class="ri-arrow-left-double-line"></i></a></li>
-          <li><a href="#"><i class="ri-arrow-left-s-line"></i></a></li>
-          <li><a class="active" href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#"><i class="ri-arrow-right-s-line"></i></a></li>
-          <li><a href="#"><i class="ri-arrow-right-double-line"></i></a></li>
-        </ul>
-      </div>
     </div>
   </section>
+</main>
+<footer>
+    <div class="inner">
+      <div class="ft_top">
+        <img src="images/thema/common/logo_w.png" alt="(주)에코산업개발 로고" class="pt_logo">
+        <div class="ft_link">
+          <a href="etc/page/terms.html">이용약관</a>
+          <a href="etc/page/privacy.html">개인정보처리방침</a>
+          <a href="etc/page/reject.html">이메일무단수집거부</a>
+          <a href="etc/page/sitemap.html">사이트맵</a>
+        </div>
+      </div>
 
+      <div class="ft_info_text">
+        <p class="ft-item"><strong>본사</strong> 59559 전라남도 고흥군 도양읍 녹동 2길 41</p>
+        <p class="ft-item"><strong>공장</strong> 58155 전라남도 화순군 도곡면 도곡농공길 50</p>
+        <div class="ft-group">
+          <p class="ft-item"><strong>TEL.</strong> 061-374-9233</p>
+          <p class="ft-item"><strong>FAX.</strong> 061-374-9234</p>
+        </div>
+      </div>
 
+      <p class="copy">COPYRIGHT ⓒ 2025 (주)에코산업개발. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
 <div class="top_btn"><i class="ri-arrow-up-s-line"></i></div>
 
 <script src="js/lib/jquery-3.7.1.min.js"></script>
@@ -111,7 +151,6 @@
 <script src="js/lib/slick.min.js"></script>
 <script src="js/nav.js"></script>
 <script src="js/main.js"></script>
-<script src="js/modal.js"></script>
 <script src="js/btn.js"></script>
 
 </body>

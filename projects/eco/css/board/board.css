@@ -131,3 +131,20 @@
   .board_info strong {display: none;}
   .board_meta {font-size: 12px; gap: 10px;}
 }
+/* 게시판 목록: 썬시멘트와 동일한 번호·제목·등록일 구성 */
+.eco-board-page .board_container {width:100%; max-width:1280px; margin:20px auto;}
+.eco-board-page .board_table {width:100%; border-collapse:collapse; table-layout:fixed; color:#666; font-size:16px;}
+.eco-board-page .board_table thead {border-top:2px solid #777; border-bottom:1px solid #ccc;}
+.eco-board-page .board_table th {text-align:center; padding:18px 10px; font-weight:700;}
+.eco-board-page .board_table .list_num {width:10%;}
+.eco-board-page .board_table .list_date {width:20%;}
+.eco-board-page .board_table tbody tr {border-bottom:1px solid #ccc; transition:background .3s;}
+.eco-board-page .board_table tbody tr:hover {background:#fafafa;}
+.eco-board-page .board_table td {text-align:center; padding:15px 10px; overflow-wrap:anywhere;}
+.eco-board-page .board_table td.list_title {text-align:left;}
+@media (max-width:768px) {
+  .eco-board-page .board_table thead, .eco-board-page .board_table td.list_num {display:none;}
+  .eco-board-page .board_table tbody tr {display:flex; flex-wrap:wrap; padding:10px 0;}
+  .eco-board-page .board_table tbody tr:first-child {border-top:2px solid #777;}
+  .eco-board-page .board_table td.list_title, .eco-board-page .board_table td.list_date {display:block; width:100%; text-align:left; padding:5px 10px;}
+}

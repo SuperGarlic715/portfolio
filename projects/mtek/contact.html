@@ -34,12 +34,13 @@
   <link rel="stylesheet" href="plugin/aos/aos.css" />
   <link rel="stylesheet" href="plugin/swiper/swiper-bundle.min.css" />
 
-  <title>(주)엠텍정보기술</title>
+  <title>온라인 문의 | (주)엠텍정보기술</title>
 </head>
+<body>
 
   <header>
     <h1 class="logo">
-      <a href="/">
+      <a href="index.html">
         <img src="images/thema/common/logo_w.png" alt="흰색 로고" class="default">
         <img src="images/thema/common/logo.png" alt="로고" class="scrolled_logo">
       </a>
@@ -82,7 +83,10 @@
           </ul>
         </div>
         <div class="depth1">
-          <a href="sub4.html" class="no_sub"><span>연구개발</span></a>
+          <a href="#"><span>연구개발</span></a>
+          <ul class="depth2">
+            <li><a href="sub4.html">연구개발</a></li>
+          </ul>
         </div>
         <div class="depth1">
           <a href="#"><span>고객지원</span></a>
@@ -95,18 +99,105 @@
         </div>
       </div>
       <ul class="lang_btn">
-        <li class="active"><a href="/"><i class="ri-global-line"></i>KR</a></li>
-        <li><a href="/">EN</a></li>
+        <li class="active"><a href="index.html"><i class="ri-global-line"></i>KR</a></li>
+        <li><a href="index.html">EN</a></li>
       </ul>
     </nav>
   </header>
+<section id="sub4" class="sub_top sub_top5">
+      <div class="sub_top_title">
+          <h3 class="aos-init" data-aos="fade-in" data-aos-once="false">고객지원</h3>
+          <span class="aos-init" data-aos="fade-down" data-aos-once="false" data-aos-delay="500">CUSTOMER SUPPORT</span>
+      </div>
+  </section>
+<section class="sub contents mtek-inquiry">
+    <div class="inner">
+      <div class="sub_title">
+        <h2>온라인 문의</h2>
+      </div>
 
+      <form class="board_container" id="mtek-inquiry-form">
+        <div class="board_box">
+          <div class="board_agree_box">
+            <h3 class="board_agree_title">개인정보 수집·이용 동의</h3>
+            <div class="board_agree_content">
+              <p><strong>■ 수집하는 개인정보 항목</strong></p>
+              <p>회사는 1:1 문의 등을 위해 아래와 같은 개인정보를 수집하고 있습니다.</p>
+              <ul>
+                <li>· 수집항목 : 이름, 연락처, 이메일</li>
+                <li>· 수집방법 : 홈페이지(온라인 문의)</li>
+              </ul>
+              <p><strong>■ 개인정보의 수집 및 이용목적</strong></p>
+              <ul>
+                <li>· 서비스 제공 및 안내 목적</li>
+              </ul>
+              <p><strong>■ 개인정보의 보유 및 이용기간</strong></p>
+              <ul>
+                <li>· 개인정보 수집 및 이용목적이 달성된 후에는 예외없이 해당정보를 파기</li>
+              </ul>
+            </div>
+            <div class="board_agree_check">
+              <label><input type="checkbox" id="privacy_ok" name="agree" required> 개인정보 수집 및 이용에 동의합니다.</label>
+            </div>
+          </div><!--board_agree_box-->
 
-  
+          <div class="board_form_notice">
+            <p><span class="required">*</span> 는 필수 입력 항목입니다.</p>
+          </div>
 
-  
+          <table class="board_form_table">
+            <tbody>
+              <tr>
+                <th><label for="inquiry_name">이름 <span class="required">*</span></label></th>
+                <td><input type="text" name="inquiry_name" id="inquiry_name" class="input_text" required></td>
+              </tr>
+              <tr>
+                <th><label for="inquiry_tel">연락처</label></th>
+                <td>
+                  <input type="tel" name="inquiry_tel" id="inquiry_tel" class="input_text" aria-describedby="guide_phone">
+                  <span id="guide_phone" class="input_guide_text">※ 연락처는 필수 입력사항이 아니므로, 필요하다고 판단되는 경우에만 기재해 주시면 됩니다.</span>
+                </td>
+              </tr>
+                <tr>
+                  <th>이메일 <span class="required">*</span></th>
+                  <td><input type="email" name="inquiry_email" id="inquiry_email" aria-label="이메일" class="input_text" required></td>
+                </tr>
+                <tr>
+                  <th>제목 <span class="required">*</span></th>
+                  <td><input type="text" name="inquiry_title" id="inquiry_title" aria-label="제목" class="input_text input_title" required></td>
+                </tr>
+                <tr>
+                  <th>내용 <span class="required">*</span></th>
+                  <td><textarea name="inquiry_message" id="inquiry_message" aria-label="내용" class="textarea_text" required></textarea></td>
+                </tr>
+                <tr>
+                  <th>자동입력방지 <span class="required">*</span></th>
+                  <td>
+                    <div class="captcha_wrap">
+                      <span class="captcha_image">
+                      </span>
+                      <input type="text" name="inquiry_captcha" id="inquiry_captcha" aria-label="자동입력방지" class="input_text" placeholder="보안문자를 입력해 주세요">
 
-  <footer>
+                    </div>
+                  </td>
+                </tr>
+
+              </tbody>
+            </table>
+
+          </div>
+
+          <div class="board_detail_buttons">
+            <button type="submit" id="inquiry_save_btn" class="btn_cmn btn_submit">문의하기</button>
+            <button type="reset" class="btn_cmn btn_cancel">취소</button>
+          </div>
+      </div>
+
+</form><!--board_container-->
+
+    </div><!--inner-->
+  </section>
+<footer>
     <div class="inner">
       <div class="ft_top">
         <img src="images/thema/common/logo_w.png" alt="하단 로고" class="pt_logo">
@@ -154,5 +245,11 @@
       });
     });
   </script>
+<script>
+  const inquiryForm = document.querySelector('#mtek-inquiry-form');
+  inquiryForm.addEventListener('submit', event => {
+    event.preventDefault();
+  });
+</script>
 </body>
 </html>

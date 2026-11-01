@@ -1,9 +1,8 @@
 @charset "utf-8";
 
 /*공통*/
-200;300;400;500;600;700;800;900&display=swap');
 
-.product_title a{display: flex; justify-content: center; width: 200px; height: 45px; border-radius: 50px; color: #fff; font-weight: 500; margin-top: 30px; transition: all 0.3s ease;}
+.product_title a{display: flex; justify-content: center; width: 200px; height: 45px; padding: 10px 20px; border-radius: 50px; color: #fff; font-weight: 500; margin-top: 30px; transition: all 0.3s ease;}
 .product_title a {background: #40B4E1;}
 .point_gray, .bg_gray {background: #fbfbfb;}
 .title_row {display: flex; align-items: center; justify-content: space-around; gap: 40px; flex-wrap: wrap; margin-bottom: 100px;}
@@ -27,7 +26,7 @@
 .product_point_item p {text-align: center; font-size: 22px; color: #222; }
 
 .sub_contents.product_banner {padding-top: 0;}
-.product_banner {position: relative; height: 400px; background: url(../images/sub/product/product_banner.jpg) top/contain no-repeat; background-attachment: fixed; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; overflow: hidden;}
+.product_banner {position: relative; height: 400px; background: url(../images/sub/product/product_banner.jpg) top/cover no-repeat; background-attachment: fixed; display: flex; justify-content: center; align-items: center; text-align: center; color: #fff; overflow: hidden;}
 .product_banner::before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.4); z-index: 2;}
 
 .product_banner h2 {z-index: 3; font-size: 60px; font-family: 'Montserrat', sans-serif;}
@@ -63,7 +62,7 @@
 .point_cutting img {border-radius: 30px;}
 
 .product_point_text h3 {font-size: 24px; display: flex; justify-content: left; font-weight: 500; line-height: 2.5;}
-.product_point_text img {margin-right: 20px;}
+.product_point_text img {width: 20px; margin-right: 20px;}
 
 /*product bottom banner*/
 .sub_contents.product_bottom_banner {padding-top: 0;}
@@ -87,7 +86,7 @@
 .product_usage_list {display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 20px;}
 .product_usage_item {width: 32%;}
 .product_usage_item img {width: 100%;}
-.product_usage_item .usage_text {display: flex; align-items: flex-start; font-size: 24px; font-weight: 400; margin: 40px 0 50px 0; line-height: 1.5;}
+.product_usage_item .usage_text {display: flex; align-items: flex-start; font-size: 20px; font-weight: 400; margin: 40px 0 50px 0; line-height: 1.5;}
 .product_usage_list .product_usage_item:nth-child(5) p.usage_text {margin-bottom: 20px;}
 .product_usage_item .usage_number {width: 40px; height: 40px; color: #fff; background: #FB9C30; border-radius: 50px; font-weight: 700; font-size: 26px; display: flex; justify-content: center; align-items: center; margin-right: 15px; flex-shrink: 0; font-family: 'Pretendard GOV', sans-serif;}
 

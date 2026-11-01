@@ -12,8 +12,8 @@
       defaults: { ease: 'none' },
       scrollTrigger: {
         trigger: hero,
-        start: 'top top',
-        end: 'bottom top',
+        start: () => hero.getBoundingClientRect().top + window.scrollY,
+        end: () => hero.getBoundingClientRect().bottom + window.scrollY,
         scrub: 0.6,
         invalidateOnRefresh: true
       }

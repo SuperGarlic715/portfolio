@@ -46,11 +46,9 @@ $(document).ready(function () {
     }
   });
 
-  //PC: .no_sub 이외의 .depth1 > a 클릭 방지
+  //하위 메뉴가 있는 상위 항목은 화면 크기와 관계없이 링크 이동 방지
   $('.depth1 > a:not(.no_sub)').on('click', function (e) {
-    if (window.innerWidth > 1024) {
-      e.preventDefault();
-    }
+    e.preventDefault();
   });
 
   //모바일 메뉴 토글
@@ -92,4 +90,37 @@ $(document).ready(function () {
       $('.depth1').removeClass('active');
     }
   });
+});
+
+
+// Keep every desktop submenu and its background as tall as the longest list.
+$(function () {
+  const menu = document.querySelector('header .main_menu');
+  if (!menu) return;
+  const header = menu.closest('header');
+  let frame;
+  function updateMenuHeight() {
+    if (window.innerWidth <= 1024) return;
+    let height = 260;
+    menu.querySelectorAll('.depth2').forEach(function (list) {
+      const previousStyle = list.getAttribute('style');
+      list.style.setProperty('display', 'block', 'important');
+      list.style.setProperty('height', 'auto', 'important');
+      list.style.setProperty('visibility', 'hidden', 'important');
+      height = Math.max(height, Math.ceil(list.getBoundingClientRect().height));
+      if (previousStyle === null) list.removeAttribute('style');
+      else list.setAttribute('style', previousStyle);
+    });
+    header.style.setProperty('--mega-menu-height', height + 'px');
+  }
+  function scheduleUpdate() {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(updateMenuHeight);
+  }
+  menu.addEventListener('pointerenter', updateMenuHeight);
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('load', scheduleUpdate);
+  new MutationObserver(scheduleUpdate).observe(menu, {childList: true, subtree: true, characterData: true});
+  if (document.fonts) document.fonts.ready.then(scheduleUpdate);
+  updateMenuHeight();
 });

@@ -5,7 +5,7 @@
 
 .custom_select_wrap {position: relative; display: flex; align-items: center;}
 .custom_select_wrap select {appearance: none; -webkit-appearance: none; -moz-appearance: none; border: none; padding: 0 40px 0 20px; font-size: 16px; background: transparent; outline: none; cursor: pointer; height: 48px; font-family: inherit;}
-.custom_select_wrap::after {content: ""; position: absolute; width: 12px; height: 8px; right: -5px; top: 50%; transform: translateY(-50%); pointer-events: none; background: url('../images/sub/search_arrow.svg') no-repeat center / contain; box-sizing: border-box;}
+.custom_select_wrap::after {content: ""; position: absolute; width: 6px; height: 6px; right: 12px; top: 50%; transform: translateY(-70%) rotate(45deg); pointer-events: none; border-right: 1px solid currentColor; border-bottom: 1px solid currentColor; box-sizing: border-box;}
 
 .search_bar input[type="text"] {flex: 1; border: none; font-size: 16px; padding: 0 20px; outline: none; height: 48px; font-family: inherit; box-sizing: border-box;}
 .search_bar button {border: none; background: transparent; padding: 0 16px; cursor: pointer; height: 48px;}
@@ -140,3 +140,6 @@
 @media screen and (max-width: 370px) {
 
 }
+/* Brand placeholder for gallery items whose photography is not supplied. */
+.gallery-logo-placeholder{display:flex;align-items:center;justify-content:center;background:#fff;}
+.gallery-logo-placeholder>img{width:45%;max-width:180px;height:auto;object-fit:contain;}

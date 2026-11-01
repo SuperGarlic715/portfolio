@@ -773,8 +773,8 @@
   .topic_item {max-width: 100%; margin-top: 40px;}
   .topic_list_item {line-height:1.5;}
 
-  .imgcards.stats {gap:14px;}
-  .imgcards.stats .imgcard.stat {flex:0 0 100%; max-width:100%;}
+  .imgcards.stats {gap:14px; flex-direction:column; align-items:stretch;}
+  .imgcards.stats .imgcard.stat {flex:0 0 auto; width:100%; min-width:0; max-width:100%;}
   .imgcards.stats .stat_num {font-size:30px;}
 }
 
@@ -797,3 +797,10 @@
   .panel_features > div { flex: 1 1 100%; padding: 12px; font-size: 14px; }
 
 }
+/* Keep product viewers and descriptions within their shared flex row. */
+.product.thumb{gap:40px;}
+.product.thumb>.prd_viewer{flex:1 1 55%;min-width:0;}
+.product.thumb>.prd_info{flex:1 1 45%;min-width:0;}
+.product.thumb .prd_tab_content{min-width:0;flex:1;}
+.product.thumb .prd_tabs{flex-shrink:0;}
+@media(max-width:768px){.product.thumb>.prd_viewer,.product.thumb>.prd_info{flex:none;width:100%;}}

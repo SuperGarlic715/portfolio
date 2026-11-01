@@ -93,7 +93,7 @@
 
 /*예약 관련 버튼*/
 .resv-links {width: 100%; max-width: 170px; display: flex; justify-content: flex-start; flex-direction: column; gap: 10px; padding: 0;}
-.resv-item {border: 1px solid #ccc; padding: 20px 15px; height: 50px; color: #59371F; transition: .3s ease;}
+.resv-item {border: 1px solid #ccc; font-size: 18px; padding: 15px; height: 50px; color: #59371F; transition: .3s ease;}
 .resv-item i {color: #59371F; font-size: 24px; margin-right: 10px;}
 .resv-item:hover {background: #59371F; color: #fff;}
 .resv-item:hover i {color: #fff;}
@@ -190,7 +190,7 @@
   .s1 .news {max-width: none; flex: 0 0 100%;}
   .cal {max-width: none; width: 100%; margin: 0; padding: 0 12px;}
   .resv-links {max-width: none; width: 100%; flex-direction: row; gap: 12px;}
-  .resv-item {flex: 1; display: flex; align-items: center; justify-content: center; height: 56px; padding: 5px 12px;}
+  .resv-item {flex: 1; display: flex; align-items: center; justify-content: center; height: 56px; padding: 15px;}
   .resv-item i {margin-right: 8px;}
 
   .s4 .inner {flex-direction: column;}
