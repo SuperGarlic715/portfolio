@@ -248,7 +248,7 @@
 
 /* Finished three-device mockup images do not need additional CSS device frames. */
 .mockup--rendered-devices{background:#eef3f7;}
-.mockup--rendered-devices>img{width:100%;height:100%;object-fit:contain;object-position:center;}
+.mockup--rendered-devices>img{width:100%;height:100%;object-fit:cover;object-position:center;}
 
 /* Fill only the uploaded MS Industry and Hiox thumbnail cards. */
 .mockup--cover>img{object-fit:cover;}
