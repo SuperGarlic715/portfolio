@@ -20,9 +20,9 @@
   --ink: #16202A;        /* 본문 글자 */
   --muted: #5A6774;      /* 보조 글자 */
   --line: #D8DFE6;       /* 구분선 */
-  --button-blue: #1913F0;
-  --button-blue-hover: #130EBD;
-  --select: #1913F0;     /* 선택 박스, 링크, 포커스 */
+  --button-blue: #0D7FD9;
+  --button-blue-hover: #0863AD;
+  --select: #0D7FD9;     /* 선택 박스, 링크, 포커스 */
   --select-ink: #FFFFFF; /* select 위 글자 */
   --todo: #B54708;       /* 채워야 할 자리 표시 */
 
@@ -43,8 +43,8 @@
     --ink: #E7ECF1;
     --muted: #98A6B3;
     --line: #2B3743;
-    --select: #1913F0;
-    --select-ink: #FFFFFF;
+    --select: #4CB0FF;
+    --select-ink: #06121C;
     --todo: #F5A35B;
     color-scheme: dark;
   }
@@ -55,8 +55,8 @@
   --ink: #E7ECF1;
   --muted: #98A6B3;
   --line: #2B3743;
-  --select: #1913F0;
-  --select-ink: #FFFFFF;
+  --select: #4CB0FF;
+  --select-ink: #06121C;
   --todo: #F5A35B;
   color-scheme: dark;
 }
