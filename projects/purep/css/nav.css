@@ -17,7 +17,7 @@ header .menu .depth1 > li {position: relative; margin: 0 50px; padding: 10px 0;}
 header .menu .depth1 > li > p {display: block; font-weight: 500; font-size: 20px; color: #fff;}
 
 header .menu .depth2 {width: 150px; border-radius: 20px; position: absolute; top: 100%; left: -40px; background: #fff; display: none; z-index: 100; overflow: hidden;}
-header .menu .depth2 li a {display: block; padding: 8px 20px; white-space: nowrap; color: #666; transition: background-color 0.1s ease, color 0.1s ease;}
+header .menu .depth2 li a {font-size: 18px; display: block; padding: 8px 20px; white-space: nowrap; color: #666; transition: background-color 0.1s ease, color 0.1s ease;}
 
 header .menu .depth2 li a:hover {background-color: #006FBC; color: #fff;}
 
@@ -55,7 +55,7 @@ header .menu_toggle.active .menu_btn:nth-child(3) {transform: rotate(-45deg) tra
   header .menu .depth1 > li > p {display: block; width: 100%; padding: 14px 20px; color: #000; font-size: 18px; position: relative;}
 
   header .menu .depth2 {width: 100%; position: static; display: none; flex-direction: column; border-radius: 0; background: #f9f9f9; overflow: visible;}
-  header .menu .depth2 li a {padding-left: 30px; color: #333; font-size: 14px;}
+  header .menu .depth2 li a {padding-left: 30px; color: #333; font-size: 18px;}
 
   header .menu .depth1 > li.active .depth2 {display: flex;}
 }
