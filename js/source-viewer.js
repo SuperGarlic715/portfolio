@@ -138,7 +138,7 @@
     opener = button;
     const currentGeneration = ++generation;
     project = button.dataset.sourceProject;
-    title.textContent = `${button.closest('.work_item').querySelector('.work_title').textContent} · SOURCE CODE`;
+    title.textContent = `${button.closest('.work_item, .archive-item').querySelector('.work_title, h3').textContent} · SOURCE CODE`;
     tab.textContent = '파일 선택';
     pathLabel.textContent = `projects / ${project}`;
     status.textContent = '파일 목록을 불러오는 중…';
