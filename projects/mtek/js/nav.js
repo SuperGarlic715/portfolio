@@ -46,11 +46,9 @@ $(document).ready(function () {
     }
   });
 
-  //PC: .no_sub 이외의 .depth1 > a 클릭 방지
+  //하위 메뉴가 있는 상위 항목은 화면 크기와 관계없이 링크 이동 방지
   $('.depth1 > a:not(.no_sub)').on('click', function (e) {
-    if (window.innerWidth > 1024) {
-      e.preventDefault();
-    }
+    e.preventDefault();
   });
 
   //모바일 메뉴 토글
