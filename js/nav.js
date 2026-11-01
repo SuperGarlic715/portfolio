@@ -89,11 +89,15 @@
     .map((a) => document.querySelector(a.getAttribute('href')))
     .filter(Boolean);
 
+  // The featured case study continues the WORK section.
+  const featuredProject = document.getElementById('purep-feature');
+  if (featuredProject) sections.push(featuredProject);
+
   if ('IntersectionObserver' in window && sections.length) {
     const io = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (!entry.isIntersecting) return;
-        const id = '#' + entry.target.id;
+        const id = entry.target.id === 'purep-feature' ? '#work' : '#' + entry.target.id;
         links.forEach((a) => {
           const on = a.getAttribute('href') === id;
           a.classList.toggle('active', on);
