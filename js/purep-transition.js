@@ -1,4 +1,4 @@
-/* Blend WORK into the white featured project without moving its content. */
+/* Keep the WORK spacer clear, then fade it to white as PUREP approaches. */
 (() => {
   const work = document.querySelector('#work');
   const feature = document.querySelector('#purep-feature');
@@ -11,8 +11,8 @@
       ease: 'none',
       scrollTrigger: {
         trigger: feature,
-        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - 240,
-        end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight * 0.65,
+        start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - parseFloat(getComputedStyle(work).paddingBottom) * 0.55,
+        end: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight,
         scrub: 0.8,
         invalidateOnRefresh: true
       }
