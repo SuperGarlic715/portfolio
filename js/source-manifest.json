@@ -225,6 +225,7 @@
   ],
   "suncement": [
     "_.html",
+    "board_lists.html",
     "career_lists.html",
     "certificate.html",
     "css/board/board.css",
