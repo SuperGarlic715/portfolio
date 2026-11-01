@@ -91,3 +91,36 @@ $(document).ready(function () {
     }
   });
 });
+
+
+// Keep every desktop submenu and its background as tall as the longest list.
+$(function () {
+  const menu = document.querySelector('header .main_menu');
+  if (!menu) return;
+  const header = menu.closest('header');
+  let frame;
+  function updateMenuHeight() {
+    if (window.innerWidth <= 1024) return;
+    let height = 260;
+    menu.querySelectorAll('.depth2').forEach(function (list) {
+      const previousStyle = list.getAttribute('style');
+      list.style.setProperty('display', 'block', 'important');
+      list.style.setProperty('height', 'auto', 'important');
+      list.style.setProperty('visibility', 'hidden', 'important');
+      height = Math.max(height, Math.ceil(list.getBoundingClientRect().height));
+      if (previousStyle === null) list.removeAttribute('style');
+      else list.setAttribute('style', previousStyle);
+    });
+    header.style.setProperty('--mega-menu-height', height + 'px');
+  }
+  function scheduleUpdate() {
+    cancelAnimationFrame(frame);
+    frame = requestAnimationFrame(updateMenuHeight);
+  }
+  menu.addEventListener('pointerenter', updateMenuHeight);
+  window.addEventListener('resize', scheduleUpdate);
+  window.addEventListener('load', scheduleUpdate);
+  new MutationObserver(scheduleUpdate).observe(menu, {childList: true, subtree: true, characterData: true});
+  if (document.fonts) document.fonts.ready.then(scheduleUpdate);
+  updateMenuHeight();
+});
