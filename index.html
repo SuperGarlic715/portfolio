@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/thema/nav.css" />
   <link rel="stylesheet" href="css/thema/main.css" />
   <link rel="stylesheet" href="css/thema/footer.css" />
+  <link rel="stylesheet" href="css/thema/source-viewer.css" />
 
   <title>KIM HA NEUL | Web Publisher Portfolio</title>
 </head>
@@ -165,7 +166,7 @@
             </ul>
             <div class="work_links">
               <a class="btn btn_fill" href="http://www.suncement.kr/" target="_blank" rel="noopener">사이트 바로가기</a>
-              <a class="btn btn_line" href="https://github.com/SuperGarlic715/portfolio/blob/main/projects/suncement/index.html" target="_blank" rel="noopener">코드 보기</a>
+              <button class="btn btn_line" type="button" data-source-project="suncement" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
             </div>
           </div>
         </article>
@@ -197,7 +198,7 @@
             </ul>
             <div class="work_links">
               <a class="btn btn_fill" href="http://www.mtekinfo.kr/" target="_blank" rel="noopener">사이트 바로가기</a>
-              <a class="btn btn_line" href="https://github.com/SuperGarlic715/portfolio/blob/main/projects/mtek/index.html" target="_blank" rel="noopener">코드 보기</a>
+              <button class="btn btn_line" type="button" data-source-project="mtek" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
             </div>
           </div>
         </article>
@@ -234,7 +235,7 @@
 
             <div class="work_links">
               <a class="btn btn_fill" href="https://www.bkcc.co.kr/" target="_blank" rel="noopener">사이트 바로가기</a>
-              <a class="btn btn_line" href="https://github.com/SuperGarlic715/portfolio/blob/main/projects/bugok/index.html" target="_blank" rel="noopener">코드 보기</a>
+              <button class="btn btn_line" type="button" data-source-project="bugok" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
             </div>
           </div>
         </article>
@@ -270,7 +271,7 @@
 
             <div class="work_links">
               <a class="btn btn_fill" href="http://www.eco-id.co.kr/" target="_blank" rel="noopener">사이트 바로가기</a>
-              <a class="btn btn_line" href="https://github.com/SuperGarlic715/portfolio/blob/main/projects/eco/index.html" target="_blank" rel="noopener">코드 보기</a>
+              <button class="btn btn_line" type="button" data-source-project="eco" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
             </div>
           </div>
         </article>
@@ -306,7 +307,7 @@
 
             <div class="work_links">
               <a class="btn btn_fill" href="projects/purep/index.html" target="_blank" rel="noopener" data-demo>사이트 열기</a>
-              <a class="btn btn_line" href="https://github.com/SuperGarlic715/portfolio/blob/main/projects/purep/index.html" target="_blank" rel="noopener">코드 보기</a>
+              <button class="btn btn_line" type="button" data-source-project="purep" aria-haspopup="dialog" aria-controls="source-viewer">코드 보기</button>
             </div>
           </div>
         </article>
@@ -417,9 +418,32 @@
 
   <div class="toast" role="status" aria-live="polite"></div>
 
+  <dialog class="source-viewer" id="source-viewer" aria-labelledby="source-title">
+    <div class="source-shell">
+      <header class="source-header">
+        <button class="source-tree-toggle" type="button" aria-controls="source-sidebar" aria-expanded="false">파일</button>
+        <h2 id="source-title">SOURCE CODE</h2>
+        <span class="source-badge">읽기 전용</span>
+        <button class="source-close" type="button" aria-label="소스 코드 창 닫기" autofocus>×</button>
+      </header>
+      <div class="source-layout">
+        <aside class="source-sidebar" id="source-sidebar" aria-label="프로젝트 파일 탐색">
+          <p class="source-sidebar-label">PROJECT FILES</p>
+          <nav class="source-tree" aria-label="소스 파일 목록"></nav>
+        </aside>
+        <section class="source-editor" aria-label="소스 코드">
+          <div class="source-editor-bar"><span class="source-tab">index.html</span><span class="source-path"></span></div>
+          <pre class="source-pre" tabindex="0" aria-label="읽기 전용 소스 코드"><code class="source-code"></code></pre>
+          <p class="source-status" role="status"></p>
+        </section>
+      </div>
+    </div>
+  </dialog>
+
   <script src="js/mesh-gradient.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/source-viewer.js"></script>
 </body>
 
 </html>
