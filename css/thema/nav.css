@@ -51,8 +51,8 @@ body::before {display:none;}
 .logo {font-family:var(--font-display);font-size:21px;font-weight:800;letter-spacing:-.7px;color:#171717;}
 .gnb .depth1 {gap:clamp(42px,7vw,80px);}
 .gnb .depth1 a {font-family:var(--font-kr);font-size:17px;font-weight:500;color:#171717;}
-.gnb .depth1 a:hover,.gnb .depth1 a.active {color:#1913F0;}
-.gnb .depth1 a.active::after {background:#1913F0;}
+.gnb .depth1 a:hover,.gnb .depth1 a.active {color:#0030E7;}
+.gnb .depth1 a.active::after {background:#0030E7;}
 @media(max-width:1100px){.gnb .depth1{gap:35px;}}
 @media(max-width:768px){
  .header,.nav-inner{height:76px;}
