@@ -797,3 +797,10 @@
   .panel_features > div { flex: 1 1 100%; padding: 12px; font-size: 14px; }
 
 }
+/* Keep product viewers and descriptions within their shared flex row. */
+.product.thumb{gap:40px;}
+.product.thumb>.prd_viewer{flex:1 1 55%;min-width:0;}
+.product.thumb>.prd_info{flex:1 1 45%;min-width:0;}
+.product.thumb .prd_tab_content{min-width:0;flex:1;}
+.product.thumb .prd_tabs{flex-shrink:0;}
+@media(max-width:768px){.product.thumb>.prd_viewer,.product.thumb>.prd_info{flex:none;width:100%;}}
