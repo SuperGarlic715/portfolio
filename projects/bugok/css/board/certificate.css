@@ -1,0 +1,25 @@
+/*certificate -> crt로 변경*/
+/*언더바에서 하이픈으로 변경*/
+.crt-list{display:flex; flex-wrap:wrap; gap:20px; justify-content:flex-start;}
+.crt-item{flex:0 0 calc((100% - 120px)/5); max-width:calc((100% - 120px)/5); margin-bottom: 20px;}
+.crt-list .crt-item:last-child {margin-right: auto;}
+
+.crt-img {width: 100%; border: 1px solid #ccc; border-radius: 10px; overflow: hidden;}
+.crt-img img {width: 100%; height: auto; min-height: 335px;}
+
+.crt-text {margin-top: 20px; text-align: center;}
+.crt-name {font-size: 16px; color: #333; font-weight: 300; margin-bottom: 5px;}
+.crt-bold {font-weight: 700; color: #000;}
+
+@media (max-width: 1240px) {
+  .certificate.html-list{justify-content:center}
+  .crt-item {margin-left:0; flex:0 0 calc((100% - 40px)/3); max-width:calc((100% - 40px)/3)}
+}
+
+@media (max-width: 768px) {
+  .crt-item {flex:0 0 calc((100% - 20px)/2); max-width:calc((100% - 20px)/2)}
+}
+
+@media (max-width: 480px) {
+  .crt-item {flex:0 0 100%; max-width:100%;}
+}

@@ -1,0 +1,79 @@
+.required {color: #ff4242; font-size: 20px;}
+
+.board_form_notice {margin: 60px 0 10px;}
+.board_form_notice p {font-size: 18px; text-align: left; color: #555;}
+
+.board_form_table {width: 100%; border-collapse: collapse; table-layout: fixed; border-top: 1px solid #444; border-bottom: 1px solid #ccc;}
+.board_form_table th, .board_form_table td {padding: 15px; font-size: 18px; color: #555; text-align: left; box-sizing: border-box; border-top: 1px solid #ccc; vertical-align: middle;}
+.board_form_table th {width: 13%; background: #f5f5f5; font-weight: 600; color: #222;}
+.board_form_table td {background: #fff; overflow: hidden;}
+
+.input_guide_text {margin-left: 10px; font-size: 16px; color: #828a8f;}
+
+.board_form_table input[type="text"],
+.board_form_table input[type="email"],
+.board_form_table input[type="password"],
+.board_form_table input[type="tel"] {width: 100%; min-width: 110px; height: 38px; font-size: 16px; color: #222; border: 1px solid #d0d0d0; padding: 0 12px; box-sizing: border-box; background: #fff;}
+
+.board_form_table input.input_text.input_title {width: 100%;}
+.board_form_table textarea {width: 100%; min-height: 300px; padding: 10px 12px; box-sizing: border-box; color: #222; font-size: 14px; line-height: 26px; border: 1px solid #d0d0d0; font-family: 'Pretendard', sans-serif; background: #fff;}
+
+.radio_row {display: flex; align-items: center; gap: 12px; flex-wrap: wrap;}
+.radio_row label {display: inline-flex; align-items: center; gap: 10px; font-size: 16px; white-space: nowrap;}
+
+.member-toggle {display: inline-flex; gap: 10px; flex-wrap: wrap;}
+.member-pill {position: relative;}
+.member-pill input {position: absolute; opacity: 0; pointer-events: none;}
+.member-pill span {display: inline-flex; align-items: center; justify-content: center; min-width: 90px; height: 40px; padding: 0 22px; border-radius: 999px; background: #f1f1f1; color: #444; font-size: 18px; font-weight: 600; cursor: pointer; transition: .2s;}
+.member-pill input:checked + span {background: #b19a88; color: #fff;}
+
+.board_detail_buttons {display: flex; justify-content: flex-end; margin: 24px 0 0; gap: 12px;}
+.btn_cmn {min-width: 110px; height: 38px; padding: 0 10px; box-sizing: border-box; font-size: 14px; cursor: pointer; transition: all 0.3s; display: inline-flex; align-items: center; justify-content: center; text-decoration: none; border: 0;}
+.board_detail_buttons .btn_cancel {color: #fff; background: #847B74;}
+.board_detail_buttons .btn_cancel:hover {background: #444241;}
+.board_detail_buttons .btn_submit {background: #55453A; color: #fff;}
+.board_detail_buttons .btn_submit:hover {background: #795946;}
+.btn_small {background: var(--brand-color); font-size: 16px; color: #fff; transition: .3s ease;}
+.btn_small:hover {background: #2b190c;}
+
+.rsv-comp-table {width: 100%; table-layout: fixed;}
+
+.rsv-comp-table .form_inline {display: flex; align-items: center; gap: 10px; flex-wrap: wrap;}
+.rsv-comp-table .form_inline input[type="text"] {width: 200px; max-width: 100%;}
+.rsv-comp-table .btn_small {flex: 0 0 auto; white-space: nowrap;}
+
+.rsv-comp-table col.c-th {width: 10%;}
+.rsv-comp-table col.c-type {width: 21%;}
+.rsv-comp-table col.c-no {width: 35%;}
+.rsv-comp-table col.c-name {width: 25%;}
+
+.form_inline {vertical-align: center !important;}
+
+.input_full.wide {max-width: 0;}
+.input_full {max-width: 320px !important;}
+
+@media (max-width: 1200px) {
+  .rsv-comp-table colgroup {display: none;}
+  .rsv-comp-table col {width: auto !important;}
+  .rsv-comp-table .member-toggle {width: 100%;}
+  .rsv-comp-table .member-pill span {min-width: 80px; font-size: 16px; height: 38px; padding: 0 16px;}
+  .rsv-comp-table .form_inline {width: 100%;}
+  .rsv-comp-table .form_inline input[type="text"] {width: 100%;}
+  .rsv-comp-table .btn_small {width: 100%; justify-content: center;}
+}
+@media (max-width:768px) {
+  .board_form_notice {margin: 40px 0 10px;} 
+  .board_form_notice p {font-size: 16px;}
+  .board_form_table th, .board_form_table td {padding: 16px 12px; font-size: 16px;} 
+  .board_form_table input[type="text"], .board_form_table input[type="email"], 
+  .board_form_table input[type="password"], .board_form_table input[type="tel"] {width: 100%;}
+
+  
+
+}
+
+@media (max-width:525px) {
+  .board_form_table th {display: block; width: 100%;}
+  .board_form_table td {display: block;} 
+  .board_form_table input, .board_form_table textarea {width: 100%;}
+}

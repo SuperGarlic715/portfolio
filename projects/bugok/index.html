@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="부곡컨트리클럽" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="부곡컨트리클럽" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/lib/remixicon/remixicon.css" />
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lib/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/thema/basic.css" />
+  <link rel="stylesheet" href="css/thema/nav.css" />
+  <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/sub.css" />
+  <link rel="stylesheet" href="css/thema/reserved.css" />
+  <link rel="stylesheet" href="css/thema/modal.css" />
+  <link rel="stylesheet" href="css/thema/footer.css">
+  <link rel="stylesheet" href="css/board/board.css" />
+  <link rel="stylesheet" href="css/board/certificate.css" />
+  <link rel="stylesheet" href="css/board/qna.css" />
+  <link rel="stylesheet" href="css/form/form.css">
+  <link rel="stylesheet" href="css/etc/etc.css" />
+
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/lib/swiper-bundle.min.js"></script>
+
+  <title>부곡컨트리클럽</title>
+</head>
+
+<body>
+  <header>
+    <div class="nav-inner">
+      <h1 class="logo">
+        <a href="/">
+          <img src="images/thema/common/logo_w.svg" alt="로고" class="default">
+          <img src="images/thema/common/logo.svg" alt="로고" class="scrolled_logo">
+        </a>
+      </h1>
+
+      <nav id="gnb" class="menu">
+        <div class="main_menu">
+          <div class="depth1">
+            <a href="#"><span>클럽소개</span></a>
+            <ul class="depth2">
+              <li><a href="sub1_1.html">클럽개요</a></li>
+              <li><a href="sub1_2.html">인사말</a></li>
+              <li><a href="sub1_3.html">연혁</a></li>
+              <li><a href="sub1_4.html">전화번호 안내</a></li>
+              <li><a href="sub1_5.html">찾아 오시는 길</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>코스안내</span></a>
+            <ul class="depth2">
+              <li><a href="sub2_1.html">전체코스</a></li>
+              <li><a href="sub2_2.html">코스공략</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>클럽하우스</span></a>
+            <ul class="depth2">
+              <li><a href="sub3_1.html">클럽하우스</a></li>
+              <li><a href="sub3_2.html">그릴</a></li>
+              <li><a href="sub3_3.html">그늘집</a></li>
+              <li><a href="sub3_4.html">프로샵</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>예약안내</span></a>
+            <ul class="depth2">
+              <li><a href="sub4_1.html">예약안내</a></li>
+              <li><a href="sub4_2.html">요금안내</a></li>
+              <li><a href="sub4_3.html">실시간예약</a></li>
+              <li><a href="sub4_4.html">예약 확인/취소</a></li>
+              <li><a href="sub4_5.html">예약 취소 내역</a></li>
+              <li><a href="sub4_6.html">동반자 변경</a></li>
+              <li><a href="sub4_7.html">대회안내</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>고객서비스</span></a>
+            <ul class="depth2">
+              <li><a href="board_lists.html">NEWS & EVENT</a></li>
+              <li><a href="qna.html">자주하는질문</a></li>
+              <li><a href="board_lists.html">자료실</a></li>
+              <li><a href="gallery_lists.html">C.C 갤러리</a></li>
+            </ul>
+          </div>
+          <div class="depth1">
+            <a href="#"><span>회원관리</span></a>
+            <ul class="depth2">
+              <li><a href="sub5_1.html">운영 및 이용지침</a></li>
+              <li><a href="sub5_2.html">입회안내</a></li>
+              <li><a href="sub5_3.html">홀인원 기록</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <ul class="util-wrap">
+        <li><a href="member/login.html" class="util">로그인</a></li>
+        <span class="divider">|</span>
+        <li><a href="member/join.html" class="util">비회원가입</a></li>
+
+        <li class="menu_toggle" id="menuToggle" aria-label="메뉴 열기" role="button" tabindex="0">
+          <i class="ri-align-right icon-open"></i>
+          <i class="ri-close-line icon-close"></i>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+  <section id="mainVisual" class="visual">
+  <!-- 2023-02-23 - 영상 배경 추가 -->
+  <div class="video-background">
+    <video autoplay muted loop playsinline poster="images/thema/main/visual_poster.jpg">
+      <source src="video/main_visual.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div class="title">
+    <p>좋은 사람과 함께하는 공간</p>
+    <h2>부곡컨트리클럽</h2>
+  </div>
+
+  <div class="scroll-indicator">
+    <span class="label">SCROLL</span>
+    <span class="mouse"><i class="wheel"></i></span>
+  </div>
+</section>
+
+  <section id="main_board" class="sec s1">
+    <div class="inner row">
+      <div class="news">
+        <div class="title">
+          <h2>공지사항</h2>
+          <a href="board/board_lists.html" class="more_btn">VIEW MORE <i class="ri-arrow-right-s-line"></i></a>
+        </div>
+
+        <div class="news-box">
+          <!--
+          <div class="no_data">
+            등록된 공지사항이 없습니다.
+          </div>
+          -->
+          
+          <ul class="news-list">
+            <li class="news-item">
+              <a href="#" class="news-title">12월 비회원 요금 안내</a>
+              <span class="news-date">2025-11-14</span>
+            </li>
+            <li class="news-item">
+              <a href="#" class="news-title">10,11월 비회원 요금 안내</a>
+              <span class="news-date">2025-10-21</span>
+            </li>
+            <li class="news-item">
+              <a href="#" class="news-title">9월 5주차 단체행사로 인한 예약안내</a>
+              <span class="news-date">2025-09-18</span>
+            </li>
+            <li class="news-item">
+              <a href="#" class="news_title">9,10월 비회원 요금안내</a>
+              <span class="news-date">2025-09-18</span>
+            </li>
+            <li class="news-item">
+              <a href="#" class="news-title">9,10월 비회원 요금안내</a>
+              <span class="news-date">2025-09-18</span>
+            </li>
+            <li class="news-item">
+              <a href="#" class="notice-title">추석연휴.공휴일 예약안내</a>
+              <span class="news-date">2025-09-09</span> 
+            </li>
+          </ul>
+          
+          <div class="num-group">
+            <a href="tel:+82-55-520-5500,5001" class="num-item tell"><i class="ri-phone-fill"></i>예약전화<strong>055-520-5500. 5001</strong></a>
+            <div class="num-item fax"><i class="ri-printer-fill"></i>FAX<strong>055-521-0711</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cal">
+        <div class="cal_head">
+          <button type="button" class="cal_nav cal_prev" aria-label="이전 달"><i class="ri-arrow-left-s-line"></i></button>
+          <strong class="cal_ym">2026.01</strong>
+          <button type="button" class="cal_nav cal_next" aria-label="다음 달"><i class="ri-arrow-right-s-line"></i></button>
+        </div>
+
+        <div class="cal_dow">
+          <span class="cal_dow_item is-sun">일</span><span class="cal_dow_item">월</span><span class="cal_dow_item">화</span><span class="cal_dow_item">수</span><span class="cal_dow_item">목</span><span class="cal_dow_item">금</span><span class="cal_dow_item is-sat">토</span>
+        </div>
+
+        <div class="cal_grid">
+          <span class="cal_cell is-empty"></span>
+          <span class="cal_cell is-empty"></span>
+          <span class="cal_cell is-empty"></span>
+          <span class="cal_cell is-empty"></span>
+
+          <a class="cal_cell is-fast" href="#"><span class="cal_day">01</span></a>
+          <a class="cal_cell is-fast" href="#"><span class="cal_day">02</span></a>
+          <a class="cal_cell is-sat is-fast" href="#"><span class="cal_day">03</span></a>
+
+          <a class="cal_cell is-sun is-fast" href="#"><span class="cal_day">04</span></a>
+          <a class="cal_cell is-fast" href="#"><span class="cal_day">05</span></a>
+          <a class="cal_cell is-fast" href="#"><span class="cal_day">06</span></a>
+          <a class="cal_cell is-fast" href="#"><span class="cal_day">07</span></a>
+          <a class="cal_cell is-selected" href="#"><span class="cal_day">08</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">09</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell is-sat" href="#"><span class="cal_day">10</span><span class="cal_meta">116팀</span></a>
+
+          <a class="cal_cell is-sun" href="#"><span class="cal_day">11</span><span class="cal_meta">53팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">12</span><span class="cal_meta">116팀</span><span class="cal_dot" aria-hidden="true"></span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">13</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">14</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">15</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">16</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell is-sat" href="#"><span class="cal_day">17</span><span class="cal_meta">116팀</span></a>
+
+          <a class="cal_cell is-sun" href="#"><span class="cal_day">18</span><span class="cal_meta">53팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">19</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">20</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">21</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">22</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">23</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell is-sat" href="#"><span class="cal_day">24</span><span class="cal_meta">116팀</span></a>
+
+          <a class="cal_cell is-sun" href="#"><span class="cal_day">25</span><span class="cal_meta">53팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">26</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">27</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">28</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">29</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell" href="#"><span class="cal_day">30</span><span class="cal_meta">116팀</span></a>
+          <a class="cal_cell is-sat" href="#"><span class="cal_day">31</span><span class="cal_meta">116팀</span></a>
+        </div>
+      </div>
+
+      <div class="resv-links">
+        <a href="sub4_3.html" class="resv-item"><i class="ri-ball-pen-fill"></i>예약하기</a>
+        <a href="sub4_4.html" class="resv-item"><i class="ri-survey-fill"></i>예약확인/취소</a>
+        <a href="sub4_1.html" class="resv-item"><i class="ri-file-list-2-fill"></i>예약안내</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec s2">
+    <div class="inner">
+      <div class="weather">
+        <div class="weather-item">
+          <span class="weather-date">12.08(월)</span>
+          <i class="weather-icon is-sunny"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.09(화)</span>
+          <i class="weather-icon is-cloudy"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.10(수)</span>
+          <i class="weather-icon is-partly-cloudy"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.11(목)</span>
+          <i class="weather-icon is-overcast"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.12(금)</span>
+          <i class="weather-icon is-windy"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.13(토)</span>
+          <i class="weather-icon is-snow"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+
+        <div class="weather-item">
+          <span class="weather-date">12.14(일)</span>
+          <i class="weather-icon is-rain"></i>
+          <span class="weather-temp">4.0°C / 9.0°C</span>
+          <span class="weather-wind">5.0m/s</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec s3">
+    <div class="inner">
+      <h2>부곡컨트리클럽에서 제공하는 이벤트를 확인하세요.</h2>
+
+      <div class="event-wrap">
+        <button type="button" class="event_nav event_prev" aria-label="이전"></button>
+
+        <div class="swiper event-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a class="event-card" href="#"><img src="images/thema/main/event01.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a class="event-card" href="#"><img src="images/thema/main/event02.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a class="event-card" href="#"><img src="images/thema/main/event03.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a class="event-card" href="#"><img src="images/thema/main/event01.jpg" alt=""></a></div>
+            <div class="swiper-slide"><a class="event-card" href="#"><img src="images/thema/main/event02.jpg" alt=""></a></div>
+          </div>
+        </div>
+
+        <button type="button" class="event_nav event_next" aria-label="다음"></button>
+      </div>
+      <a href="" class="more_btn wht">VIEW MORE <i class="ri-arrow-right-s-line"></i></a>
+    </div>
+  </section>
+
+  <section class="sec s4">
+    <div class="inner row">
+
+      <a class="fea-card is-course" href="#">
+        <div class="fea-txt">
+          <strong class="fea-tit">코스공략</strong>
+          <span class="fea-desc">섬세한 분석으로 완성되는 코스 공략</span>
+        </div>
+        <span class="fea-more">VIEW MORE</span>
+      </a>
+
+      <a class="fea-card is-club" href="#">
+        <div class="fea-txt">
+          <strong class="fea-tit">클럽하우스</strong>
+          <span class="fea-desc">머무는 시간까지 품격이 되는 공간</span>
+        </div>
+        <span class="fea-more">VIEW MORE</span>
+      </a>
+    </div>
+  </section>
+
+  <div class="modal fade promo-modal" id="promoModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="promo-grid">
+            <a href="" class="promo-item"><img src="images/popup/popup01.jpg" alt=""></a>
+          </div>
+        </div>
+
+        <div class="modal-footer promo-footer">
+          <label class="promo-check">
+            <span>오늘 하루 보지 않기</span>
+            <input type="checkbox">
+          </label>
+
+          <button type="button" class="promo-btn" data-bs-dismiss="modal">
+            닫기</i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="inner">
+      <div class="ft_top">
+        <img src="images/thema/common/logo_w.svg" alt="부곡컨트리클럽 로고" class="pt_logo">
+        <div class="ft_link">
+          <a href="etc/terms.html">이용약관</a>
+          <a href="etc/privacy.html">개인정보처리방침</a>
+          <a href="etc/reject.html">이메일무단수집거부</a>
+          <a href="etc/sitemap.html">사이트맵</a>
+        </div>
+      </div>
+
+      <div class="ft-wrap">
+        <div class="ft-left">
+          <div class="ft-group">
+            <p class="ft-item"><span><strong>ADDRESS</strong> 50365 경상남도 창녕군 부곡면 온천로 445</span></p>
+          </div>
+
+          <div class="ft-group">
+            <p class="ft-item"><strong>TEL</strong> 055-521-0707</span></p>
+            <p class="ft-item"><strong>FAX</strong> 055-521-0711</p>
+            <p class="ft-item"><strong>E-MAIL</strong> webman@bkcc.co.kr</p>
+          </div>
+
+          <p class="copy">COPYRIGHT © 2026 부곡컨트리클럽. ALL RIGHTS RESERVED.</p>
+        </div>
+        <div class="ft-right">
+          <div class="call">예약전화<a href="tel:055-520-5000,5001">055-520-5000~1</a></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    $(function () {
+      const $modal = $("#promoModal");
+      if (!$modal.length) return;
+
+      $modal.modal({
+        backdrop: "static",
+        keyboard: false
+      });
+
+      $modal.modal("show");
+    });
+  </script>
+
+  <div class="top_btn"><i class="ri-arrow-up-s-line"></i></div>
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/btn.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="부곡컨트리클럽" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="부곡컨트리클럽" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="website" />
+
+  <!-- 파비콘 -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/lib/remixicon/remixicon.css" />
+  <link rel="stylesheet" href="css/lib/bootstrap/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/lib/swiper/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="css/thema/basic.css" />
+  <link rel="stylesheet" href="css/thema/nav.css" />
+  <link rel="stylesheet" href="css/thema/main.css" />
+  <link rel="stylesheet" href="css/thema/sub.css" />
+  <link rel="stylesheet" href="css/thema/reserved.css" />
+  <link rel="stylesheet" href="css/thema/modal.css" />
+  <link rel="stylesheet" href="css/thema/footer.css">
+  <link rel="stylesheet" href="css/board/board.css" />
+  <link rel="stylesheet" href="css/board/certificate.css" />
+  <link rel="stylesheet" href="css/board/qna.css" />
+  <link rel="stylesheet" href="css/form/form.css">
+  <link rel="stylesheet" href="css/etc/etc.css" />
+
+  <script src="js/lib/jquery-3.7.1.min.js"></script>
+  <script src="js/lib/bootstrap.bundle.min.js"></script>
+  <script src="js/lib/swiper-bundle.min.js"></script>
+
+  <title>부곡컨트리클럽</title>
+</head>
+<body>
+
+  <section class="sub contents">
+    <div class="inner">
+        <!-- 상단 검색/총 건수 -->
+        <div class="board_header">
+          <div class="board_total">총 00000 건</div>
+          <form name="formNotice" id="searchForm" class="search_bar">
+            <div class="custom_select_wrap">
+              <select name="searchType" class="select-search">
+                <option value="">전체</option>
+                <option value="">제목</option>
+                <option value="">내용</option>
+              </select>
+            </div>
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <button id="search_btn" class="button s_button btn-search" type="button"><i class="ri-search-line"></i></button>
+          </form>
+        </div>
+
+        <!-- 게시판 리스트 -->
+        <div class="board_container">
+          <div class="board_box">
+            <table class="board_table">
+              <thead>
+                <tr>
+                  <th class="list_num">NO</th>
+                  <th class="list_title">제목</th>
+                  <th class="list_writer">작성자</th>
+                  <th class="list_file">첨부파일</th>
+                  <th class="list_date">등록일</th>
+                  <th class="list_views">조회수</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>10</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>00:00:00</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td><a href="view.html">제목을 입력해 주세요. 제목을 입력해 주세요. 제목을 입력해 주세요. 제목을 입력해 주세요. 제목을 입력해 주세요. 제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>00:00:00</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>00:00:00</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td><a href="view.html">제목을 입력해 주세요.</a></td>
+                  <td>부곡CC</td>
+                  <td><i class="ri-file-3-line" aria-label="첨부파일 있음"></i></td>
+                  <td>2025-08-01</td>
+                  <td>123456</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- 페이지네이션 -->
+        <div class="pagination">
+          <ul>
+            <li><a href="#" class="pag_pd" aria-label="첫 페이지"><i class="ri-arrow-left-double-line"></i></a></li>
+            <li><a href="#" class="pag_pd" aria-label="이전 페이지"><i class="ri-arrow-left-s-line"></i></a></li>
+            <li><a class="active" href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li><a href="#" class="pag_pd" aria-label="다음 페이지"><i class="ri-arrow-right-s-line"></i></a></li>
+            <li><a href="#" class="pag_pd" aria-label="마지막 페이지"><i class="ri-arrow-right-double-line"></i></a></li>
+          </ul>
+        </div>
+      </main>
+    </div>
+  </div>
+</section>
+
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/btn.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,230 @@
+/*공통*/
+.sec.h1000 {height: 100vh;}
+.sec.h825 {min-height: 600px; height: auto;}
+
+.main_title {text-align: center; display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 0 auto 70px;}
+.main_title.white {color: #fff;}
+.main_title .title {font-size: 56px; color: #222; font-weight: 800; text-align: center;}
+.main_title .title.wht {color: #fff;}
+
+.main_title p {font-size: 20px;}
+
+.main_title .dash {display: flex; width: 50px; height: 1px; background: #222; margin: 10px 0 20px;}
+
+.s2 .main_title .dash, .s4 .main_title .dash {background: #fff;}
+
+.inner.col {flex-direction: column;}
+
+.txt.highlight {font-weight: 900;}
+.highlight {color: var(--brand-color);}
+
+/*main visual*/
+#mainVisual {overflow:hidden; position:relative; width:100%; height: 948px;}
+#mainVisual::before {content:''; position:absolute; inset:0; background:rgba(0,0,0,.4); z-index: 1;}
+
+
+/* 2023-02-23 - 삭제 */
+/*.visual {background-image: url(../../images/thema/main/slide01.jpg); background-size: cover; background-repeat: no-repeat;} */
+
+/* 2023-02-23 - 추가 */
+.visual {position: relative;width: 100%;height: 100vh; overflow: hidden; background-color: #000;}
+.video-background {position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 1; }
+.video-background video { width: 100%; height: 100%; object-fit: cover; }
+.video-background::after { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.3);  z-index: 2;}
+.visual .title,.visual .scroll-indicator { position: relative; z-index: 3; }
+
+
+/* 타이틀 */
+#mainVisual .title{position:absolute; top: 40%; left:50%; transform:translateX(-50%); z-index:1; width:max-content; color:#fff; text-align: center; user-select: none;}
+#mainVisual .title h2 {display:block; font-size: 66px; font-weight: 700; color:#fff;}
+#mainVisual .title p {font-size: 36px; font-weight: 400; line-height:1.3; white-space:pre-line; text-transform:uppercase; color: #fff;}
+
+/*scrolled-icon*/
+.scroll-indicator {position:absolute; left:50%; bottom: 10%; transform:translateX(-50%); display:flex; flex-direction:column; align-items:center; gap:10px; z-index:10;}
+.scroll-indicator .label{font-size: 14px; font-weight: 400; letter-spacing: 1px; color: #fff; margin: 0;}
+.scroll-indicator .mouse{position:relative; width: 25px; height: 40px; border: 1px solid rgba(255, 255, 255, 1); border-radius:18px; display:flex; justify-content:center; align-items:flex-start; padding-top: 8px;}
+.scroll-indicator .wheel{width: 4px; height: 4px; background:#fff; border-radius:50%; animation:wheelMove 1.4s ease-in-out infinite;}
+@keyframes wheelMove{0%{transform:translateY(0);opacity:1;}50%{transform:translateY(5px);opacity:.6;}100%{transform:translateY(0);opacity:1;}}
+
+/*공지사항*/
+.s1 {padding: 70px 0;}
+
+.s1 .inner {align-items:flex-start;}
+
+.s1 .news {width: 100%; max-width: 630px;}
+.s1 .news .title {display: flex; justify-content: space-between; margin: 0; align-items: center;}
+.s1 .news .title h2 {font-size: 24px; }
+
+.s1 .news .news-list {margin: 25px 0 20px;}
+.s1 .news .news-list .news-item {display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #ccc; padding: 15px 10px;}
+.s1 .news .news-list .news-item:last-child {border-bottom: 1px solid #ccc;}
+
+.s1 .news .num-group {display: flex; justify-content: space-between; align-items: center; gap: 20px;}
+.s1 .news .num-group .num-item {flex: 1; text-align: center; padding: 10px 15px; display: flex; justify-content: center; align-items: center; color: #fff; font-size: 16px; gap: 10px;}
+.s1 .news .num-group .num-item strong {font-size: 20px; color: #fff;}
+.s1 .news .num-group .num-item.tell {flex: 1.2; background: #664630;}
+.s1 .news .num-group .num-item.fax {flex: 1; background: #165938;}
+
+.no_data {display: flex; align-items: center; justify-content: center; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; min-height: 300px; padding: 45px 35px; text-align: center; margin: 20px 0;}
+
+/*캘린더*/
+.cal {max-width: 410px; margin: 0 auto; padding: 0;}
+.cal_head {display: flex; justify-content: center; align-items: center; gap: 22px;}
+.cal_nav {width: 44px; height: 44px; border: 0; background: transparent; font-size: 34px; line-height: 1; cursor: pointer;}
+.cal_ym {font-size: 36px; font-weight: 800; letter-spacing: -0.5px;}
+
+.cal_dow {display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px; margin: 10px 0 15px;}
+.cal_dow_item {width: 50px; text-align: center; font-size: 16px; font-weight: 600; padding: 10px 0;}
+.cal_dow_item.is-sun {color: #FF3848;}
+.cal_dow_item.is-sat {color: #217AFF;}
+
+.cal_grid {display: grid; grid-template-columns: repeat(7, 1fr); gap: 12px;}
+.cal_cell {position: relative; min-width: 50px; min-height: 55px; border-radius: 6px; background: #D7EDFF; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.cal_day {font-size: 16px; font-weight: 400; color: #111;}
+.cal_meta {font-size: 14px; font-weight: 400; color: #111;}
+
+.cal_cell.is-empty {background: transparent; opacity: 0; pointer-events: none;}
+.cal_cell.is-selected {outline: 2px solid #217AFF; background: #fff;}
+.cal_cell.is-fast {background: #fafafa;}
+.cal_cell:hover {outline: 2px solid #217AFF; background: #fff;}
+
+.cal_cell.is-sun .cal_day {color: #FF3848;}
+.cal_cell.is-sat .cal_day {color: #217AFF;}
+
+/*예약 관련 버튼*/
+.resv-links {width: 100%; max-width: 170px; display: flex; justify-content: flex-start; flex-direction: column; gap: 10px; padding: 0;}
+.resv-item {border: 1px solid #ccc; padding: 20px 15px; height: 50px; color: #59371F; transition: .3s ease;}
+.resv-item i {color: #59371F; font-size: 24px; margin-right: 10px;}
+.resv-item:hover {background: #59371F; color: #fff;}
+.resv-item:hover i {color: #fff;}
+
+/*날씨*/
+.s2 {background: #fbfbfb; padding: 40px 0;}
+.s2 .weather {display: flex; width: 100%; background: #fff; border: 1px solid #eee; overflow: hidden; box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.05); flex-wrap: wrap;}
+.s2 .weather .weather-item {display: flex; flex: 1; flex-direction: column; align-items: center; justify-content: center; gap: 5px; padding: 15px 30px; min-height: 200px; border-right: 1px solid #efefef;}
+.s2 .weather .weather-item:last-child {border-right: 0;}
+.s2 .weather .weather-date {font-size: 20px; font-weight: 700;}
+.s2 .weather .weather-temp {font-size: 18px; font-weight: 500;}
+.s2 .weather .weather-wind {font-size: 18px; font-weight: 500;}
+.s2 .weather .weather-icon {display: block; width: 50px; height: 50px; background-repeat: no-repeat; background-position: center; background-size: contain;}
+
+.s2 .weather .weather-icon.is-cloudy {background-image: url(../../images/thema/main/weather/cloudy.svg);}
+.s2 .weather .weather-icon.is-sunny {background-image: url(../../images/thema/main/weather/sunny.svg);}
+.s2 .weather .weather-icon.is-partly-cloudy {background-image: url(../../images/thema/main/weather/partly-cloudy.svg);}
+.s2 .weather .weather-icon.is-overcast {background-image: url(../../images/thema/main/weather/overcast.svg);}
+.s2 .weather .weather-icon.is-windy {background-image: url(../../images/thema/main/weather/windy.svg);}
+.s2 .weather .weather-icon.is-snow {background-image: url(../../images/thema/main/weather/snow.svg);}
+.s2 .weather .weather-icon.is-rain {background-image: url(../../images/thema/main/weather/rain.svg);}
+
+/*이벤트*/
+.s3 {padding: 90px 0; overflow: hidden; background-image: url(../../images/thema/main/s3_bg.jpg); background-size: cover; background-repeat: no-repeat;}
+.s3 .inner {display: flex; flex-direction: column; gap: 50px;}
+.s3 h2 {font-size: 24px; color: #fff; text-align: center;}
+
+.s3 .event-wrap {display: flex; align-items: center; gap: 18px; max-width: 1280px; margin: 0 auto;}
+.s3 .event-swiper {flex: 1; min-width: 0; overflow: hidden;}
+.s3 .event-swiper .swiper-wrapper {align-items: center;}
+.s3 .event-swiper .swiper-slide {display: flex; justify-content: center; align-items: center;}
+
+.s3 .event-card {display: block; width: 100%; overflow: hidden;}
+.s3 .event-card img {display: block; width: 100%; height: auto;}
+
+.s3 .event_nav {position: relative; flex: 0 0 56px; width: 56px; height: 56px; border-radius: 999px; border: 1px solid rgba(255,255,255,.7); background: rgba(0,0,0,.25); cursor: pointer;}
+.s3 .event_nav::before {content: ""; display: block; width: 10px; height: 10px; border-top: 2px solid #fff; border-right: 2px solid #fff; position: relative; top: 12%; left: 52%;}
+.s3 .event_prev::before {transform: translate(-50%,-50%) rotate(-135deg);}
+.s3 .event_next::before {transform: translate(-50%,-50%) rotate(45deg);}
+
+/*링크*/
+.s4 {padding: 80px 0;}
+.s4 .inner {gap: 20px;}
+.s4 .fea-card {display: flex; flex: 1; align-items: stretch; justify-content: space-between; flex-direction: column; min-height: 200px; padding: 40px 40px 30px; color: #fff;}
+
+.s4 .fea-card.is-course {background-image: url(../../images/thema/main/course.jpg);}
+.s4 .fea-card.is-club {background-image: url(../../images/thema/main/club.jpg);}
+
+.s4 .fea-txt {display: flex; flex-direction: column;}
+.s4 .fea-tit {font-size: 24px; font-weight: 600; color: #fff;}
+.s4 .fea-desc {font-size: 18px; font-weight: 400;}
+.s4 .fea-more {display: inline-flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; letter-spacing: .2px;}
+.s4 .fea-more::after {content: ""; width: 7px; height: 7px; border-top: 2px solid #fff; border-right: 2px solid #fff; transform: rotate(45deg);}
+
+.s4 .fea-card:hover .fea-more {transform: translateX(4px);}
+.s4 .fea-more {font-weight: 400; transition: transform .25s ease; justify-content: flex-end;}
+
+/*자세히 보기 버튼*/
+.more_btn {display: inline-flex; justify-content: space-between; align-items: center; font-size: 16px; font-weight: 400; vertical-align: middle; transition: .3s ease;}
+.more_btn .ri-add-line {font-size: 30px;}
+.more_btn.gray {border: 1px solid #aaa; color: #444;}
+.more_btn.gray:hover {background: var(--brand-color); color: #fff; border-color: transparent;}
+
+.more_btn.wht {border: 1px solid #fff; color: #fff; text-align: center; padding: 10px 20px; gap: 10px;}
+.more_btn.wht:hover {background: #fff; color: var(--brand-color2);} 
+.more_btn.wht i {padding-bottom: 3px;}
+
+.progress.product_progress {position: absolute; left: 61.8%; right: auto; bottom: 15%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; cursor: pointer;}
+.progress.product_progress li {position: relative; height: 8px; overflow: hidden;}
+.progress.product_progress li .bar {display: block; width: 8px; height: 100%; background: rgba(0, 0, 0, .15); transition: width .5s ease; border-radius: 10px;}
+.progress.product_progress li.active .bar {width: 100px; background: #003365;}
+
+@media (max-width:1240px){
+  .resv-links {flex-direction: row; max-width: 100%; margin-top: 40px; padding: 0 12px;}
+  .resv-item {flex: 1;}
+
+  .s3 .event-wrap {max-width: 100%;}
+}
+
+@media (max-width:1024px){
+  #mainVisual .cont{position: static;}
+  #mainVisual .title {width:95%}
+
+  .progress.product_progress {bottom: 10%;}
+
+  .s1 {padding: 70px 0;}
+  .s1 .inner {flex-direction: column; gap: 24px;}
+
+  .s1 .main_title .title {text-align: center;}
+  .s1 .main_title {max-width: 100%; text-align: center; margin-bottom: 50px; align-items: center; }
+
+  .s1-slide-wrap {width: 100%; margin-right: 0; padding-left: 0;}
+
+  .s1 .news {max-width: none; flex: 0 0 100%;}
+  .cal {max-width: none; width: 100%; margin: 0; padding: 0 12px;}
+  .resv-links {max-width: none; width: 100%; flex-direction: row; gap: 12px;}
+  .resv-item {flex: 1; display: flex; align-items: center; justify-content: center; height: 56px; padding: 5px 12px;}
+  .resv-item i {margin-right: 8px;}
+
+  .s4 .inner {flex-direction: column;}
+}
+
+@media (max-width:768px){
+  .main_title .title {font-size: 42px;}
+  #mainVisual .title h2 {font-size:40px; white-space:normal}
+
+  .s1 .news {max-width: 100%;}
+  .s1 .news .num-group {flex-direction: column;}
+  .s1 .news .num-group .num-item.tell {width: 100%; flex: 1;}
+  .s1 .news .num-group .num-item.fax {width: 100%;}
+
+  .cal_head {gap: 14px;}
+  .cal_ym {font-size: 26px;}
+
+  .cal_dow {gap: 8px;}
+  .cal_dow_item {width: auto; padding: 8px 0; font-size: 14px;}
+
+  .cal_grid {gap: 8px;}
+  .cal_cell {min-width: 0; min-height: 52px;}
+  .cal_day {font-size: 14px;}
+  .cal_meta {font-size: 12px;}
+
+}
+
+@media (max-width:576px){
+  #mainVisual .title h2 {font-size: 42px; white-space:normal}
+  #mainVisual .title p {font-size: 20px;}
+
+  .resv-links {flex-direction: column;}
+}
+
+@media (max-width: 370px){
+
+}

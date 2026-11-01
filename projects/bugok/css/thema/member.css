@@ -1,0 +1,132 @@
+/*head*/
+.login {gap: 20px; flex-wrap: wrap;}
+.member-head {text-align: center; margin-bottom: 26px; font-family: 'Nanum Myeongjo', serif;}
+.member-title {font-size: 34px; font-weight: 700; margin: 0 0 18px;}
+.member-desc {font-size: 28px; line-height: 1.9; margin: 0; color: #664630; font-weight: 600;}
+.member-desc.black {color: #222; font-size: 24px;}
+.member-desc.md {font-size: 24px; color: #222; font-family: 'Pretendard GOV', sans-serif; font-weight: 400; line-height: 34px;}
+
+.login-divider {height: 1px; background: #e8e2dd; margin: 26px 0 40px;}
+
+/*grid*/
+.login-grid {display: flex; gap: 28px; align-items: stretch;}
+.login-card {flex: 1; border: 1px solid #ccc; background: #fff; padding: 32px 34px;}
+.login-card-title {font-size: 22px; font-weight: 700; margin: 0 0 18px; color: #222;}
+
+/*form*/
+.login-form {display: flex; flex-direction: column; gap: 14px;}
+.login-row {display: flex; align-items: center; gap: 10px;}
+.login-select {flex: 0 0 180px; height: 46px; border: 1px solid #ccc; padding: 0 12px; font-size: 16px; color: #333; background: #fff; outline: none;}
+.login-dash {flex: 0 0 auto; color: #ccc; font-weight: 700;}
+.login-input {width: 100%; height: 46px; border: 1px solid #ccc; padding: 0 14px; font-size: 16px; color: #333; outline: none;}
+.login-input::placeholder {color: #b3a7a0;}
+.login-btn {height: 45px; background: #664630; color: #fff; font-size: 20px; font-weight: 400; cursor: pointer; display: block;}
+.login-btn:active {transform: translateY(1px);}
+
+/*note & links*/
+.login-note {border: 1px solid #ccc; background: #f7f7f7; padding: 30px; margin-top: 2px;}
+.login-note-list {margin: 0; padding-left: 18px; color: #795E4B; font-size: 14px; line-height: 1.8;}
+.login-note-list li {font-size: 18px;}
+.login-links {border: 1px solid #ccc; background: #f7f7f7; min-height: 120px; padding: 30px; display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 2px; height: 56px;}
+.login-link {color: #6b4b3a; font-size: 18px; font-weight: 400;}
+.login-links-bar {width: 1px; height: 18px; background: #d8d0cb;}
+
+/*비회원가입*/
+.terms-wrap {border: 1px solid #ddd; margin-bottom: 50px;}
+.terms-box {height: 360px; overflow-y: auto; padding: 24px;}
+.terms-content {font-size: 18px; line-height: 1.8; color: #333;}
+.terms-content strong {display: inline-block; margin-bottom: 6px;}
+
+.terms-agree {border-top: 1px solid #ddd; padding: 18px 24px; background: #fafafa;}
+.agree-check {display: flex; align-items: center; gap: 10px; font-size: 18px; color: #222;}
+.agree-check input {width: 18px; height: 18px;}
+
+.join-sec-top {border-top: 1px solid #444; padding: 15px; display: flex; justify-content: space-between; align-items: center;}
+.join-sec {margin: -25px 0 50px;}
+
+.join-page .title-md {display: flex; align-items: center; gap: 8px; margin-bottom: 18px;}
+.join-page .title-ico {font-size: 20px; color: #6b4b3a;}
+
+.join-form {width: 100%;}
+.join-sec {border-top: 1px solid #444; margin-top: 18px;}
+
+.join-sec-title {font-size: 20px; font-weight: 500; color: #222;}
+.join-sec-note {font-size: 15px; color: #ff3b30; font-weight: 600;}
+
+.join-table {width: 100%; table-layout: fixed; border-collapse: collapse;}
+.join-table th {background: #f5f5f5; text-align: left; font-weight: 700; padding: 18px 16px; border-bottom: 1px solid #ddd; border-right: 1px solid #ddd; vertical-align: middle;}
+.join-table td {padding: 18px 16px; border-bottom: 1px solid #ddd; vertical-align: top;}
+.join-table tr td:last-child {border-left: 1px solid #ddd;}
+.join-table tr th:nth-child(3) {border-left: 1px solid #ddd;}
+
+.join-table .req {color: #ff3b30; font-weight: 800; margin-right: 6px;}
+.join-inline {gap: 10px;}
+.join-help {margin: 10px 0 0; font-size: 18px; color: #222; line-height: 1.4;}
+
+.join-zip {width: 220px !important; height: 46px; border: 1px solid #ddd; padding: 0 12px;}
+.join-addr-row {display: flex; gap: 12px; margin-top: 12px;}
+.join-addr-row .input_full {height: 46px; border: 1px solid #ddd; padding: 0 12px;}
+
+.join-tel {display: flex; align-items: center; gap: 10px;}
+
+.join-tel input {min-width: 70px !important; height: 46px; border: 1px solid #ddd; padding: 0 12px; text-align: center;}
+.join-dash {color: #999; font-weight: 700;}
+
+.form_inline.join-inline {display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;}
+.form_inline.join-inline > * {min-width: 0;}
+.form_inline.join-inline .input_full {width: auto; flex: 1 1 auto;}
+.form_inline.join-inline .btn_small {flex: 0 0 auto; white-space: nowrap;}
+
+.join-table col.c-th {width: 150px;}
+
+.join-btns {justify-content: center; margin-top: 34px;}
+
+/*ID PW 찾기*/
+.find-radio {display: inline-flex; align-items: center; gap: 10px; font-size: 18px;}
+.find-radio input {width: 18px; height: 18px;}
+.find-sub {margin: 10px 0 0; font-size: 16px; color: #222;}
+.find-info {text-align: center !important; background: #F5F5F5 !important; font-size: 18px; color: #795E4B !important; padding: 18px 16px; border: none !important;}
+.find-notice {width: 100%; margin-top: 30px;}
+.find-notice-head {font-size: 20px; font-weight: 700; color: #ff3b30; margin: 0 0 14px;}
+.find-warn {font-weight: 900; margin-right: 8px;}
+.find-notice-list {margin: 0; padding-left: 18px; font-size: 18px; color: #222; line-height: 1.8;}
+.find-notice-list li {position: relative; padding-left: 16px; font-size: 20px; font-weight: 400; color: #222; line-height: 1.7;}
+.find-notice-list li::before {content: '•'; position: absolute; left: 0; top: 2px; color: #8a6a55; font-size: 20px;}
+
+.input_md {max-width: 200px !important;}
+
+.find-notice-list.full {width: 100%; background: #F5F5F5; border: 1px solid #ccc; padding: 30px; margin-bottom: 20px;}
+
+@media (max-width:768px) {
+  .login-title {font-size: 28px;}
+  .login-desc, .login-desc.black {font-size: 20px;}
+  .login-note-list {padding: 0;}
+  .login-divider {margin: 22px 0 28px;}
+  .login-grid {flex-direction: column; gap: 18px;}
+  .login-card {padding: 24px 18px;}
+  .login-select {flex: 0 0 100px;}
+
+  .join-sec-top {flex-direction: column; align-items: flex-start;}
+
+  .join-table colgroup {display: none;}
+  .join-table col {width: auto !important;}
+  .join-table th, .join-table td {padding: 16px 12px; font-size: 16px;}
+
+  .join-table .form_inline.join-inline {width: 100%; display: flex; align-items: center; gap: 10px; flex-wrap: nowrap;}
+  .join-table .form_inline.join-inline .input_full {flex: 1 1 auto; width: auto; min-width: 0;}
+  .join-table .form_inline.join-inline .btn_small {flex: 0 0 auto; white-space: nowrap;}
+
+  .join-mobile-inline {width: 100%;}
+  .join-mobile-inline .join-tel {flex: 1 1 auto; min-width: 0;}
+  .join-mobile-inline .join-tel input {width: 56px !important; min-width: 56px !important; height: 40px; padding: 0 6px;}
+  .join-mobile-inline .btn_small {padding: 0 12px;}
+  .join-table tr th:nth-child(3), .join-table tr td:last-child {border-left: none;}
+
+  .input_md {max-width: 100px !important;}
+}
+
+@media screen and (max-width: 586px){
+  .login, .login-links {flex-direction: column;}
+  .login-links-bar {display: none;}
+  .input_md {max-width: 140px !important;}
+}

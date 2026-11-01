@@ -1,0 +1,20 @@
+.qna-acc {width: 100%; border-top: 1px solid #d9d9d9; border-bottom: 1px solid #ccc;}
+.qna-acc .qna-item {border: 0; border-top: 1px solid #ccc; border-radius: 0; background: transparent;}
+.qna-acc .qna-item:first-child {border-top: 0;}
+.qna-acc .qna-btn {background: #fff; padding: 22px 18px; border: 0; border-radius: 0; box-shadow: none; display: flex; align-items: center; justify-content: space-between; gap: 16px;}
+.qna-acc .qna-btn:focus {box-shadow: none;}
+.qna-acc .qna-btn::after {display: none;}
+.qna-q {display: flex; align-items: flex-start; gap: 10px; font-size: 20px; font-weight: 600; color: #795E4B; line-height: 1.4; flex: 1; min-width: 0;}
+.qna-a {display: flex; align-items: flex-start; gap: 10px; font-size: 20px; color: #444; line-height: 1.6;}
+.qna-mark {font-weight: 800; color: #6b5a4a; flex: 0 0 auto;}
+.qna-toggle {flex: 0 0 auto; width: 30px; height: 30px; border-radius: 999px; background: #6b5a4a; position: relative;}
+.qna-toggle::before {content: ""; position: absolute; left: 50%; top: 50%; width: 8px; height: 8px; border-right: 2px solid #fff; border-bottom: 2px solid #fff; transform: translate(-50%, -55%) rotate(45deg); transition: transform .2s ease;}
+.qna-acc .qna-btn:not(.collapsed) .qna-toggle::before {transform: translate(-50%, -45%) rotate(-135deg);}
+.qna-body {padding: 20px; border-top: 1px solid #ccc;}
+.qna-body .qna-a {padding-left: 0;}
+
+@media (max-width:768px) {
+  .qna-acc .qna-btn {padding: 18px 14px;}
+
+  .qna-toggle {width: 28px; height: 28px;}
+}
