@@ -31,13 +31,13 @@
       }
     });
     timeline.fromTo([work, feature], { '--work-feature-bg': source.background }, {
-      '--work-feature-bg': '#ffffff'
+      '--work-feature-bg': '#f2f2f0'
     }, 0).fromTo(work, {
       '--ink': source.ink, '--muted': source.muted, '--line': source.line,
       '--surface': source.surface, '--paper': source.paper
     }, {
       '--ink': '#232323', '--muted': '#232323', '--line': '#d8dfe6',
-      '--surface': '#ffffff', '--paper': '#ffffff'
+      '--surface': '#ffffff', '--paper': '#f2f2f0'
     }, 0);
   });
 })();
