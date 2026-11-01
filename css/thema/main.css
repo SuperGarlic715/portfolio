@@ -78,7 +78,7 @@
 .shot_mo .shot_label {left: 8px;}
 
 .work_title {font-size: 26px; letter-spacing: -0.01em;}
-.work_summary {margin-top: 10px; font-size: 17px; color: var(--muted);}
+.work_summary {margin-top: 10px; font-size: 17px; color: var(--muted); word-break: break-all;}
 
 .work_meta {margin-top: 28px; border-top: 1px solid var(--line);}
 .work_meta > div {display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--line); font-size: 15px;}
