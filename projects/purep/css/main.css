@@ -62,7 +62,7 @@
 .video_bg {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('../images/video_bg.jpg') center center / cover no-repeat; z-index: 0;}
 .video_overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(55, 127, 155, 0.6); z-index: 0;}
 
-.video_slider_section .inner {position: relative; z-index: 2; max-width: 1280px; margin: 0 auto; display: flex; flex-direction: column; align-items: flex-start;}
+.video_slider_section .inner {position: relative; z-index: 2; width: 100%; max-width: none; margin: 0; padding-inline: 0; display: flex; flex-direction: column; align-items: flex-start;}
 
 .video_slider_text {margin-bottom: 60px; color: #fff;}
 .video_slider_text h2 {line-height: 1.2; font-size: 42px; font-weight: 700; line-height: 1.4; margin-bottom: 20px; }
