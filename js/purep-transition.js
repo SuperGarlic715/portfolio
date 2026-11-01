@@ -11,9 +11,9 @@
       ease: 'none',
       scrollTrigger: {
         trigger: feature,
-        start: 'top bottom',
+        start: 'top bottom+=240',
         end: 'top 65%',
-        scrub: 0.5,
+        scrub: 0.8,
         invalidateOnRefresh: true
       }
     });
