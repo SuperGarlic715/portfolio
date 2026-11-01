@@ -20,6 +20,8 @@
   --ink: #16202A;        /* 본문 글자 */
   --muted: #5A6774;      /* 보조 글자 */
   --line: #D8DFE6;       /* 구분선 */
+  --button-blue: #0D7FD9;
+  --button-blue-hover: #0863AD;
   --select: #0D7FD9;     /* 선택 박스, 링크, 포커스 */
   --select-ink: #FFFFFF; /* select 위 글자 */
   --todo: #B54708;       /* 채워야 할 자리 표시 */
@@ -88,19 +90,19 @@ dl, dd {margin: 0;}
 .skip_link:focus {top: calc(12px + env(safe-area-inset-top, 0px));}
 
 /* ---------- 버튼 ---------- */
-.btn {display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 4px; font-size: 16px; font-weight: 600; line-height: 1; white-space: nowrap; transition: background-color .2s, color .2s, border-color .2s;}
-.btn_fill {background: var(--ink); color: var(--paper);}
-.btn_fill:hover {background: var(--select); color: var(--select-ink);}
-.btn_line {border: 1px solid var(--ink); color: var(--ink);}
-.btn_line:hover {border-color: var(--select); color: var(--select);}
+.btn {display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 22px; border-radius: 999px; font-size: 16px; font-weight: 600; line-height: 1; white-space: nowrap; transition: background-color .2s, color .2s, border-color .2s;}
+.btn_fill {background: var(--button-blue); color: #fff;}
+.btn_fill:hover {background: var(--button-blue-hover); color: #fff;}
+.btn_line {border: 1px solid var(--button-blue); color: var(--button-blue);}
+.btn_line:hover {background: var(--button-blue); border-color: var(--button-blue); color: #fff;}
 
 /* ---------- 채워야 할 자리 : 제출 전에 모두 없애기 ---------- */
 .todo {color: var(--todo); background: color-mix(in srgb, var(--todo) 10%, transparent); border-bottom: 1px dashed var(--todo); padding: 0 2px; font-weight: inherit;}
 
 /* ---------- 맨 위로 ---------- */
-.top_btn {position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 4000; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: var(--surface); color: var(--ink); border: 1px solid var(--line); opacity: 0; visibility: hidden; transform: translateY(16px); transition: opacity .3s ease, visibility .3s ease, transform .3s ease, border-color .3s ease, color .3s ease;}
+.top_btn {position: fixed; right: 24px; bottom: calc(24px + env(safe-area-inset-bottom, 0px)); z-index: 4000; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 50%; background: var(--button-blue); color: #fff; border: 1px solid var(--button-blue); opacity: 0; visibility: hidden; transform: translateY(16px); transition: opacity .3s ease, visibility .3s ease, transform .3s ease, border-color .3s ease, color .3s ease;}
 .top_btn.show {opacity: 1; visibility: visible; transform: translateY(0);}
-.top_btn.show:hover {border-color: var(--select); color: var(--select); transform: translateY(-5px);}
+.top_btn.show:hover {background: var(--button-blue-hover); border-color: var(--button-blue-hover); color: #fff; transform: translateY(-5px);}
 
 /* ---------- 알림 ---------- */
 .toast {position: fixed; left: 50%; bottom: calc(32px + env(safe-area-inset-bottom, 0px)); z-index: 5000; transform: translate(-50%, 16px); max-width: calc(100% - 40px); padding: 12px 18px; border-radius: 4px; background: var(--ink); color: var(--paper); font-size: 15px; font-weight: 500; opacity: 0; pointer-events: none; transition: opacity .2s, transform .2s;}

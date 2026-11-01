@@ -9,8 +9,8 @@
 .contact-email-address{min-width:0;font-family:var(--font-display),sans-serif;font-size:clamp(18px,2.25vw,28px);font-weight:600;letter-spacing:-.04em;line-height:1.4;overflow-wrap:anywhere;}
 .contact-email-address:hover{color:#0d7fd9;}
 .contact-email-actions{display:flex;align-items:center;gap:16px;margin-left:auto;flex-shrink:0;}
-.contact-copy{padding:9px 16px;border:1px solid #cce2f6;border-radius:12px;background:#eef6fe;color:#0b6fbd;font:inherit;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;}
-.contact-copy:hover{background:#dfefff;}
+.contact-copy{padding:9px 16px;border:1px solid var(--button-blue);border-radius:999px;background:transparent;color:var(--button-blue);font:inherit;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;}
+.contact-copy:hover{background:var(--button-blue);color:#fff;}
 .contact-send{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#0d7fd9;color:white;transition:background .2s;}
 .contact-send:hover{background:#0863ad;}
 .contact-blueprint a:focus-visible,.contact-blueprint button:focus-visible{outline:3px solid #0d7fd9;outline-offset:4px;}
