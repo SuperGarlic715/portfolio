@@ -15,6 +15,7 @@
   // ---------- 모바일 메뉴 ----------
   function setMenu(open) {
     gnb.classList.toggle('open', open);
+    if (open) header.classList.remove('header-hidden');
     toggle.classList.toggle('active', open);
     toggle.setAttribute('aria-expanded', String(open));
     toggle.querySelector('.sr_only').textContent = open ? '메뉴 닫기' : '메뉴 열기';
@@ -62,8 +63,16 @@
   }
 
   // ---------- 스크롤 상태 ----------
+  let previousScrollY = Math.max(0, window.scrollY);
   function onScroll() {
-    const y = window.scrollY;
+    const y = Math.max(0, window.scrollY);
+    const delta = y - previousScrollY;
+    if (y <= header.offsetHeight || gnb.classList.contains('open')) {
+      header.classList.remove('header-hidden');
+    } else if (Math.abs(delta) >= 2) {
+      header.classList.toggle('header-hidden', delta > 0);
+    }
+    if (Math.abs(delta) >= 2 || y === 0) previousScrollY = y;
     header.classList.toggle('scrolled', y > 8);
     topBtn.classList.toggle('show', y > 50);
   }
@@ -77,6 +86,12 @@
     });
   }, { passive: true });
   onScroll();
+  header.addEventListener('focusin', () => header.classList.remove('header-hidden'));
+  window.addEventListener('pageshow', () => {
+    previousScrollY = Math.max(0, window.scrollY);
+    header.classList.remove('header-hidden');
+    onScroll();
+  });
 
   topBtn.addEventListener('click', () => {
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

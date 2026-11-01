@@ -62,3 +62,9 @@ body::before {display:none;}
  .gnb .depth1{gap:0;}
  .gnb .depth1 a{font-size:16px;}
 }
+
+/* Reveal the navigation on upward scrolling, hide it on downward scrolling. */
+.header{position:fixed;--ink:#16202a;--muted:#5a6774;--line:#d8dfe6;transform:translateY(0);transition:transform .28s ease,background-color .2s ease,box-shadow .2s ease;}
+.header.scrolled{background:rgb(255 255 255 / .96);box-shadow:0 1px 12px rgb(15 21 27 / .08);backdrop-filter:blur(12px);}
+.header.header-hidden{transform:translateY(-100%);pointer-events:none;}
+@media(prefers-reduced-motion:reduce){.header{transition:none;}}
