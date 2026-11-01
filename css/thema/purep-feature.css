@@ -44,4 +44,4 @@
 /* Leave content clear of the scroll-driven blend into the featured project. */
 .work{position:relative;padding-bottom:clamp(300px,29vw,460px);color:var(--ink);background-color:var(--work-feature-bg,var(--paper));}
 .work::after{content:none;}
-.purep-feature{background:var(--work-feature-bg,#f7f7f5);border-top:0;}
+.purep-feature{background:var(--work-feature-bg,#F5F7F9);border-top:0;}
