@@ -1,7 +1,7 @@
 footer {background: #213D5E; padding: 50px 0;}
-footer .inner {width: 100%; max-width: none; margin-inline: 0; padding-inline: 0; color: #b0c9dc; flex-wrap: wrap;}
+footer .inner {width: 100%; max-width: 1280px; margin-inline: auto; color: #b0c9dc; flex-wrap: wrap;}
 
-footer .footer_top {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between;}
+footer .footer_top {width: 100%; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 40px;}
 footer .footer_logo {width: 15%; height: 200px;}
 
 footer .footer_util_links {width: 100%; padding-right: 0; font-size: 14px; display: flex; gap: 20px; border-bottom: 1px solid #6A8BB1; padding-bottom: 15px;}
