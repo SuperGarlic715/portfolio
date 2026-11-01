@@ -180,7 +180,7 @@
 @media(max-width:480px){.hero-title{font-size:clamp(42px,11.4vw,60px);}.hero-tags{max-width:65%;line-height:1.5;}}
 
 /* Project archive */
-.archive-list{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;}
+.archive-list{list-style:none;margin:32px 0 0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px;}
 .archive-item{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:12px;background:var(--surface);}
 .archive-item[hidden]{display:none;}
 .archive-thumb{aspect-ratio:16/10;overflow:hidden;background:#e9edf8;border-bottom:1px solid var(--line);}
@@ -213,3 +213,35 @@
 .archive-preview-image[hidden]{display:none;}
 .archive-preview-message:not(:empty){padding:40px 24px;text-align:center;line-height:1.8;}
 @media(max-width:600px){.archive-preview{width:94vw;}.archive-preview-header{padding:10px 14px;}.archive-preview-header h2{font-size:14px;}}
+
+/* Six reusable thumbnail compositions; the original screens stay unmodified. */
+.mockup{position:relative;isolation:isolate;background:#edf1f6;}
+.mockup-backdrop{position:absolute;inset:0;z-index:-1;}
+.mockup-screen{position:absolute;display:block;left:9%;top:13%;width:82%;height:74%;border-radius:6px;background:#fff;box-shadow:0 12px 24px #14213b30;overflow:hidden;}
+.mockup-screen>img{width:100%;height:100%;object-fit:cover;object-position:top;}
+.mockup-phone{position:absolute;display:block;width:19%;height:62%;right:7%;bottom:8%;padding:4px;border-radius:10px;background:#20242a;box-shadow:0 8px 16px #0004;overflow:hidden;}
+.mockup-phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:7px;}
+.mockup-pending{position:absolute;left:0;right:0;bottom:4%;text-align:center;font-size:11px;color:#59677a;}
+.mockup--browser .mockup-screen{padding-top:14px;}
+.mockup--browser .mockup-screen::before{content:'● ● ●';position:absolute;top:0;left:0;right:0;height:14px;padding-left:8px;text-align:left;background:#f6f7fa;color:#b8c1d0;font-size:7px;line-height:14px;letter-spacing:1px;}
+.mockup--browser .mockup-phone{display:none;}
+.mockup--devices{background:#e8f0f0;}
+.mockup--devices .mockup-screen{left:9%;top:12%;width:75%;height:65%;border:5px solid #25282c;border-bottom:14px solid #cbd0d4;border-radius:7px;overflow:visible;}
+.mockup--devices .mockup-screen img{border-radius:2px;}
+.mockup--devices .mockup-screen::after{content:'';position:absolute;left:36%;bottom:-20%;width:28%;height:17%;background:linear-gradient(#a4aab0,#d8dcdf);clip-path:polygon(24% 0,76% 0,88% 80%,100% 90%,100% 100%,0 100%,0 90%,12% 80%);}
+.mockup--monitor{background:#eef0f3;}
+.mockup--monitor .mockup-screen{left:13%;top:10%;width:74%;height:67%;border:6px solid #282b30;border-bottom:16px solid #cbd0d4;overflow:visible;}
+.mockup--monitor .mockup-screen::after{content:'';position:absolute;left:32%;bottom:-24%;width:36%;height:20%;background:linear-gradient(#a7abb0,#dddfe2);clip-path:polygon(30% 0,70% 0,80% 75%,100% 90%,100% 100%,0 100%,0 90%,20% 75%);}
+.mockup--monitor .mockup-phone{display:none;}
+.mockup--floating{background:#dce5f4;}
+.mockup--floating .mockup-screen{left:11%;top:13%;width:76%;height:73%;transform:perspective(900px) rotateY(-9deg) rotateX(3deg);box-shadow:14px 18px 25px #1a2c5040;}
+.mockup--floating .mockup-phone{right:6%;bottom:7%;width:18%;height:58%;}
+.mockup--layered{background:#071321;}
+.mockup--layered .mockup-backdrop{background:linear-gradient(#061322ba,#061322d9),var(--mockup-image) center/cover;filter:blur(2px);}
+.mockup--layered .mockup-screen{left:10%;top:14%;width:80%;height:72%;box-shadow:0 14px 26px #0009;border:1px solid #ffffff26;}
+.mockup--layered .mockup-phone{display:none;}
+.mockup--layered .mockup-pending{color:#cbd5e1;}
+.mockup--split{background:#f2eee9;}
+.mockup--split .mockup-screen{left:6%;top:16%;width:73%;height:68%;padding-top:10px;}
+.mockup--split .mockup-screen::before{content:'';position:absolute;left:0;right:0;top:0;height:10px;background:#d8d7d4;}
+.mockup--split .mockup-phone{right:6%;bottom:7%;height:70%;width:22%;}
