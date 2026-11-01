@@ -42,8 +42,6 @@
 @media(prefers-reduced-motion:reduce){.purep-card-image img{transition:none;}.purep-card:hover img{transform:none;}}
 
 /* Leave content clear of the scroll-driven blend into the featured project. */
-.work{position:relative;padding-bottom:clamp(600px,58vw,920px);}
-.work::after{content:"";position:absolute;inset:auto 0 0;height:clamp(600px,58vw,920px);pointer-events:none;background:#fff;opacity:var(--purep-blend,0);}
-.purep-feature{background:#fff;border-top:0;}
-
-@media(prefers-reduced-motion:reduce){.work::after{opacity:1;}}
+.work{position:relative;padding-bottom:clamp(600px,58vw,920px);background-color:var(--work-feature-bg,var(--paper));}
+.work::after{content:none;}
+.purep-feature{background:var(--work-feature-bg,#fff);border-top:0;}

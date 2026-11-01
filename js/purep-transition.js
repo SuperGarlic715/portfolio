@@ -1,14 +1,27 @@
-/* Keep the WORK spacer clear, then fade it to white as PUREP approaches. */
+/* Transition both sections together so the spacer never becomes a separate panel. */
 (() => {
   const work = document.querySelector('#work');
   const feature = document.querySelector('#purep-feature');
   if (!work || !feature || !window.gsap || !window.ScrollTrigger) return;
   gsap.registerPlugin(ScrollTrigger);
   const media = gsap.matchMedia();
-  media.add('(prefers-reduced-motion: no-preference)', () => {
-    gsap.fromTo(work, { '--purep-blend': 0 }, {
-      '--purep-blend': 1,
-      ease: 'none',
+  media.add({
+    motion: '(prefers-reduced-motion: no-preference)',
+    dark: '(prefers-color-scheme: dark)',
+    light: '(prefers-color-scheme: light)'
+  }, context => {
+    if (!context.conditions.motion) return;
+    const body = getComputedStyle(document.body);
+    const source = {
+      background: body.backgroundColor,
+      ink: body.getPropertyValue('--ink').trim(),
+      muted: body.getPropertyValue('--muted').trim(),
+      line: body.getPropertyValue('--line').trim(),
+      surface: body.getPropertyValue('--surface').trim(),
+      paper: body.getPropertyValue('--paper').trim()
+    };
+    const timeline = gsap.timeline({
+      defaults: { ease: 'none' },
       scrollTrigger: {
         trigger: feature,
         start: () => feature.getBoundingClientRect().top + window.scrollY - window.innerHeight - parseFloat(getComputedStyle(work).paddingBottom) * 0.55,
@@ -17,5 +30,14 @@
         invalidateOnRefresh: true
       }
     });
+    timeline.fromTo([work, feature], { '--work-feature-bg': source.background }, {
+      '--work-feature-bg': '#ffffff'
+    }, 0).fromTo(work, {
+      '--ink': source.ink, '--muted': source.muted, '--line': source.line,
+      '--surface': source.surface, '--paper': source.paper
+    }, {
+      '--ink': '#16202a', '--muted': '#5a6774', '--line': '#d8dfe6',
+      '--surface': '#ffffff', '--paper': '#ffffff'
+    }, 0);
   });
 })();
