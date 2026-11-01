@@ -1,19 +1,19 @@
 /* Compact blueprint contact: email is the only contact detail. */
 .contact-blueprint{position:relative;isolation:isolate;overflow:hidden;min-height:600px;display:flex;align-items:center;padding:76px 0 84px;background-color:#edf4fa;background-image:linear-gradient(rgb(13 127 217 / .055) 1px,transparent 1px),linear-gradient(90deg,rgb(13 127 217 / .055) 1px,transparent 1px);background-size:64px 64px;color:#16202a;border-top:1px solid #dce7f0;}
 .contact-blueprint-inner{width:100%;position:relative;z-index:1;text-align:center;}
-.contact-eyebrow{color:#0d7fd9;font-family:var(--font-display),sans-serif;font-size:12px;font-weight:600;letter-spacing:.25em;}
+.contact-eyebrow{color:var(--button-blue);font-family:var(--font-display),sans-serif;font-size:12px;font-weight:600;letter-spacing:.25em;}
 .contact-blueprint h2{margin-top:20px;font-size:clamp(26px,3.2vw,44px);font-weight:750;letter-spacing:-.045em;line-height:1.4;word-break:keep-all;}
 .contact-blueprint-description{margin-top:14px;font-size:16px;color:#65798a;}
 .contact-email-card{display:flex;align-items:center;gap:24px;width:100%;max-width:760px;margin:32px auto 0;padding:22px 28px;border:1px solid #d7e7f5;border-radius:18px;background:rgb(255 255 255 / .94);box-shadow:0 8px 28px rgb(28 77 116 / .04);text-align:left;}
 .contact-envelope{flex-shrink:0;color:#283d50;}
 .contact-email-address{min-width:0;font-family:var(--font-display),sans-serif;font-size:clamp(18px,2.25vw,28px);font-weight:600;letter-spacing:-.04em;line-height:1.4;overflow-wrap:anywhere;}
-.contact-email-address:hover{color:#0d7fd9;}
+.contact-email-address:hover{color:var(--button-blue);}
 .contact-email-actions{display:flex;align-items:center;gap:16px;margin-left:auto;flex-shrink:0;}
 .contact-copy{padding:9px 16px;border:1px solid var(--button-blue);border-radius:999px;background:transparent;color:var(--button-blue);font:inherit;font-size:13px;font-weight:600;white-space:nowrap;cursor:pointer;}
 .contact-copy:hover{background:var(--button-blue);color:#fff;}
-.contact-send{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:#0d7fd9;color:white;transition:background .2s;}
-.contact-send:hover{background:#0863ad;}
-.contact-blueprint a:focus-visible,.contact-blueprint button:focus-visible{outline:3px solid #0d7fd9;outline-offset:4px;}
+.contact-send{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:50%;background:var(--button-blue);color:white;transition:background .2s;}
+.contact-send:hover{background:var(--button-blue-hover);}
+.contact-blueprint a:focus-visible,.contact-blueprint button:focus-visible{outline:3px solid var(--button-blue);outline-offset:4px;}
 .contact-wireframe{position:absolute;width:260px;height:170px;border:1px solid rgb(13 127 217 / .10);border-radius:10px;pointer-events:none;}
 .contact-wireframe::before{content:"";position:absolute;inset:0 0 auto;height:25px;border-bottom:1px solid rgb(13 127 217 / .09);}
 .contact-wireframe::after{content:"";position:absolute;top:-6px;left:-6px;width:11px;height:11px;background:linear-gradient(#6aa6d5,#6aa6d5) center/1px 11px no-repeat,linear-gradient(#6aa6d5,#6aa6d5) center/11px 1px no-repeat;opacity:.45;}

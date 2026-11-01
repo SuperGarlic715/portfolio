@@ -2,7 +2,7 @@
 .purep-eyebrow{display:flex;align-items:center;gap:16px;font-size:11px;letter-spacing:.12em;color:#5a6774;}
 .purep-eyebrow span{width:68px;height:1px;background:#c5d0db;}
 .purep-feature h2{margin-top:24px;font-family:var(--font-display),sans-serif;font-size:clamp(52px,7vw,88px);font-weight:800;line-height:1.05;letter-spacing:-.06em;}
-.purep-feature h2>span{color:#0d7fd9;}
+.purep-feature h2>span{color:var(--button-blue);}
 .purep-subtitle{margin-top:12px;font-size:clamp(19px,2.5vw,30px);font-weight:600;letter-spacing:-.025em;}
 .purep-intro{margin-top:16px;color:#5a6774;line-height:1.7;word-break:keep-all;}
 .purep-cards{display:grid;grid-template-columns:1.12fr 1fr 1fr;gap:24px;margin-top:40px;}
@@ -13,8 +13,8 @@
 .purep-card:nth-child(2) img{object-fit:cover;background:#dcefff;}
 .purep-card:nth-child(3) img{object-fit:cover;object-position:center;background:#d8e7f0;}
 .purep-card:hover img{transform:scale(1.035);}
-.purep-card:focus-visible{outline:3px solid #0d7fd9;outline-offset:8px;border-radius:12px;}
-.purep-card-number{display:flex;align-items:center;gap:14px;margin:24px 0 12px;font-size:12px;color:#0d7fd9;font-weight:600;}
+.purep-card:focus-visible{outline:3px solid var(--button-blue);outline-offset:8px;border-radius:12px;}
+.purep-card-number{display:flex;align-items:center;gap:14px;margin:24px 0 12px;font-size:12px;color:var(--button-blue);font-weight:600;}
 .purep-card-number span{width:55px;height:1px;background:#c5d0db;}
 .purep-card-title{display:block;font-family:var(--font-display),sans-serif;font-size:clamp(20px,2.2vw,28px);font-weight:700;letter-spacing:-.03em;}
 .purep-card-description{display:block;margin-top:8px;color:#5a6774;font-size:15px;}
@@ -36,7 +36,7 @@
 .purep-gallery-controls button{width:44px;height:44px;border:1px solid var(--button-blue);border-radius:50%;background:var(--button-blue);color:#fff;cursor:pointer;}
 .purep-website{height:100%;display:flex;flex-direction:column;}
 .purep-website p{padding:8px 16px;font-size:12px;background:#f5f7f9;}
-.purep-website a{color:#0d7fd9;text-decoration:underline;}
+.purep-website a{color:var(--button-blue);text-decoration:underline;}
 .purep-website iframe{display:block;width:100%;flex:1;min-height:0;border:0;background:white;}
 @media(max-width:768px){.purep-cards{grid-template-columns:1fr;gap:36px;}.purep-card-image{height:auto;aspect-ratio:16/10;}.purep-card-number{margin-top:18px;}.purep-dialog{width:94vw;height:88dvh;}.purep-dialog-header{padding:12px 16px;}.purep-intro{font-size:14px;}}
 @media(prefers-reduced-motion:reduce){.purep-card-image img{transition:none;}.purep-card:hover img{transform:none;}}
