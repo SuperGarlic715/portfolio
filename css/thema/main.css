@@ -49,6 +49,7 @@
 .section_note {font-size: 14px; color: var(--muted);}
 
 /* ---------- about ---------- */
+.about{--about-transition-bg:#fff;--ink:#16202A;--muted:#5A6774;--line:#D8DFE6;background-color:var(--about-transition-bg);color:var(--ink);color-scheme:light;}
 .about_text {font-size: 20px; line-height: 1.8; word-break: break-all;}
 .about_group {margin-top: 64px;}
 .group_title {margin-bottom: 8px; font-size: 15px; font-weight: 600; color: var(--muted);}
@@ -151,7 +152,7 @@
 
 /* Animated mesh gradient hero */
 .hero{--hero-blend-space:220px;position:relative;width:100%;height:calc(100vh + var(--hero-blend-space));min-height:calc(760px + var(--hero-blend-space));max-height:calc(1080px + var(--hero-blend-space));padding:0 0 var(--hero-blend-space);overflow:hidden;isolation:isolate;background:#7293E6;}
-.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:var(--hero-blend-space);z-index:3;pointer-events:none;background:linear-gradient(to bottom,transparent 0%,var(--paper) 100%);}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:var(--hero-blend-space);z-index:3;pointer-events:none;background:linear-gradient(to bottom,transparent 0%,var(--about-transition-bg,#fff) 100%);}
 .hero + .about{border-top:0;}
 .gradient-bg{position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(120deg,#7293E6,#B6A7FF,#FFE38A);}
 .gradient-bg canvas{display:block;width:100%;height:100%;}
