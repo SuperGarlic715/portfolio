@@ -21,8 +21,8 @@
     duration: 800,
     easing: 'ease-out-cubic',
     offset: 80,
-    once: true,
-    mirror: false
+    once: false,
+    mirror: true
   });
   reducedMotion.addEventListener('change', updateMotion);
   window.addEventListener('load', () => AOS.refresh());
