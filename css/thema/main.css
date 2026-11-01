@@ -160,7 +160,7 @@
 .hero-title .accent{color:#1913F0;}
 .hero-desc{font-size:20px;line-height:1.8;font-weight:500;letter-spacing:-.5px;word-break:keep-all;color:#171717;}
 .hero-bottom{font-family:var(--font-display);width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;}
-.hero-tags{--tag-gap:16px;display:flex;flex-wrap:wrap;align-items:center;gap:var(--tag-gap);font-size:12px;letter-spacing:1.5px;color:#fff;font-weight:600;}
+.hero-tags{--tag-gap:16px;display:flex;flex-wrap:wrap;align-items:center;gap:var(--tag-gap);font-size:12px;letter-spacing:1.5px;color:#fff;font-weight:600;text-shadow:0 1px 3px rgb(0 0 0 / 65%),0 2px 8px rgb(0 0 0 / 35%);}
 .hero-tags li{display:flex;align-items:center;gap:var(--tag-gap);}
 .hero-tags li+li::before{content:"·";}
 .scroll{display:flex;flex-direction:column;align-items:center;gap:13px;color:#1913F0;font-size:11px;font-weight:700;letter-spacing:2px;white-space:nowrap;transition:color .3s ease;animation:scroll-float 2s ease-in-out infinite;will-change:transform;}
