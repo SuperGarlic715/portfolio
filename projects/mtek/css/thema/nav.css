@@ -108,3 +108,6 @@ header.scrolled .logo img.scrolled_logo {display: inline;}
   .ri-global-line, .lang_btn li.active a {color: #003365;}
   .lang_btn li.active::after {background: #003365;}
 }
+
+/* A closed off-canvas menu must not extend the page's horizontal scroll area. */
+@media(max-width:768px){header .menu:not(.open){visibility:hidden;}header .menu.open{visibility:visible;}}

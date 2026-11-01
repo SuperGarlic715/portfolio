@@ -270,3 +270,10 @@
   .board_meta {font-size: 12px; gap: 10px;}
   
 }
+/* Inquiry layout follows the ECO form while retaining MTEK colors and shell. */
+.mtek-inquiry .inner{display:block;}
+.mtek-inquiry .board_container{width:100%;}
+.mtek-inquiry .captcha_wrap{flex-wrap:wrap;}
+.mtek-inquiry .board_agree_check input{flex-shrink:0;}
+@media(max-width:768px){.board_table td{min-width:0;max-width:100%;}.board_table td a{max-width:100%;white-space:normal;overflow-wrap:anywhere;}}
+@media(max-width:768px){.gallery_item>a{display:block;}.gallery_title{overflow-wrap:anywhere;}.gallery_item .board_meta{display:flex;flex-wrap:wrap;gap:8px;}}
